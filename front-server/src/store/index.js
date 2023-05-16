@@ -47,7 +47,7 @@ export default new Vuex.Store({
         url: `${API_URL}/articles/`,
       })
         .then((res) => {
-        // console.log(res, context)
+        console.log(res, context)
           context.commit('GET_ARTICLES', res.data)
         })
         .catch((err) => {
