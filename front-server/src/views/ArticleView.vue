@@ -8,7 +8,7 @@
 </template>
 
 <script>
-import ArticleList from '@/components/ArticleList.vue'
+import ArticleList from '@/components/ArticleList'
 
 export default {
   name: 'ArticleView',

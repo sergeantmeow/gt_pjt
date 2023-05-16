@@ -48,7 +48,10 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'dj_rest_auth.registration',
     'rest_framework',
-    # 'corseheaders',
+
+    # CORS policy
+    'corsheaders',
+
     'allauth.account',
 ]
 
@@ -69,21 +72,22 @@ REST_FRAMEWORK = {
 }
 
 MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    # "corsheaders.middleware.CorsMiddleware",
 ]
 
-CORSE_ALLOWED_ORIGINS = [
-    'http://localhost:8000',
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8080',
+    'http://127.0.0.1:8080',
 ]
-
-CORSE_ALLOWED_ORIGINS = True
+# 모든 Origin 허용시에만
+# CORS_ALLOWED_ORIGINS = True
 
 ROOT_URLCONF = 'back_server.urls'
 
