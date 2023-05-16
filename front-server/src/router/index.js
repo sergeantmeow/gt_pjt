@@ -4,6 +4,7 @@ import ArticleView from '../views/ArticleView'
 import ArticleCreateView from '../views/ArticleCreateView'
 import ArticleDetailView from '../views/ArticleDetailView'
 import MovieListView from '@/views/MovieListView'
+
 Vue.use(VueRouter)
 
 const routes = [

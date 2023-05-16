@@ -3,8 +3,9 @@
     <div class="card">
       <img id="posterID" :src="`https://image.tmdb.org/t/p/w500/${movieItem.poster_path}`" class="card-img-top" alt="">
       <div class="card-body">
-        <h5 class="card-title fw-bold">{{ movieItem.title }}</h5>
-        <p class="card-text card-description" id="overView">{{ movieItem.overview }}</p>
+        <h4 class="card-title fw-bold">{{ movieItem?.title }}</h4>
+        <!-- <p class="card-text card-description" id="overView">{{ movieItem?.overview }}</p> -->
+        <p>평점 평균 : {{ movieItem?.vote_average }}</p>
       </div>
     </div>
   </div>
@@ -44,7 +45,7 @@ export default {
   margin: 5px;
 }
 
-.card-content__more-btn::before {
+/* .card-content__more-btn::before {
   content: '더보기';
 }
 
@@ -54,6 +55,6 @@ export default {
 
 .card-description:has(+ .card-content__more-btn:checked) {
   -webkit-line-clamp:unset
-}
+} */
 
 </style>

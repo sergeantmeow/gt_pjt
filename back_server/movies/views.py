@@ -16,7 +16,9 @@ def movie_detail():
     pass
 
 
+@api_view(['GET'])
 def movie_list(request):
     movies = get_list_or_404(Movie)
     serializer = MovieListSerializer(movies, many=True)
+    print('>>>>>>data serialized<<<<<<')
     return Response(serializer.data)

@@ -7,5 +7,5 @@ urlpatterns = [
     path('articles/', include('articles.urls')),
     path('accounts/', include('dj_rest_auth.urls')),
     path('accounts/signup/', include('dj_rest_auth.registration.urls')),
-    path('api/v2/', include('movies.urls')),
+    path('movies/', include('movies.urls')),
 ]

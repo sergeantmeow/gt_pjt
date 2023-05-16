@@ -1,24 +1,23 @@
 <template>
-  <div id="outerLine">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <MovieCardItem
-      v-for="movieItem in movies"
-      :key="movieItem.id"
-      :movieItem="movieItem"
-      class="col-md-4"
-      />
-    </div>
+  <div class="col">
+    <MovieCardItem
+    v-for="movieItem in movies"
+    :key="movieItem.id"
+    :movieItem="movieItem"
+    class="col-md-4"
+    />
   </div>
 </template>
 
 <script>
 import MovieCardItem from '@/components/MovieCardItem'
+// import axios from 'axios'
 
 export default {
   name: 'MovieCard',
   data(){
     return {
-      movies : this.$store.state.movies
+      movies : this.$store.state.cinemaMovies
     }
   },
   components: {
@@ -31,4 +30,5 @@ export default {
   #outerLine {
     margin: 14px
   }
+
 </style>
