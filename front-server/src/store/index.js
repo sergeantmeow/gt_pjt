@@ -27,16 +27,17 @@ export default new Vuex.Store({
   },
   actions: {
     getMovies(context){
-      
+      console.log('>>>>reached getMovies function<<<<')
       axios({
         method: 'get',
-        url: `${API_URL}/movies/api/v2/movies/`,
+        url: `${API_URL}/movies/`,
       })
       .then((response)=>{
+        console.log('>>>>Got the Data<<<<')
         context.commit('GET_MOVIES', response.data.results)
       })
       .catch((err)=>{
-        console.log('>>>Error Occurred<<<')
+        console.log('>>>>Error Occurred<<<<')
         console.log(err)
       })
     },

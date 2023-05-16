@@ -2,7 +2,7 @@
   <div id="outerLine">
     <div class="row row-cols-1 row-cols-md-3 g-4">
       <MovieCardItem
-      v-for="movieItem in movieItems"
+      v-for="movieItem in movies"
       :key="movieItem.id"
       :movieItem="movieItem"
       class="col-md-4"
@@ -18,7 +18,7 @@ export default {
   name: 'MovieCard',
   data(){
     return {
-      movieItems : this.$store.state.movieItems
+      movies : this.$store.state.movies
     }
   },
   components: {
