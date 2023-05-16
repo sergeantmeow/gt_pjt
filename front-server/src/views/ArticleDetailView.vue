@@ -6,6 +6,7 @@
     <p>내용 : {{ article?.content }}</p>
     <p>작성시간 : {{ article?.created_at }}</p>
     <p>수정시간 : {{ article?.updated_at }}</p>
+    <button @click="deleteArticle">삭제</button>
   </div>
 </template>
 
@@ -32,6 +33,19 @@ export default {
       .then((res) => {
         console.log(res)
         this.article = res.data
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+    },
+    deleteArticle(){
+      axios({
+        method: 'delete',
+        url: `${API_URL}/articles/${ this.$route.params.id }/`
+      })
+      .then((res) => {
+        console.log(res)
+        console.log('삭제되었습니다.')
       })
       .catch((err) => {
         console.log(err)
