@@ -11,37 +11,36 @@ export default new Vuex.Store({
   state: {
     articles: [
     ],
+    movies: [
+    ],
   },
   getters: {
   },
   mutations: {
-    GET_JSON(state, movieItems){
-      state.movieItems = movieItems
-    },
     GET_ARTICLES(state, articles) {
       state.articles = articles
     },
+
+    GET_MOVIES(state, movies){
+      state.movies = movies
+    },
   },
   actions: {
-    getJson(context){
-      const API_URL = "https://api.themoviedb.org/3/movie/top_rated"
+    getMovies(context){
       
       axios({
-        url: API_URL,
-        params: {
-          api_key : 'ce3376151cdca276068439ff358212cb',
-          language : 'en-US',
-          page : 1
-        }
+        method: 'get',
+        url: `${API_URL}/movies/api/v2/movies/`,
       })
       .then((response)=>{
-        context.commit('GET_JSON', response.data.results)
+        context.commit('GET_MOVIES', response.data.results)
       })
       .catch((err)=>{
         console.log('>>>Error Occurred<<<')
         console.log(err)
       })
     },
+
     getArticles(context) {
       axios({
         method: 'get',

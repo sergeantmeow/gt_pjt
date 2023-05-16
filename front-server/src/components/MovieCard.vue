@@ -26,7 +26,7 @@ export default {
   },
   methods : {
     getLink(){
-      this.$store.dispatch('getJson')
+      this.$store.dispatch('getMovies')
     }
   },
   created(){

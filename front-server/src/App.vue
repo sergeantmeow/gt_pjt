@@ -2,8 +2,7 @@
   <div id="app">
     <nav>
       <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-      <router-link :to="{ name: 'MovieListView'}">Movie</router-link>
+      <router-link :to="{ name: 'MovieListView'}">Movie</router-link> |
       <router-link :to="{ name: 'ArticleView' }">Articles</router-link>
     </nav>
     <router-view/>
