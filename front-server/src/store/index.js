@@ -18,6 +18,9 @@ export default new Vuex.Store({
     GET_JSON(state, movieItems){
       state.movieItems = movieItems
     },
+    GET_ARTICLES(state, articles) {
+      state.articles = articles
+    },
   },
   actions: {
     getJson(context){
@@ -38,9 +41,6 @@ export default new Vuex.Store({
         console.log('>>>Error Occurred<<<')
         console.log(err)
       })
-    },
-    GET_ARTICLES(state, articles) {
-      state.articles = articles
     },
     getArticles(context) {
       axios({
