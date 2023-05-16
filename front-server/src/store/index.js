@@ -27,7 +27,6 @@ export default new Vuex.Store({
   },
   actions: {
     getMovies(context){
-      
       axios({
         method: 'get',
         url: `${API_URL}/movies/api/v2/movies/`,
