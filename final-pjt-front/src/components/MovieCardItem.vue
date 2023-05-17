@@ -1,13 +1,17 @@
 <template>
   <div class="col">
-    <div class="card">
-      <img id="posterID" :src="`https://image.tmdb.org/t/p/w500/${movieItem.poster_path}`" class="card-img-top" alt="">
-      <div class="card-body">
-        <h4 class="card-title fw-bold">{{ movieItem?.title }}</h4>
-        <!-- <p class="card-text card-description" id="overView">{{ movieItem?.overview }}</p> -->
-        <p>평점 평균 : {{ movieItem?.vote_average }}</p>
+    <router-link :to="{
+      name: 'MovieDetailView',
+      params: {id: movieItem.title}}">
+      <div class="card">
+        <img id="posterID" :src="`https://image.tmdb.org/t/p/w500/${movieItem.poster_path}`" class="card-img-top" alt="">
+        <div class="card-body">
+          <h4 class="card-title fw-bold">{{ movieItem?.title }}</h4>
+          <!-- <p class="card-text card-description" id="overView">{{ movieItem?.overview }}</p> -->
+          <p>평점 평균 : {{ movieItem?.vote_average }}</p>
+        </div>
       </div>
-    </div>
+    </router-link>
   </div>
 </template>
 
