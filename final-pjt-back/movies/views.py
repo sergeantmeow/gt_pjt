@@ -12,8 +12,10 @@ def movie_search(request):
 
 
 @api_view(['GET'])
-def movie_detail():
-    pass
+def movie_detail(request, movie_pk):
+    movie = get_object_or_404(Movie, pk = movie_pk)
+    serializer = MovieSerializer(movie)
+    return Response(serializer.data)
 
 
 @api_view(['GET'])
