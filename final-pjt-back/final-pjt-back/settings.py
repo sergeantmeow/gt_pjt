@@ -89,7 +89,7 @@ CORS_ALLOWED_ORIGINS = [
 # 모든 Origin 허용시에만
 # CORS_ALLOWED_ORIGINS = True
 
-ROOT_URLCONF = 'back_server.urls'
+ROOT_URLCONF = 'final-pjt-back.urls'
 
 TEMPLATES = [
     {
@@ -107,7 +107,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'back_server.wsgi.application'
+WSGI_APPLICATION = 'final-pjt-back.wsgi.application'
 
 
 # Database
