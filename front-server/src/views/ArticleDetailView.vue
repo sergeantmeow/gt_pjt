@@ -38,7 +38,8 @@ export default {
         console.log(err)
       })
     },
-    deleteArticle(){
+    // 삭제하고 다른 페이지 이동 설정하기
+    deleteArticle(){ 
       axios({
         method: 'delete',
         url: `${API_URL}/articles/${ this.$route.params.id }/`
@@ -46,6 +47,7 @@ export default {
       .then((res) => {
         console.log(res)
         console.log('삭제되었습니다.')
+        this.$router.push('/articles')
       })
       .catch((err) => {
         console.log(err)
