@@ -15,6 +15,7 @@
 
 <script>
 import axios from 'axios'
+
 const API_URL = 'http://127.0.0.1:8000'
 
 export default {
@@ -24,6 +25,18 @@ export default {
       title: null,
       content: null,
     }
+  },
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
+    }
+  },
+  beforeEnter: (to, from, next) => {
+      if (this.isLogIn()) { // 로그인되어 있는 경우
+        next(); // 페이지로 이동
+      } else {
+        next({ name: 'LogInView' }); // 로그인 페이지로 이동
+      }
   },
   methods: {
     createArticle() {
@@ -39,11 +52,10 @@ export default {
       }
       axios({
         method: 'post',
-        url: `${API_URL}/articles/`,
+        url: `${API_URL}/articles/create/`,
         data: { title, content},
       })
       .then(() => {
-        // console.log(res)
         this.$router.push({name: 'ArticleView'})
       })
       .catch((err) => {

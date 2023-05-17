@@ -26,19 +26,29 @@ export default {
   created() {
     this.getArticleDetail()
   },
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
+    }
+  },
   methods: {
     getArticleDetail() {
-      axios({
+      if (this.isLogin) {
+        axios({
         method: 'get',
         url: `${API_URL}/articles/${ this.$route.params.id }/`,
-      })
-      .then((res) => {
-        console.log(res)
-        this.article = res.data
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+        })
+        .then((res) => {
+          console.log(res)
+          this.article = res.data
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+      } else {
+        alert('로그인이 필요한 페이지입니다...')
+        this.$router.push({name: 'LogInView'})
+      }
     },
     // 삭제하고 다른 페이지 이동 설정하기
     deleteArticle(){ 
@@ -48,8 +58,7 @@ export default {
       })
       .then((res) => {
         console.log(res)
-        console.log('삭제되었습니다.')
-        this.$router.push('/articles')
+        this.$router.push({name: 'ArticleView'})
       })
       .catch((err) => {
         console.log(err)
