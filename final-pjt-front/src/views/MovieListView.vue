@@ -1,13 +1,20 @@
 <template>
   <div>
-    <nav>
+    <nav id="movie_navbar">
       <!-- <router-link :to="{ name: 'MovieListView'}">인기작</router-link> |
       <router-link :to="{ name: 'MovieOnCinema' }">지금 상영 중</router-link> |
       <router-link :to="{ name: 'ArticleView' }">맞춤 추천</router-link> -->
-      <a href="" @click.prevent="popular">인기작 랜덤20(임시)</a> |
-      <a href="" @click.prevent="cinema">지금 상영 중</a> |
-      <a href="" @click.prevent="mbti">To Be Added</a>
+      <button class="btn btn-warning">
+        <a href="" @click.prevent="popular" class="text-decoration-none fw-bold">Recommendations</a>
+      </button>|
+      <button class="btn btn-warning">
+        <a href="" @click.prevent="cinema" class="text-decoration-none fw-bold">Now On Cinema</a>
+      </button>|
+      <button class="btn btn-warning">
+        <a href="" @click.prevent="mbti" class="text-decoration-none fw-bold">To Be Added</a>
+      </button>
     </nav>
+    <hr id="spacer">
     <div v-if="link === 1">
       <MovieCard/>
     </div>
@@ -71,5 +78,11 @@ export default {
 </script>
 
 <style>
+#spacer {
+  margin: none
+}
+#movie_navbar{
+  margin-top: 1rem;
+}
 
 </style>
