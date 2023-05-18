@@ -20,6 +20,8 @@ export default new Vuex.Store({
     ],
     cinemaMovies: [
     ],
+    mbtiMovies: [
+    ],
     user: {
       token: null,
       username: null,
@@ -47,8 +49,10 @@ export default new Vuex.Store({
 
     GET_MOVIES_CINEMA(state, cinemaMovies){
       state.cinemaMovies = cinemaMovies
-      // console.log('voila')
-      // console.log(cinemaMovies)
+    },
+
+    GET_MBTI(state, mbtiMovies){
+      state.mbtiMovies = mbtiMovies
     },
     
     // accounts
@@ -70,27 +74,23 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/`,
       })
       .then((response)=>{
-      let twentyData = [];
-      let idx = [];
-      for(let i=0; i<20; i++){
-          let goFlag = true;
-          let tmpNum = Math.floor(Math.random() * response.data.length)
-          for(let j=0; j<idx.length; j++){
-            if(tmpNum ==idx[j]){
-              goFlag = false
-              i--
-              break
-            }
-          }
-          if(goFlag){
-            idx.push(tmpNum)
-            twentyData.push(response.data[tmpNum])
-          }
-        }
-        context.commit('GET_MOVIES', twentyData)
+        context.commit('GET_MOVIES', response.data)
       })
       .catch((err)=>{
         console.log(err)
+      })
+    },
+
+    getMBTIMovies(context){
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/mbti/`,
+        params: {
+          mbti : this.state.user.mbti
+        }
+      })
+      .then((response)=>{
+        context.commit('GET_MBTI', response.data)
       })
     },
 
@@ -100,7 +100,7 @@ export default new Vuex.Store({
         url: API_URL,
         params: {
           api_key : 'ce3376151cdca276068439ff358212cb',
-          language : 'en-US',
+          language : 'ko-KO',
           page : 1
         }
       })

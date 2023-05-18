@@ -4,7 +4,7 @@
       <div class="container-fluid">
         <a href="" class="text-decoration-none fw-bold">
           <img alt="VCR Logo" src="./assets/vcr.png" class="logo_img">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">토탈 비디오</a>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
