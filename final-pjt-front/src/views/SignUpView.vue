@@ -36,18 +36,16 @@ export default {
   },
   methods: {
     signUp() {
-      const username = this.username
-      const password1 = this.password1
-      const password2 = this.password2
-      const mbti = this.mbti
-
-      if (password1 !== password2) {
+      if (this.password1 !== this.password2) {
         this.passwordsMatchError = true; // 비밀번호 불일치 오류 플래그 설정
         return; // 함수 종료
       }
 
       const payload = {
-        username, password1, password2, mbti
+        username : this.username,
+        password1 : this.password1,
+        password2 : this.password2,
+        mbti : this.mbti
       }
 
       this.$store.dispatch('signUp', payload)

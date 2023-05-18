@@ -4,4 +4,4 @@ from django.contrib.auth.models import AbstractUser
 # Create your models here.
 class User(AbstractUser):
     followings = models.ManyToManyField('self', symmetrical=False, related_name='followers')
-    mbti = models.TextField(blank=True)
+    mbti = models.TextField(max_length=4, blank=True)

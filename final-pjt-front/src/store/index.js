@@ -28,7 +28,10 @@ export default new Vuex.Store({
   },
   getters: {
     isLogin(state) {
-      return state.token ? true : false
+      return state.user.token ? true : false
+    },
+    userName(state) {
+      return state.user.username
     }
   },
   mutations: {
@@ -51,6 +54,11 @@ export default new Vuex.Store({
     // accounts
     SET_USER(state, user) {
       state.user = user
+    },
+    RESET_USER(state) {
+      state.user.token = null
+      state.user.username = null
+      state.user.mbti = null
     },
 
   },
@@ -106,10 +114,7 @@ export default new Vuex.Store({
 
     // accounts
     signUp(context, payload) {
-      const username = payload.username
-      const password1 = payload.password1
-      const password2 = payload.password2
-      const mbti = payload.mbti
+      const { username, password1, password2, mbti } = payload;
 
       axios({
         method: 'post',
@@ -121,11 +126,11 @@ export default new Vuex.Store({
         .then((res) => {
           const user = {
             token: res.data.key,
-            username: username,
-            mbti: mbti
+            username,
+            mbti
           }
           context.commit('SET_USER', user)
-          router.push({name: 'ArticleView'})
+          context.dispatch('login', { username, password: password1 })
         })
         .catch((err) => {
         console.log(err)
@@ -134,7 +139,6 @@ export default new Vuex.Store({
     login(context, payload) {
       const username = payload.username
       const password = payload.password
-
       axios({
         method: 'post',
         url: `${API_URL}/accounts/login/`,
@@ -143,13 +147,14 @@ export default new Vuex.Store({
         }
       })
       .then((res) => {
+        console.log(res)
         const user = {
           token: res.data.key,
-          username: username,
-          mbti: res.data.mbti
+          username: res.data.user.username,
+          mbti: res.data.user.mbti,
         }
         context.commit('SET_USER', user)
-        router.push({name: 'ArticleView'})
+        router.push('/')
       })
       .catch((err) => console.log(err))
     },
@@ -162,13 +167,22 @@ export default new Vuex.Store({
         }
       })
       .then(() => {
-        context.commit('SAVE_TOKEN', null);
-        context.commit('SAVE_USERNAME', null);
-        context.commit('SAVE_MBTI', null);
-        location.reload()
+        context.commit('RESET_USER')
+        localStorage.removeItem('vuex');
+        // 이전 경로와 현재 경로가 다른 경우에만 이동
+        if (router.history.current.path !== '/') {
+          router.push('/');
+          }
       })
       .catch((err) => console.log(err))
-    }
+    },
+    setToken({ commit }, token) {
+      commit('SET_TOKEN', token)
+      // 10분 후에 토큰 삭제
+      setTimeout(() => {
+        commit('SET_TOKEN', null)
+      }, 1000 * 60 * 10) // 10분을 밀리초로 변환
+    },
   },
   modules: {
   }

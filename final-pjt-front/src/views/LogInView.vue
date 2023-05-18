@@ -32,6 +32,6 @@ export default {
       }
       this.$store.dispatch('login', payload)
     }
-  }
+  },
 }
 </script>
