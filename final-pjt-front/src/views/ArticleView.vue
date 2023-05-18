@@ -14,14 +14,12 @@ export default {
   components: {
     ArticleList,
   },
-  computed:{
-  },
   created() {
     this.getArticles()
   },
   methods: {
     getArticles() {
-      this.$store.dispatch('getArticles')
+      this.$store.dispatch('getArticles')     
     }
   }
 }

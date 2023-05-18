@@ -15,6 +15,7 @@
 
 <script>
 import axios from 'axios'
+
 const API_URL = 'http://127.0.0.1:8000'
 
 export default {
@@ -23,6 +24,11 @@ export default {
     return {
       title: null,
       content: null,
+    }
+  },
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
     }
   },
   methods: {
@@ -39,11 +45,13 @@ export default {
       }
       axios({
         method: 'post',
-        url: `${API_URL}/articles/`,
+        url: `${API_URL}/articles/create/`,
+        headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+        },
         data: { title, content},
       })
       .then(() => {
-        // console.log(res)
         this.$router.push({name: 'ArticleView'})
       })
       .catch((err) => {

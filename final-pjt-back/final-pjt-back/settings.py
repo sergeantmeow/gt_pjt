@@ -32,27 +32,33 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     # Django Apps
+    'accounts',
     'articles',
     'movies',
 
+
+    # registration
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'dj_rest_auth.registration',
+    
+    # Auth
+    'rest_framework.authtoken',
+    'dj_rest_auth',
+
+    # CORS policy
+    'corsheaders',
+
+
+    'rest_framework',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'rest_framework.authtoken',
-    'dj_rest_auth',
-    'django.contrib.sites',
-    'allauth',
-    'allauth.socialaccount',
-    'dj_rest_auth.registration',
-    'rest_framework',
-
-    # CORS policy
-    'corsheaders',
-
-    'allauth.account',
 ]
 
 REST_AUTH = {
@@ -84,10 +90,9 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     'http://localhost:8080',
-    'http://127.0.0.1:8080',
 ]
 # 모든 Origin 허용시에만
-# CORS_ALLOWED_ORIGINS = True
+# CORS_ORIGIN_ALLOW_ALL = True
 
 ROOT_URLCONF = 'final-pjt-back.urls'
 
@@ -164,4 +169,4 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# AUTH_USER_MODEL = 'accounts.user'
+AUTH_USER_MODEL = 'accounts.User'

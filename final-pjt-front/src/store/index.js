@@ -1,6 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 import axios from 'axios'
+import createPersistedState from 'vuex-persistedstate'
+import router from '../router'
 
 const API_URL = 'http://127.0.0.1:8000'
 
@@ -8,6 +10,9 @@ Vue.use(Vuex)
 
 
 export default new Vuex.Store({
+  plugins: [
+    createPersistedState(),
+  ],
   state: {
     articles: [
     ],
@@ -15,14 +20,27 @@ export default new Vuex.Store({
     ],
     cinemaMovies: [
     ],
+    user: {
+      token: null,
+      username: null,
+      mbti: null
+    },
   },
   getters: {
+    isLogin(state) {
+      return state.user.token ? true : false
+    },
+    currentUser(state) {
+      return state.user
+    }
   },
   mutations: {
+    // articles
     GET_ARTICLES(state, articles) {
       state.articles = articles
     },
 
+    // movies
     GET_MOVIES(state, movies){
       state.movies = movies
     },
@@ -32,9 +50,20 @@ export default new Vuex.Store({
       // console.log('voila')
       // console.log(cinemaMovies)
     },
+    
+    // accounts
+    SET_USER(state, user) {
+      state.user = user
+    },
+    RESET_USER(state) {
+      state.user.token = null
+      state.user.username = null
+      state.user.mbti = null
+    },
 
   },
   actions: {
+    // movies
     getMovies(context){
       axios({
         method: 'get',
@@ -77,26 +106,89 @@ export default new Vuex.Store({
       })
       .then((response)=>{
         context.commit('GET_MOVIES_CINEMA', response.data.results)
-        // console.log(response.data.results)
       })
       .catch((err)=>{
         console.log(err)
       })
     },
 
+    // articles
     getArticles(context) {
       axios({
         method: 'get',
         url: `${API_URL}/articles/`,
       })
         .then((res) => {
-        // console.log(res, context)
           context.commit('GET_ARTICLES', res.data)
         })
         .catch((err) => {
         console.log(err)
       })
-    }
+    },
+
+    // accounts
+    signUp(context, payload) {
+      const { username, password1, password2, mbti } = payload;
+
+      axios({
+        method: 'post',
+        url: `${API_URL}/accounts/signup/`,
+        data: {
+          username, password1, password2, mbti
+        }
+      })
+        .then((res) => {
+          const user = {
+            token: res.data.key,
+            username,
+            mbti
+          }
+          context.commit('SET_USER', user)
+          context.dispatch('login', { username, password: password1 })
+        })
+        .catch((err) => {
+        console.log(err)
+      })
+    },
+    login(context, payload) {
+      const username = payload.username
+      const password = payload.password
+      axios({
+        method: 'post',
+        url: `${API_URL}/accounts/login/`,
+        data: {
+          username, password
+        }
+      })
+      .then((res) => {
+        const user = {
+          token: res.data.key,
+          username: res.data.user.username,
+          mbti: res.data.user.mbti,
+        }
+        context.commit('SET_USER', user)
+        router.push('/')
+      })
+      .catch((err) => console.log(err))
+    },
+    logout(context){
+      axios({
+        method: 'post',
+        url: `${API_URL}/accounts/logout/`,
+        headers: {
+          Authorization: `Token ${context.state.user.token}`
+        }
+      })
+      .then(() => {
+        context.commit('RESET_USER')
+        localStorage.removeItem('vuex');
+        // 이전 경로와 현재 경로가 다른 경우에만 이동
+        if (router.history.current.path !== '/') {
+          router.push('/');
+          }
+      })
+      .catch((err) => console.log(err))
+    },
   },
   modules: {
   }

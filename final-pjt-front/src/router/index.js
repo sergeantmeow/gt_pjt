@@ -5,6 +5,9 @@ import ArticleCreateView from '../views/ArticleCreateView'
 import ArticleDetailView from '../views/ArticleDetailView'
 import MovieListView from '@/views/MovieListView'
 import MovieDetailView from '@/views/MovieDetailView'
+import LogInView from '../views/LogInView'
+import SignUpView from '../views/SignUpView'
+import MyProfileView from '@/views/MyProfileView'
 
 Vue.use(VueRouter)
 
@@ -14,16 +17,19 @@ const routes = [
     name: 'ArticleView',
     component: ArticleView
   },
+
   {
     path: '/articles/create',
     name: 'ArticleCreateView',
     component: ArticleCreateView
   },
+
   {
-    path: '/articles/detail',
+    path: '/articles/detail/:id',
     name: 'ArticleDetailView',
     component: ArticleDetailView
   },
+
   {
     path: '/MovieList',
     name: 'MovieListView',
@@ -33,8 +39,25 @@ const routes = [
     path: '/MovieDetail',
     name: 'MovieDetailView',
     component: MovieDetailView
-  }
+  },
+  
+  {
+    path: '/signup',
+    name: 'SignUpView',
+    component: SignUpView
+  },
 
+  {
+    path: '/login',
+    name: 'LogInView',
+    component: LogInView
+  },
+  
+  {
+    path: '/myprofile',
+    name: 'MyProfileView',
+    component: MyProfileView
+  },
 ]
 
 const router = new VueRouter({
@@ -43,4 +66,7 @@ const router = new VueRouter({
   routes
 })
 
+
+
 export default router
+
