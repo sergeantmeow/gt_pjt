@@ -3,7 +3,10 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <nav>
       <div v-if="isLogin">
-      {{ userName }} 님 안녕하세요
+      <router-link :to="{ name: 'MyProfileView' }">
+        {{ currentUser.username }}
+      </router-link>
+      님 안녕하세요
       <button @click="logout">로그아웃</button>
       </div>
       <div v-else>
@@ -24,8 +27,8 @@ export default {
     isLogin() {
       return this.$store.getters.isLogin; // 로그인 여부 확인
     },
-    userName() {
-      return this.$store.getters.userName; // 사용자 이름 가져오기
+    currentUser() {
+      return this.$store.getters.currentUser; // 사용자 이름 가져오기
     }
   },
   methods: {

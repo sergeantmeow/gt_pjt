@@ -30,8 +30,8 @@ export default new Vuex.Store({
     isLogin(state) {
       return state.user.token ? true : false
     },
-    userName(state) {
-      return state.user.username
+    currentUser(state) {
+      return state.user
     }
   },
   mutations: {
@@ -100,9 +100,6 @@ export default new Vuex.Store({
       axios({
         method: 'get',
         url: `${API_URL}/articles/`,
-        headers: {
-          Authorization: `Token ${ context.state.token }`
-        }
       })
         .then((res) => {
           context.commit('GET_ARTICLES', res.data)
@@ -147,7 +144,6 @@ export default new Vuex.Store({
         }
       })
       .then((res) => {
-        console.log(res)
         const user = {
           token: res.data.key,
           username: res.data.user.username,
@@ -175,13 +171,6 @@ export default new Vuex.Store({
           }
       })
       .catch((err) => console.log(err))
-    },
-    setToken({ commit }, token) {
-      commit('SET_TOKEN', token)
-      // 10분 후에 토큰 삭제
-      setTimeout(() => {
-        commit('SET_TOKEN', null)
-      }, 1000 * 60 * 10) // 10분을 밀리초로 변환
     },
   },
   modules: {

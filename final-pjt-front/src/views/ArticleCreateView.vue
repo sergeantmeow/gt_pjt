@@ -31,13 +31,6 @@ export default {
       return this.$store.getters.isLogin
     }
   },
-  beforeEnter: (to, from, next) => {
-      if (this.isLogIn()) { // 로그인되어 있는 경우
-        next(); // 페이지로 이동
-      } else {
-        next({ name: 'LogInView' }); // 로그인 페이지로 이동
-      }
-  },
   methods: {
     createArticle() {
       const title = this.title
@@ -53,6 +46,9 @@ export default {
       axios({
         method: 'post',
         url: `${API_URL}/articles/create/`,
+        headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+        },
         data: { title, content},
       })
       .then(() => {
