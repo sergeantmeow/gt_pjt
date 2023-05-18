@@ -4,6 +4,7 @@ import ArticleView from '../views/ArticleView'
 import ArticleCreateView from '../views/ArticleCreateView'
 import ArticleDetailView from '../views/ArticleDetailView'
 import MovieListView from '@/views/MovieListView'
+import MovieDetailView from '@/views/MovieDetailView'
 
 Vue.use(VueRouter)
 
@@ -28,6 +29,12 @@ const routes = [
     name: 'MovieListView',
     component: MovieListView
   },
+  {
+    path: '/MovieDetail',
+    name: 'MovieDetailView',
+    component: MovieDetailView
+  }
+
 ]
 
 const router = new VueRouter({

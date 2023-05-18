@@ -29,8 +29,8 @@ export default new Vuex.Store({
 
     GET_MOVIES_CINEMA(state, cinemaMovies){
       state.cinemaMovies = cinemaMovies
-      console.log('voila')
-      console.log(cinemaMovies)
+      // console.log('voila')
+      // console.log(cinemaMovies)
     },
 
   },
@@ -41,7 +41,24 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/`,
       })
       .then((response)=>{
-        context.commit('GET_MOVIES', response.data)
+      let twentyData = [];
+      let idx = [];
+      for(let i=0; i<20; i++){
+          let goFlag = true;
+          let tmpNum = Math.floor(Math.random() * response.data.length)
+          for(let j=0; j<idx.length; j++){
+            if(tmpNum ==idx[j]){
+              goFlag = false
+              i--
+              break
+            }
+          }
+          if(goFlag){
+            idx.push(tmpNum)
+            twentyData.push(response.data[tmpNum])
+          }
+        }
+        context.commit('GET_MOVIES', twentyData)
       })
       .catch((err)=>{
         console.log(err)

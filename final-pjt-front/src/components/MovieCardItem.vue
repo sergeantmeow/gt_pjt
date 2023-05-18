@@ -2,7 +2,7 @@
   <div class="col">
     <router-link :to="{
       name: 'MovieDetailView',
-      params: {id: movieItem.title}}">
+      params: { id: movieItem.id }}">
       <div class="card">
         <img id="posterID" :src="`https://image.tmdb.org/t/p/w500/${movieItem.poster_path}`" class="card-img-top" alt="">
         <div class="card-body">
