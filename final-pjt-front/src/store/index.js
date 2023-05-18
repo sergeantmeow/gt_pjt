@@ -169,7 +169,13 @@ export default new Vuex.Store({
         context.commit('SET_USER', user)
         router.push('/')
       })
-      .catch((err) => console.log(err))
+      .catch((error) => {
+        if (error.response && error.response.status === 400) {
+          alert('잘못된 username 또는 password를 입력하셨습니다.')
+        } else {
+          console.log(error)
+        }
+      })
     },
     logout(context){
       axios({

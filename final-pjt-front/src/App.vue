@@ -3,7 +3,7 @@
     <img alt="Vue logo" src="./assets/logo.png">
     <nav>
       <div v-if="isLogin">
-      <router-link :to="{ name: 'MyProfileView' }">
+      <router-link :to="{ name: 'ProfileView', params: { username: currentUser.username } }">
         {{ currentUser.username }}
       </router-link>
       님 안녕하세요

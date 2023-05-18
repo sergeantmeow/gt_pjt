@@ -50,6 +50,19 @@ def article_detail(request, article_pk):
             serializer.save()
             return Response(serializer.data)
 
+# 로그인한 사용자만 게시글에 좋아요 가능
+@api_view(['POST'])
+# @permission_classes([IsAuthenticated])
+def article_like(request, article_pk):
+    article = get_object_or_404(Article, pk=article_pk)
+    if request.method == 'POST':
+        if article.like_users.filter(pk=request.user.pk).exists():
+            article.like_users.remove(request.user)
+        else:
+            article.like_users.add(request.user)
+        serializer = ArticleSerializer(article)
+        return Response(serializer.data)
+
 # 로그인 했을 시에 게시글에 댓글 달기 기능 작성
 @api_view(['GET'])
 def comment_list(request):
