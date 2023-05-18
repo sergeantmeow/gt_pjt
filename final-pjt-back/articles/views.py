@@ -12,21 +12,20 @@ from .serializers import ArticleListSerializer, ArticleSerializer, CommentSerial
 from .models import Article, Comment
 
 # 로그인안해도 게시글 볼 수 있게 하기
-@api_view(['GET', 'POST'])
+@api_view(['GET'])
+@permission_classes([])
 def article_list(request):
     if request.method == 'GET':
-        # articles = Article.objects.all()
-        articles = get_list_or_404(Article)
+        articles = Article.objects.all()
         serializer = ArticleListSerializer(articles, many=True)
         return Response(serializer.data)
 
 @api_view(['POST'])
-# @permission_classes([IsAuthenticated])
+@permission_classes([IsAuthenticated])
 def article_create(request):
     if request.method == 'POST':
         serializer = ArticleSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            # serializer.save()
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
 
