@@ -1,13 +1,20 @@
 <template>
   <div>
-    <nav>
+    <nav id="movie_navbar">
       <!-- <router-link :to="{ name: 'MovieListView'}">인기작</router-link> |
       <router-link :to="{ name: 'MovieOnCinema' }">지금 상영 중</router-link> |
       <router-link :to="{ name: 'ArticleView' }">맞춤 추천</router-link> -->
-      <a href="" @click.prevent="popular">인기작 랜덤20(임시)</a> |
-      <a href="" @click.prevent="cinema">지금 상영 중</a> |
-      <a href="" @click.prevent="mbti">To Be Added</a>
+      <button class="movie_nav">
+        <a href="" @click.prevent="popular" class="text-decoration-none fw-bold">Recommendations</a>
+      </button>|
+      <button class="movie_nav">
+        <a href="" @click.prevent="cinema" class="text-decoration-none fw-bold">Now On Cinema</a>
+      </button>|
+      <button class="movie_nav">
+        <a href="" @click.prevent="mbti" class="text-decoration-none fw-bold">To Be Added</a>
+      </button>
     </nav>
+    <hr id="spacer">
     <div v-if="link === 1">
       <MovieCard/>
     </div>
@@ -16,7 +23,7 @@
       <MovieOnCinema/>
     </div>
     <div v-else>
-      <p>맞춤 추천은 이 곳</p>
+      <p>기능 추가 예정</p>
     </div>
   </div>
 </template>
@@ -33,6 +40,11 @@ export default {
     MovieOnCinema,
     KakaoMap,
   },
+  computed: {
+    isLogin() {
+      return this.$store.getters.isLogin; // 로그인 여부 확인
+    },
+  },
   data(){
     return{
       link : 1,
@@ -48,6 +60,10 @@ export default {
   created(){
     this.getLink()
     this.getCine()
+    if(this.isLogin){
+      this.getMBTI()
+      console.log('getmbti function initiated!')
+    }
   },
   methods : {
     popular(){
@@ -64,12 +80,27 @@ export default {
     },
     getCine(){
       this.$store.dispatch('getMoviesCinema')
-    }
+    },
+    getMBTI(){
+      this.$store.dispatch('getMBTIMovies')
+    },
   },
 
 }
 </script>
 
 <style>
+#spacer {
+  margin: none
+}
+#movie_navbar{
+  margin-top: 1rem;
+}
+
+.movie_nav{
+  background-color: #9effb8;
+  border-radius: 5px;
+  border: none;
+}
 
 </style>
