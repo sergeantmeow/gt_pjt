@@ -1,0 +1,6148 @@
+[
+ {
+  "model":"movies.cinema", 
+  "fields":{
+  "id": 1226,
+  "contact": "062-369-3572",
+  "address": "광주광역시 서구 무진대로 904 (광천동)",
+  "name": "CGV 광주터미널 1관",
+  "cood_x": 189004.9682,
+  "cood_y": 184579.5536
+ }
+},
+ {
+  "model":"movies.cinema", 
+  "fields":{
+  "id": 1231,
+  "contact": "02-371-6505",
+  "address": "광주광역시 서구 시청로 67 (치평동)",
+  "name": "CGV광주상무 제1관",
+  "cood_x": 186350.8164,
+  "cood_y": 183915.8701
+ }
+},
+ {
+  "model":"movies.cinema", 
+  "fields":{
+  "id": 1232,
+  "contact": "224-5858",
+  "address": "광주광역시 동구 충장로46번길 10 (충장로5가)",
+  "name": "광주극장",
+  "cood_x": 191934.2551,
+  "cood_y": 183420.9653
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1234,
+  "contact": "221-1940",
+  "address": "광주광역시 동구 독립로 268 (대인동)",
+  "name": "샤롯데관",
+  "cood_x": 191913.0383,
+  "cood_y": 183968.0199
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1239,
+  "contact": "062-350-9340",
+  "address": "광주광역시 동구 제봉로 96 (서석동)",
+  "name": "광주독립영화관(G시네마)",
+  "cood_x": 192842.5254,
+  "cood_y": 183089.7815
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1240,
+  "contact": "070-4940-0523",
+  "address": "광주광역시 동구 충장로안길 12 (황금동)",
+  "name": "롯데시네마 충장로 8관",
+  "cood_x": 192149.202,
+  "cood_y": 183221.9289
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1242,
+  "contact": "062-511-1100",
+  "address": "광주광역시 북구 우치로 60 (중흥동)",
+  "name": "메가박스 전대 6관",
+  "cood_x": 191950.6543,
+  "cood_y": 185940.6389
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1244,
+  "address": "광주광역시 북구 우치로 649 (생용동)",
+  "name": "광주자동차극장",
+  "cood_x": 190877.7984,
+  "cood_y": 191627.3773
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1245,
+  "contact": "053-960-2642",
+  "address": "대구광역시 동구 안심로 80 (율하동)",
+  "name": "롯데시네마 율하관(제6관)",
+  "cood_x": 352868.5366,
+  "cood_y": 264480.5655
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1246,
+  "contact": "053-256-0528",
+  "address": "대구광역시 동구 팔공로49길 16 (봉무동,이시아폴리스라이프스타일센터)",
+  "name": "씨네Q 대구이시아 1관",
+  "cood_x": 347690.4344,
+  "cood_y": 270271.2257
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1253,
+  "address": "대구광역시 동구 동부로 149 (신천동, 동대구역복합환승센터)",
+  "name": "메가박스중앙 (주)대구 신세계지점 Dolby Cinema관",
+  "cood_x": 347037.242,
+  "cood_y": 265407.4043
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1256,
+  "contact": "985-5080",
+  "address": "대구광역시 동구 팔공산로 1184 (용수동)",
+  "name": "씨네팔공산",
+  "cood_x": 352679.2832,
+  "cood_y": 277641.7859
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1265,
+  "contact": "257-2041",
+  "address": "대구광역시 중구 국채보상로 547 (종로1가)",
+  "name": "롯데시네마 프리미엄 만경관 8관",
+  "cood_x": 343571.9657,
+  "cood_y": 264582.7763
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1274,
+  "contact": "428-9320",
+  "address": "대구광역시 중구 달구벌대로 2077 (계산동2가)",
+  "name": "CGV대구현대 제1관",
+  "cood_x": 343588.7356,
+  "cood_y": 264119.0108
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1280,
+  "contact": 534315609,
+  "address": "대구광역시 중구 중앙대로 412 (남일동)",
+  "name": "CGV대구아카데미제5관",
+  "cood_x": 343908.6834,
+  "cood_y": 264477.417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1284,
+  "contact": "427-8091",
+  "address": "대구광역시 중구 동성로2길 95 (동성로2가)",
+  "name": "롯데시네마 동성로 제1관(샤롯데관)",
+  "cood_x": 344128.8755,
+  "cood_y": 264507.1567
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1290,
+  "contact": "053-629-4424",
+  "address": "대구광역시 중구 국채보상로 537 (수동)",
+  "name": "독립영화전용관 오오극장",
+  "cood_x": 343471.4392,
+  "cood_y": 264558.0693
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1294,
+  "contact": "600-2101",
+  "address": "대구광역시 중구 동성로 39 (동성로2가)",
+  "name": "CGV대구한일 3관",
+  "cood_x": 344009.2409,
+  "cood_y": 264537.6112
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1298,
+  "contact": "053-784-0797",
+  "address": "대구광역시 수성구 지범로 191 (범물동,동아백화점 수성점 9층)",
+  "name": "CGV 대구수성 제1관",
+  "cood_x": 348194.4994,
+  "cood_y": 259144.5193
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1302,
+  "contact": "053-222-6600",
+  "address": "대구광역시 수성구 유니버시아드로 140 (대흥동)",
+  "name": "CGV대구스타디움제1관",
+  "cood_x": 352335.045,
+  "cood_y": 260158.7502
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1311,
+  "contact": "053-609-3031",
+  "address": "대구광역시 중구 중앙대로 412, 아카데미극장 (남일동)",
+  "name": "CGV대구아카데미제3관",
+  "cood_x": 343908.6834,
+  "cood_y": 264477.417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1312,
+  "contact": "053-584-1166",
+  "address": "대구광역시 달서구 성서로 414 (이곡동)",
+  "name": "롯데시네마 성서9 (제9관)",
+  "cood_x": 336128.8616,
+  "cood_y": 262620.4355
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1321,
+  "contact": "070-7434-5020",
+  "address": "대구광역시 달서구 월곡로 247 (상인동)",
+  "name": "롯데시네마 상인 제1관",
+  "cood_x": 339041.173,
+  "cood_y": 258463.128
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1328,
+  "contact": "053-635-8312",
+  "address": "대구광역시 달서구 조암로 29 (월성동)",
+  "name": "CGV 대구월성 1관",
+  "cood_x": 337925.1213,
+  "cood_y": 259346.8508
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1337,
+  "address": "경상북도 영주시 구성로350번길 24 (영주동)",
+  "name": "예당시네마",
+  "cood_x": 344845.7834,
+  "cood_y": 370384.9337
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1338,
+  "address": "경상북도 영주시 구성로 417 (영주동)",
+  "name": "롯데시네마 영주",
+  "cood_x": 344256.2072,
+  "cood_y": 370753.4519
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1339,
+  "contact": "041-881-4620",
+  "address": "충청남도 공주시 흑수골길 12 (신관동)",
+  "name": "메가박스공주제1관",
+  "cood_x": 212364.4999,
+  "cood_y": 330291.5739
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1346,
+  "contact": "041-523-8444",
+  "address": "충청남도 천안시 동남구 명동길 47 (대흥동,오렌지씨네스타 5층)",
+  "name": "CGV천안 8관",
+  "cood_x": 213170.6052,
+  "cood_y": 367376.0817
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1347,
+  "contact": "041-547-9070",
+  "address": "충청남도 천안시 서북구 공원로 196, 6층 (불당동)",
+  "name": "CGV천안펜타포트(1관)",
+  "cood_x": 208976.4765,
+  "cood_y": 366326.6344
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1353,
+  "contact": "640-6121",
+  "address": "충청남도 천안시 동남구 만남로 43 (신부동)",
+  "name": "CGV천안터미널 2관",
+  "cood_x": 213910.8506,
+  "cood_y": 368774.0876
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1365,
+  "contact": "833-9999",
+  "address": "충청남도 부여군 부여읍 사비로100번길 12",
+  "name": "금성시네마",
+  "cood_x": 191994.9315,
+  "cood_y": 308949.1439
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1371,
+  "contact": "041-415-0098",
+  "address": "충청남도 천안시 동남구 중앙로 111 (문화동, 영상미디어센터)",
+  "name": "인디플러스 천안",
+  "cood_x": 213497.5571,
+  "cood_y": 367440.5055
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1372,
+  "address": "충청남도 천안시 동남구 버들로 41, 지하1층 (문화동, 파리빌딩)",
+  "name": "천안인생극장",
+  "cood_x": 213495.9752,
+  "cood_y": 367329.0431
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1377,
+  "contact": "041-566-4400",
+  "address": "충청남도 천안시 서북구 1공단1길 52, 4층 (두정동, 센트하임프라자)",
+  "name": "메가박스중앙(주) 천안지점(제1관)",
+  "cood_x": 213076.3258,
+  "cood_y": 370130.3313
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1388,
+  "contact": "1544-1122",
+  "address": "충청남도 홍성군 홍성읍 조양로247번길 9",
+  "name": "CGV 홍성(제1관)",
+  "cood_x": 170963.8162,
+  "cood_y": 344485.5651
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1392,
+  "contact": "041-634-9572",
+  "address": "충청남도 홍성군 홍북읍 청사로174번길 2 (한승갤러리)",
+  "name": "(주)홍성메가 2관",
+  "cood_x": 171227.2017,
+  "cood_y": 350955.2392
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1397,
+  "contact": "1544-1122",
+  "address": "충청남도 홍성군 홍성읍 조양로247번길 9 (롯데마트, 홍성터미널)",
+  "name": "CGV 홍성 (제6관)",
+  "cood_x": 170963.8162,
+  "cood_y": 344485.5651
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1398,
+  "contact": "666-9999",
+  "address": "충청남도 서산시 율지18로 38 (동문동,외 2필지)",
+  "name": "롯데시네마 서산관(1관)",
+  "cood_x": 152229.2291,
+  "cood_y": 364299.2693
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1401,
+  "contact": "041-837-4501",
+  "address": "충청남도 부여군 부여읍 계백로 305, 3층",
+  "name": "스타박스 1관",
+  "cood_x": 192176.0015,
+  "cood_y": 308412.5469
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1404,
+  "address": "충청남도 태안군 태안읍 백화로 192",
+  "name": "태안 작은영화관 1관",
+  "cood_x": 138419.6435,
+  "cood_y": 361755.2695
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1409,
+  "contact": "041-665-7439",
+  "address": "충청남도 서산시 안견로 242 (동문동)",
+  "name": "CGV서산 1관",
+  "cood_x": 151407.21,
+  "cood_y": 364271.7801
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1417,
+  "contact": "041-666-9999",
+  "address": "충청남도 서산시 율지18로 38 (동문동)",
+  "name": "롯데시네마 서산관 (7관)",
+  "cood_x": 152229.2291,
+  "cood_y": 364299.2693
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1418,
+  "contact": "031-646-6824",
+  "address": "경기도 평택시 평남로 862, 5층 (비전동)",
+  "name": "CGV 평택소사 3관",
+  "cood_x": 209854.0132,
+  "cood_y": 388765.0857
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1422,
+  "address": "경기도 평택시 평택로 51 (평택동)",
+  "name": "CGV평택 4DX관",
+  "cood_x": 207390.4968,
+  "cood_y": 387776.2716
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1432,
+  "address": "경기도 평택시 관광특구로 19 (서정동)",
+  "name": "롯데컬처웍스(주) 롯데시네마 송탄1관",
+  "cood_x": 205355.9942,
+  "cood_y": 396167.9982
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1437,
+  "contact": "031-647-3040",
+  "address": "경기도 평택시 경기대로 279 (비전동)",
+  "name": "롯데시네마 평택비전 3관",
+  "cood_x": 209932.5817,
+  "cood_y": 388254.4237
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1442,
+  "contact": "3393-3500",
+  "address": "서울특별시 중구 퇴계로 212 (충무로4가)",
+  "name": "대한극장(6관)",
+  "cood_x": 199532.8921,
+  "cood_y": 451004.6367
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1443,
+  "contact": "02-2012-3002",
+  "address": "서울특별시 용산구 한강대로23길 55, 6층 (한강로3가, 현대아이파크몰)",
+  "name": "씨지브이 용산아이파크몰 제2관",
+  "cood_x": 196762.0774,
+  "cood_y": 447480.0396
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1444,
+  "contact": "02-2638-2851",
+  "address": "서울특별시 영등포구 영중로 15, 4층 (영등포동4가, 타임스퀘어)",
+  "name": "CGV 영등포 제3관",
+  "cood_x": 191385.0574,
+  "cood_y": 446098.5559
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1449,
+  "contact": "02-6137-5042",
+  "address": "서울특별시 영등포구 국제금융로 10, B3층 (여의도동, IFC)",
+  "name": "CGV여의도 5관 [CGV아트하우스]",
+  "cood_x": 193326.931,
+  "cood_y": 446973.9146
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1451,
+  "contact": "2274-2121",
+  "address": "서울특별시 중구 마른내로 47  (초동)",
+  "name": "명보 <<1,2,5관>>",
+  "cood_x": 199332.2989,
+  "cood_y": 451378.468
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1452,
+  "contact": "02-3147-3818",
+  "address": "서울특별시 양천구 목동동로 309 (목동,행복한세상백화점 7층)",
+  "name": "메가박스중앙(주) 목동지점 COMFORT 2관",
+  "cood_x": 188977.1711,
+  "cood_y": 447466.355
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1453,
+  "contact": "02-3017-3653",
+  "address": "서울특별시 양천구 목동동로 257 (목동,현대백화점 지하2층)",
+  "name": "메가박스중앙(주)더부티크목동현대백화점101호(The Boutique)",
+  "cood_x": 188884.0756,
+  "cood_y": 447186.8886
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1461,
+  "contact": "02-3291-5540",
+  "address": "서울특별시 성북구 아리랑로 82 (돈암동)",
+  "name": "아리랑시네센터 제1관",
+  "cood_x": 201158.1367,
+  "cood_y": 455288.7654
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1464,
+  "contact": "02-371-6777",
+  "address": "서울특별시 성북구 동소문로 106, 11층 (동선동1가)",
+  "name": "CGV 성신여대입구 2관",
+  "cood_x": 201447.4187,
+  "cood_y": 454477.1033
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1474,
+  "address": "서울특별시 은평구 녹번로 16  (녹번동)",
+  "name": "이동상영관",
+  "cood_x": 193604.7092,
+  "cood_y": 455734.9023
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1475,
+  "contact": 23507053,
+  "address": "서울특별시 은평구 불광로 20, 13층 (대조동, 팜스퀘어)",
+  "name": "CGV불광제3관",
+  "cood_x": 193661.7324,
+  "cood_y": 456379.1939
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1481,
+  "contact": "02-3147-3806",
+  "address": "서울특별시 서대문구 신촌역로 30 (신촌동)",
+  "name": "메가박스중앙(주)신촌지점 6관",
+  "cood_x": 194798.4584,
+  "cood_y": 450837.0517
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1482,
+  "contact": "02-3147-3806",
+  "address": "서울특별시 서대문구 신촌역로 30 (신촌동,5층)",
+  "name": "메가박스중앙(주)신촌지점 7관",
+  "cood_x": 194798.4584,
+  "cood_y": 450837.0517
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1484,
+  "contact": "02-363-2537",
+  "address": "서울특별시 서대문구 성산로 527, B1층 (대신동, 하늬솔빌딩)",
+  "name": "필름포럼 1관",
+  "cood_x": 195028.4006,
+  "cood_y": 451317.9095
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1485,
+  "contact": "02-363-2537",
+  "address": "서울특별시 서대문구 성산로 527, 하늬솔빌딩 A동 B1층 (대신동)",
+  "name": "필름포럼 2관",
+  "cood_x": 195028.4006,
+  "cood_y": 451317.9095
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1486,
+  "contact": "070-7017-6601",
+  "address": "서울특별시 서대문구 이화여대길 52 (대현동,이화캠퍼스복합단지 지하 4,5층)",
+  "name": "아트하우스 모모-이화·KB 시네마 1관",
+  "cood_x": 195287.7664,
+  "cood_y": 451143.7893
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1488,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 지하2~3층 (창천동, 아트레온)",
+  "name": "CGV신촌아트레온 1관",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1489,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 3층 (창천동, 아트레온)",
+  "name": "CGV신촌아트레온 2관",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1490,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 5층 (창천동, 아트레온)",
+  "name": "CGV신촌아트레온 3관",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1491,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 7층 (창천동, 아트레온)",
+  "name": "CGV신촌아트레온 4관",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1493,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 9층 (창천동, 아트레온)",
+  "name": "CGV신촌아트레온 6관",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1495,
+  "contact": "070-4222-8869",
+  "address": "서울특별시 중구 새문안로 22 (충정로1가, 문화일보)",
+  "name": "청춘극장",
+  "cood_x": 197164.2265,
+  "cood_y": 451647.6741
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1496,
+  "contact": "02-2136-3500",
+  "address": "서울특별시 중구 장충단로13길 20, 현대시티타워 10층 (을지로6가)",
+  "name": "CGV 동대문 제1관",
+  "cood_x": 200613.5103,
+  "cood_y": 451817.5154
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1497,
+  "contact": "2270-0602",
+  "address": "서울특별시 중구 장충단로 247 (을지로6가,굿모닝시티)",
+  "name": "메가박스중앙(주) 동대문점 COMFORT 1관",
+  "cood_x": 200573.6413,
+  "cood_y": 451621.0365
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1504,
+  "address": "서울특별시 중구 퇴계로 123  (충무로2가)",
+  "name": "인사이드시네마",
+  "cood_x": 198636.2504,
+  "cood_y": 451005.7216
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1505,
+  "address": "서울특별시 중구 퇴계로 123 (충무로2가)",
+  "name": "CGV 명동역 씨네라이브러리 4관",
+  "cood_x": 198636.2504,
+  "cood_y": 451005.7216
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1507,
+  "contact": "3393-3500",
+  "address": "서울특별시 중구 퇴계로 212 (필동2가)",
+  "name": "대한극장(4관)",
+  "cood_x": 199519.6498,
+  "cood_y": 450977.2505
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1510,
+  "contact": "02-2285-0818",
+  "address": "서울특별시 중구 청파로 426 (봉래동2가,서울역)",
+  "name": "KTX시네마",
+  "cood_x": 197242.9948,
+  "cood_y": 450658.9479
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1511,
+  "contact": "02-373-2995",
+  "address": "서울특별시 서대문구 신촌로 129, 아트레온 지하1층 (창천동)",
+  "name": "CGV신촌아트레온 10관[CGV아트하우스]",
+  "cood_x": 194649.344,
+  "cood_y": 450478.3522
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1515,
+  "contact": 7074057912,
+  "address": "서울특별시 은평구 통일로 1050 (진관동)",
+  "name": "롯데시네마 은평 2관",
+  "cood_x": 192694.9237,
+  "cood_y": 459461.2361
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1521,
+  "contact": "02-3147-3806",
+  "address": "서울특별시 서대문구 신촌역로 30, 5층 (신촌동)",
+  "name": "메가박스중앙(주)신촌지점 COMFORT 1관",
+  "cood_x": 194798.4584,
+  "cood_y": 450837.0517
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1533,
+  "contact": "02-2207-1703",
+  "address": "서울특별시 중랑구 상봉로 131, 지하1,2층 (상봉동, 상봉듀오트리스주상복합)",
+  "name": "CGV상봉3관",
+  "cood_x": 208076.3867,
+  "cood_y": 455017.5286
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1538,
+  "contact": "6405-2577",
+  "address": "서울특별시 중랑구 망우로30길 3 (상봉동)",
+  "name": "메가박스중앙(주) 상봉지점 1관",
+  "cood_x": 206526.0022,
+  "cood_y": 454549.1674
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1547,
+  "address": "경기도 성남시 수정구 산성대로 267, 신흥역 시네마타워 8-11층 (신흥동)",
+  "name": "롯데컬처웍스(주) 롯데시네마 성남중앙 1관",
+  "cood_x": 212889.7803,
+  "cood_y": 437694.3048
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1556,
+  "contact": "031-229-3566",
+  "address": "경기도 용인시 기흥구 구성로 357, 용인테크노밸리 지하1층 (청덕동)",
+  "name": "메가박스 용인테크노밸리 1관",
+  "cood_x": 213057.9276,
+  "cood_y": 421057.2355
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1561,
+  "contact": "063-843-7707",
+  "address": "전라북도 익산시 선화로 77 (모현동1가)",
+  "name": "롯데시네마 익산모현관 제1관",
+  "cood_x": 194489.7532,
+  "cood_y": 272181.1411
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1568,
+  "contact": "02-3665-9064",
+  "address": "서울특별시 강서구 공항대로45길 63, 3~9층 (등촌동)",
+  "name": "CGV 등촌 1관",
+  "cood_x": 187210.9178,
+  "cood_y": 450631.4355
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1574,
+  "contact": 315817791,
+  "address": "경기도 가평군 가평읍 석봉로 100, 뮤직빌리지내 1939세네마 1관",
+  "name": "1939시네마1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1575,
+  "contact": 315817791,
+  "address": "경기도 가평군 가평읍 석봉로 100, 뮤직빌리지내 1939 시네마2관",
+  "name": "1939 시네마 2관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1576,
+  "address": "경기도 용인시 처인구 중부대로 1294, 5층 (역북동)",
+  "name": "롯데시네마 용인역북 1관",
+  "cood_x": 216638.1962,
+  "cood_y": 414851.808
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1583,
+  "contact": "061-745-9150",
+  "address": "전라남도 보성군 보성읍 현충로 44-12",
+  "name": "보성작은영화관 2관",
+  "cood_x": 207098.3049,
+  "cood_y": 140734.5103
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1585,
+  "contact": "02-526-8859",
+  "address": "서울특별시 도봉구 도봉로 684, 6~7층 (방학동)",
+  "name": "CGV 방학 4DX관",
+  "cood_x": 203783.2123,
+  "cood_y": 462550.4573
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1587,
+  "contact": "02-526-8859",
+  "address": "서울특별시 도봉구 도봉로 684, 4~5층 (방학동)",
+  "name": "CGV 방학 7관",
+  "cood_x": 203783.2123,
+  "cood_y": 462550.4573
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1592,
+  "contact": "02-6914-5661",
+  "address": "경기도 광명시 일직로 43, GIDC B동 B2층 G262호, G301호 (일직동)",
+  "name": "CGV광명역1관",
+  "cood_x": 189919.3109,
+  "cood_y": 435641.2772
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1594,
+  "address": "인천광역시 부평구 주부토로 236, B동 (갈산동)",
+  "name": "롯데시네마 부평갈산 3관",
+  "cood_x": 175822.3041,
+  "cood_y": 445934.8107
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1604,
+  "contact": "062-446-6644",
+  "address": "광주광역시 서구 시청로60번길 21-9 (치평동)",
+  "name": "메가박스 상무 10관",
+  "cood_x": 186613.0465,
+  "cood_y": 183951.233
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1608,
+  "contact": "062-446-6644",
+  "address": "광주광역시 서구 시청로60번길 21-6 (치평동)",
+  "name": "메가박스 상무 2관",
+  "cood_x": 186660.302,
+  "cood_y": 183916.1105
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1622,
+  "contact": "062-410-7173",
+  "address": "광주광역시 동구 중앙로160번길 16-7 (불로동)",
+  "name": "CGV광주금남로 7관",
+  "cood_x": 192150.4993,
+  "cood_y": 183089.569
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1630,
+  "contact": "062-222-0006",
+  "address": "광주광역시 동구 충장로 69-7  (충장로3가)",
+  "name": "듀오씨네마",
+  "cood_x": 192215.1123,
+  "cood_y": 183338.2341
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1633,
+  "contact": "062-718-9500",
+  "address": "광주광역시 동구 중앙로 163, 11층 (충장로4가, NC 웨이브 충장점)",
+  "name": "CGV 광주충장로 3관",
+  "cood_x": 192005.764,
+  "cood_y": 183296.8613
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1636,
+  "contact": "070-7491-6296",
+  "address": "대구광역시 서구 달구벌대로 1691 (내당동, M플라자)",
+  "name": "롯데시네마광장관 6관",
+  "cood_x": 340011.7376,
+  "cood_y": 262835.1995
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1642,
+  "contact": "1544-1533",
+  "address": "경상북도 구미시 야은로 296, 4층 (봉곡동)",
+  "name": "씨네Q 구미봉곡점 5관",
+  "cood_x": 318307.6387,
+  "cood_y": 293880.282
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1643,
+  "contact": "444-2013",
+  "address": "경상북도 구미시 구미중앙로17길 16 (원평동)",
+  "name": "롯데시네마 프리미엄구미센트럴 2관",
+  "cood_x": 320081.3739,
+  "cood_y": 292887.704
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1647,
+  "address": "경상북도 구미시 구미중앙로 44 (원평동)",
+  "name": "씨지브이구미(제1관)",
+  "cood_x": 319433.1401,
+  "cood_y": 292986.7904
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1663,
+  "contact": "053-782-7458",
+  "address": "경상북도 경산시 하양읍 대경로 765, 2층",
+  "name": "메가박스 경산하양 1관",
+  "cood_x": 364510.4316,
+  "cood_y": 269692.9448
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1665,
+  "contact": "053-782-7458",
+  "address": "경상북도 경산시 하양읍 대경로 765, 4층",
+  "name": "메가박스 경산하양 3관",
+  "cood_x": 364510.4316,
+  "cood_y": 269692.9448
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1668,
+  "contact": "02-3147-3852",
+  "address": "경상북도 구미시 인동가산로 14 (진평동)",
+  "name": "메가박스중앙 구미강동점 2관",
+  "cood_x": 327591.8409,
+  "cood_y": 290553.6791
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1673,
+  "contact": "461-7779",
+  "address": "경상북도 구미시 산호대로 233 (공단동, 박스인빌딩 4층 일부 5층,6층,7층)",
+  "name": "롯데시네마 구미공단 (1관)",
+  "cood_x": 324642.517,
+  "cood_y": 290192.8659
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1682,
+  "contact": "054-772-2225",
+  "address": "경상북도 경주시 계림로 83, 2층 (노동동)",
+  "name": "롯데시네마 2관",
+  "cood_x": 399897.0604,
+  "cood_y": 262421.9147
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1684,
+  "contact": "054-772-3600",
+  "address": "경상북도 경주시 원효로 110 (노동동)",
+  "name": "메가박스 2관",
+  "cood_x": 399859.7326,
+  "cood_y": 262426.132
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1686,
+  "contact": "1544-1533",
+  "address": "경상북도 경주시 보문로 465-67, 2~4층 (신평동)",
+  "name": "씨네큐 경주보문점 1관",
+  "cood_x": 406950.6156,
+  "cood_y": 262342.5094
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1690,
+  "contact": "054-954-7253",
+  "address": "경상북도 고령군 대가야읍 대가야로 1216 (대가야역사테마관광지)",
+  "name": "대가야시네마 1관",
+  "cood_x": 314024.6745,
+  "cood_y": 247263.9357
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1703,
+  "contact": "070-7017-9480",
+  "address": "경상북도 문경시 모전로 65 (모전동, 홈플러스 1층)",
+  "name": "메가박스중앙(주) 문경 제3관",
+  "cood_x": 306449.7947,
+  "cood_y": 343567.1711
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1706,
+  "contact": "033-460-8973",
+  "address": "강원도 인제군 기린면 대내로 34-18",
+  "name": "CGV기린",
+  "cood_x": 315843.2857,
+  "cood_y": 496630.228
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1707,
+  "contact": "070-7016-3522",
+  "address": "울산광역시 중구 젊음의거리 73 (성남동)",
+  "name": "메가박스중앙(주) 울산지점 COMPORT 3관",
+  "cood_x": 410395.7665,
+  "cood_y": 230768.5378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1715,
+  "contact": "070-7493-2911",
+  "address": "울산광역시 중구 젊음의2거리 33 (성남동)",
+  "name": "롯데시네마 울산성남 제1관",
+  "cood_x": 410346.7649,
+  "cood_y": 230634.4694
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1722,
+  "contact": "032-423-1004",
+  "address": "인천광역시 미추홀구 미추홀대로 736, 12,13층 (주안동)",
+  "name": "CGV 남주안점 6관",
+  "cood_x": 171686.671,
+  "cood_y": 440193.9217
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1723,
+  "address": "인천광역시 미추홀구 연남로 35, 지하1층 (관교동)",
+  "name": "롯데시네마 인천터미널3관",
+  "cood_x": 173499.2673,
+  "cood_y": 437739.3214
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1726,
+  "contact": "032-423-1004",
+  "address": "인천광역시 미추홀구 미추홀대로 736, 10,11층 (주안동)",
+  "name": "CGV 남주안점 2관",
+  "cood_x": 171686.671,
+  "cood_y": 440193.9217
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1731,
+  "contact": "070-7600-3869",
+  "address": "전라북도 전주시 완산구 용머리로 45, 3층 (효자동1가)",
+  "name": "CGV전주효자 7관",
+  "cood_x": 210401.0807,
+  "cood_y": 256333.1337
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1732,
+  "contact": "063-288-9033",
+  "address": "전라북도 전주시 완산구 전주객사3길 72 (고사동)",
+  "name": "CGV 전주고사 1관",
+  "cood_x": 212769.1687,
+  "cood_y": 257808.7298
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1733,
+  "contact": "063-283-7722",
+  "address": "전라북도 전주시 완산구 전주객사3길 67 (고사동)",
+  "name": "전주시네마 제5관",
+  "cood_x": 212702.2804,
+  "cood_y": 257804.796
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1735,
+  "contact": "063-460-0961",
+  "address": "전라북도 전주시 완산구 홍산로 260, M-SQUARE 6층 (효자동3가)",
+  "name": "CGV서전주 1관",
+  "cood_x": 209548.0584,
+  "cood_y": 257418.3612
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1740,
+  "contact": "063-271-4513",
+  "address": "전라북도 전주시 덕진구 동부대로 1215 (송천동2가)",
+  "name": "메가박스 전주송천(5관)",
+  "cood_x": 210254.132,
+  "cood_y": 263261.141
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1751,
+  "contact": "031-580-2061",
+  "address": "경기도 가평군 가평읍 석봉로 181",
+  "name": "가평군청",
+  "cood_x": 244802.517,
+  "cood_y": 481099.0494
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1752,
+  "address": "전라북도 전주시 완산구 백제대로 10 (평화동1가, 전주롯데시네마 평화점)",
+  "name": "롯데시네마 전주평화1관",
+  "cood_x": 211904.5286,
+  "cood_y": 255135.9476
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1759,
+  "contact": "063)231-3377",
+  "address": "전라북도 전주시 완산구 전주객사3길 22 (고사동)",
+  "name": "전주디지털독립영화관",
+  "cood_x": 212808.454,
+  "cood_y": 257594.5655
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1767,
+  "contact": "063-287-2223",
+  "address": "전라북도 전주시 완산구 전주객사4길 74-12 (고사동, 3층 우측)",
+  "name": "메가박스 전주객사 제1관",
+  "cood_x": 212915.8216,
+  "cood_y": 257873.5197
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1768,
+  "contact": "063-287-2223",
+  "address": "전라북도 전주시 완산구 전주객사4길 74-12 (고사동)",
+  "name": "메가박스 전주객사 제2관",
+  "cood_x": 212915.8216,
+  "cood_y": 257873.5197
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1772,
+  "address": "전라북도 전주시 완산구 전주객사4길 74-12 (고사동, 5층 좌측)",
+  "name": "메가박스 전주객사점 제6관",
+  "cood_x": 212915.8216,
+  "cood_y": 257873.5197
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1773,
+  "address": "전라북도 전주시 완산구 전주객사4길 74-12 (고사동, 7층 우측)",
+  "name": "메가박스 전주객사점 제7관",
+  "cood_x": 212915.8216,
+  "cood_y": 257873.5197
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1776,
+  "contact": "063-287-2223",
+  "address": "전라북도 전주시 완산구 전주객사4길 74-12 (고사동, 7층 좌측)",
+  "name": "메가박스 전주객사점 10관",
+  "cood_x": 212915.8216,
+  "cood_y": 257873.5197
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1778,
+  "address": "전라북도 전주시 완산구 전주객사3길 74-25 (고사동)",
+  "name": "조이앤시네마 전주1관",
+  "cood_x": 212780.202,
+  "cood_y": 257897.0112
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1784,
+  "contact": "063-289-2941",
+  "address": "전라북도 전주시 완산구 온고을로 2 (서신동, 롯데백화점)",
+  "name": "롯데시네마전주8(제8관)",
+  "cood_x": 210932.1764,
+  "cood_y": 259384.6678
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1792,
+  "address": "충청북도 청주시 흥덕구 서부로 1190  (석곡동)",
+  "name": "아트시네마",
+  "cood_x": 238743.9251,
+  "cood_y": 345509.6541
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1793,
+  "address": "충청남도 당진시 우두1로 88 (읍내동)",
+  "name": "CGV당진점",
+  "cood_x": 166983.1523,
+  "cood_y": 377888.6566
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1794,
+  "contact": "041-932-0305",
+  "address": "충청남도 보령시 대흥로 51 (대천동)",
+  "name": "씨지브이 보령 GH관",
+  "cood_x": 163381.0939,
+  "cood_y": 316605.8914
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1796,
+  "contact": "041-936-5532",
+  "address": "충청남도 보령시 중앙로 125 (대천동)",
+  "name": "명보시네마 1관",
+  "cood_x": 163192.5035,
+  "cood_y": 316884.0004
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1799,
+  "address": "충청남도 예산군 예산읍 천변로 160 (예산군창작문화센터)",
+  "name": "예산시네마",
+  "cood_x": 186329.8621,
+  "cood_y": 352777.581
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1804,
+  "contact": "041-942-7053",
+  "address": "충청남도 청양군 청양읍 칠갑산로 221, 청양군문화체육센타",
+  "name": "청양시네마 1관",
+  "cood_x": 182102.1663,
+  "cood_y": 327860.0146
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1806,
+  "contact": "041-956-7936",
+  "address": "충청남도 서천군 장항읍 장항로145번길 30 (장항미디어센터)",
+  "name": "서천군 기벌포영화관",
+  "cood_x": 172358.3199,
+  "cood_y": 279239.3856
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1808,
+  "address": "충청남도 아산시 번영로 225 (모종동)",
+  "name": "롯데시네마 아산터미널1관",
+  "cood_x": 201341.1916,
+  "cood_y": 364818.0344
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1814,
+  "contact": "031-386-0666",
+  "address": "경기도 안양시 동안구 동안로 119 (호계동,뉴코아아울렛 11층)",
+  "name": "CGV범계4관",
+  "cood_x": 195607.794,
+  "cood_y": 431900.7041
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1816,
+  "contact": "070-7492-9982",
+  "address": "경기도 안양시 동안구 흥안대로 519, 아이퍼스트타워 7~12층 (관양동)",
+  "name": "롯데시네마 인덕원(3관)",
+  "cood_x": 197818.1119,
+  "cood_y": 433137.5784
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1820,
+  "contact": "463-1949",
+  "address": "경기도 안양시 동안구 시민대로 180 (호계동)",
+  "name": "롯데시네마 평촌(제1관)",
+  "cood_x": 195544.974,
+  "cood_y": 432016.7834
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1828,
+  "contact": "031-828-9723",
+  "address": "경기도 양주시 광적면 부흥로618번길 303",
+  "name": "양주문예회관",
+  "cood_x": 197398.2247,
+  "cood_y": 478964.8967
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1829,
+  "contact": "031-843-0600",
+  "address": "경기도 양주시 고읍남로 6-6, 해동월드타워 9(10)층 1,2,3(1,2,3,4)호 (광사동)",
+  "name": "메가박스 양주 2관",
+  "cood_x": 206986.7852,
+  "cood_y": 477076.7717
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1833,
+  "contact": "070-7465-3610",
+  "address": "경기도 양주시 고읍남로 6-16 (광사동)",
+  "name": "롯데시네마 양주고읍 제3관",
+  "cood_x": 206882.1862,
+  "cood_y": 477020.5632
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1838,
+  "contact": "347-7578",
+  "address": "경기도 안양시 동안구 관평로170번길 33 (관양동)",
+  "name": "CGV평촌5관",
+  "cood_x": 196587.715,
+  "cood_y": 432322.2319
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1844,
+  "contact": "070-7405-2342",
+  "address": "경기도 안양시 만안구 안양로 311, PROJECT 500 TOWER 9~13층 (안양동)",
+  "name": "롯데시네마 안양일번가 (1관)"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1854,
+  "contact": "2157-1100",
+  "address": "서울특별시 송파구 충민로 66 (문정동, 가든파이브라이프영관 10층)",
+  "name": "CGV 송파 6관",
+  "cood_x": 210986.4607,
+  "cood_y": 441725.2935
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1861,
+  "contact": "02-3470-3493",
+  "address": "서울특별시 송파구 올림픽로 300, 엔터테인먼트동 5~11층 (신천동, 롯데월드몰)",
+  "name": "롯데시네마 월드타워(제21관)",
+  "cood_x": 209074.9008,
+  "cood_y": 445657.8093
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1873,
+  "contact": "070-8236-0366",
+  "address": "서울특별시 마포구 양화로 176, 동교동 스타피카소 8층 (동교동)",
+  "name": "독립영화전용관 인디스페이스",
+  "cood_x": 193282.1308,
+  "cood_y": 450549.2802
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1874,
+  "contact": "3672-4232",
+  "address": "서울특별시 종로구 삼일대로 428 (낙원동)",
+  "name": "허리우드클래식",
+  "cood_x": 198852.9597,
+  "cood_y": 452253.9426
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1877,
+  "address": "서울특별시 송파구 송파대로 111, 204동 비162호 (문정동, 파크하비오)",
+  "name": "메가박스 송파파크하비오점(9관)",
+  "cood_x": 210868.3975,
+  "cood_y": 442053.2279
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1878,
+  "contact": "02-742-4232",
+  "address": "서울특별시 종로구 삼일대로 428, 4층 (낙원동)",
+  "name": "낭만극장",
+  "cood_x": 198852.9597,
+  "cood_y": 452253.9426
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1885,
+  "contact": "070-8145-3128",
+  "address": "서울특별시 종로구 새문안로 68, 흥국생명빌딩 지하2층 (신문로1가)",
+  "name": "씨네큐브광화문 1관",
+  "cood_x": 197482.2053,
+  "cood_y": 451938.3079
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1887,
+  "contact": "02)730-5515",
+  "address": "서울특별시 종로구 경희궁1가길 7, 2층 (신문로2가, 복합문화공간에무)",
+  "name": "에무 시네마 1관",
+  "cood_x": 197193.7713,
+  "cood_y": 452199.4288
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1888,
+  "contact": "02-730-5604",
+  "address": "서울특별시 종로구 경희궁1가길 7, 복합문화공간 에무 3층 (신문로2가)",
+  "name": "에무 시네마 2관",
+  "cood_x": 197193.7713,
+  "cood_y": 452199.4288
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1889,
+  "contact": "766-3211",
+  "address": "서울특별시 종로구 대명길 28 (명륜2가,지하3층)",
+  "name": "CGV 대학로 1관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1900,
+  "contact": "766-3211",
+  "address": "서울특별시 종로구 대명길 28 (명륜2가,지하1층)",
+  "name": "CGV 대학로 5관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1901,
+  "contact": "766-3211",
+  "address": "서울특별시 종로구 대명길 28 (명륜2가,지하2층)",
+  "name": "CGV 대학로 3관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1903,
+  "contact": "3674-7735",
+  "address": "서울특별시 종로구 대명길 28, 대학로CGV 2층 (명륜2가)",
+  "name": "CGV 대학로 6관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1904,
+  "contact": "766-3211",
+  "address": "서울특별시 종로구 대명길 28 (명륜2가,3층)",
+  "name": "CGV 대학로 7관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1905,
+  "contact": "766-3211",
+  "address": "서울특별시 종로구 대명길 28 (명륜2가,4층)",
+  "name": "CGV 대학로 8관",
+  "cood_x": 199916.8335,
+  "cood_y": 453462.4209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1906,
+  "contact": "3674-7735",
+  "address": "서울특별시 종로구 돈화문로5가길 1 (돈의동,지하2층)",
+  "name": "CGV피카디리1958 1관",
+  "cood_x": 199155.5449,
+  "cood_y": 452083.1255
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1909,
+  "contact": "3674-7735",
+  "address": "서울특별시 종로구 돈화문로5가길 1 (돈의동,지하4층)",
+  "name": "CGV피카디리1958 4관",
+  "cood_x": 199155.5449,
+  "cood_y": 452083.1255
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1913,
+  "address": "경상남도 양산시 물금읍 증산역로 177, 라피에스타 6,7층",
+  "name": "메가박스중앙(주) 양산증산지점 7관",
+  "cood_x": 382680.0115,
+  "cood_y": 203015.6519
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1920,
+  "contact": "033-592-7053",
+  "address": "강원도 정선군 고한읍 고한10길 28-12, 고한작은영화관",
+  "name": "고한시네마 1관",
+  "cood_x": 364813.5172,
+  "cood_y": 412459.4078
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1922,
+  "contact": "02-3147-3858",
+  "address": "대전광역시 중구 중앙로 126, 4~9층 (대흥동)",
+  "name": "메가박스중앙(주) 대전중앙로지점 1관",
+  "cood_x": 238010.3151,
+  "cood_y": 314178.0578
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1930,
+  "address": "충청북도 음성군 맹동면 대하1길 10, 5층",
+  "name": "CGV 충북혁신 1관",
+  "cood_x": 248107.0984,
+  "cood_y": 378637.7135
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1935,
+  "address": "대구광역시 달성군 현풍읍 테크노상업로 62",
+  "name": "롯데시네마 대구현풍1",
+  "cood_x": 331615.4789,
+  "cood_y": 244670.8114
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1954,
+  "contact": "042-273-7400",
+  "address": "대전광역시 동구 은어송로 72 (가오동)",
+  "name": "CGV대전가오 제5관",
+  "cood_x": 241064.7676,
+  "cood_y": 311893.458
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1955,
+  "contact": "472-1138",
+  "address": "대전광역시 동구 중앙로 192 (중동)",
+  "name": "대전아트시네마",
+  "cood_x": 238578.0742,
+  "cood_y": 314456.027
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1956,
+  "contact": "629-6363",
+  "address": "대전광역시 동구 동대전로 171 (자양동)",
+  "name": "우송예술회관(비상설상영장)",
+  "cood_x": 239960.4876,
+  "cood_y": 315314.4324
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1963,
+  "contact": "042-623-6181",
+  "address": "대전광역시 동구 동서대로1695번길 30 (용전동, 대전복합터미널 동관 3~4층)",
+  "name": "CGV대전터미널 1관",
+  "cood_x": 239202.8467,
+  "cood_y": 316830.0761
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1970,
+  "contact": "070-7465-3984",
+  "address": "부산광역시 부산진구 동천로 92, 6층 (전포동)",
+  "name": "롯데시네마 서면 제6관",
+  "cood_x": 387920.2921,
+  "cood_y": 186157.3162
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1972,
+  "contact": "818-2440",
+  "address": "부산광역시 부산진구 중앙대로692번길 16, 대한시네마 (부전동)",
+  "name": "대한시네마 제2관",
+  "cood_x": 387658.3526,
+  "cood_y": 185836.3426
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1974,
+  "address": "부산광역시 부산진구 가야대로 772 (부전동, 롯데백화점 10층)",
+  "name": "롯데시네마 부산본점관 제11관",
+  "cood_x": 387271.2995,
+  "cood_y": 186099.1375
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 1975,
+  "contact": "910-1411",
+  "address": "부산광역시 부산진구 동천로 4 (전포동)",
+  "name": "CGV서면 4DX관",
+  "cood_x": 388011.1978,
+  "cood_y": 185310.7053
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2003,
+  "contact": "051-901-2103",
+  "address": "부산광역시 기장군 기장읍 기장해안로 147",
+  "name": "롯데시네마 동부산 제1관",
+  "cood_x": 401473.9507,
+  "cood_y": 190354.2558
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2009,
+  "contact": "051-728-7108",
+  "address": "부산광역시 기장군 정관읍 정관6로 39, 5층",
+  "name": "메가박스 정관 1관",
+  "cood_x": 398025.7114,
+  "cood_y": 204401.6914
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2011,
+  "contact": "051-728-7108",
+  "address": "부산광역시 기장군 정관읍 정관6로 39, 7층",
+  "name": "메가박스 정관 3관",
+  "cood_x": 398025.7114,
+  "cood_y": 204401.6914
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2015,
+  "contact": "051-714-2760",
+  "address": "부산광역시 기장군 정관읍 정관중앙로 45",
+  "name": "CGV 정관 1관",
+  "cood_x": 398024.2448,
+  "cood_y": 204621.6557
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2024,
+  "contact": "032-565-5660",
+  "address": "인천광역시 서구 서곶로 788, 홀리랜드 4층 (당하동)",
+  "name": "메가박스 검단점 COMFORT 1관",
+  "cood_x": 171261.4184,
+  "cood_y": 454010.5166
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2029,
+  "contact": "234-8801",
+  "address": "인천광역시 미추홀구 염창로 58, 7층 (주안동, 카라아울렛)",
+  "name": "CGV주안역 1관",
+  "cood_x": 171655.8502,
+  "cood_y": 440422.7007
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2031,
+  "contact": "425-0100",
+  "address": "인천광역시 미추홀구 미추홀대로 716, 8층 (주안동, 메인프라자)",
+  "name": "영화공간 주안3관",
+  "cood_x": 171673.903,
+  "cood_y": 439949.6655
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2044,
+  "contact": "070-4820-5700",
+  "address": "전라북도 무주군 무주읍 한풍루로 326-17",
+  "name": "제1관 반디관",
+  "cood_x": 259656.6929,
+  "cood_y": 278226.1038
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2046,
+  "contact": "063-535-9150",
+  "address": "전라북도 정읍시 중앙1길 1 (수성동)",
+  "name": "CGV 1관",
+  "cood_x": 186288.5333,
+  "cood_y": 230026.0421
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2047,
+  "contact": "055-932-7053",
+  "address": "경상남도 합천군 합천읍 남정길 76, 합천시네마",
+  "name": "합천시네마 1관",
+  "cood_x": 304875.2603,
+  "cood_y": 230377.7434
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2051,
+  "address": "전라남도 여수시 웅천로 19-35 (웅천동)",
+  "name": "CGV여수웅천(제6관)",
+  "cood_x": 262077.5781,
+  "cood_y": 139123.0121
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2053,
+  "contact": "284-2800",
+  "address": "전라남도 목포시 원형동로 53 (상동)",
+  "name": "CGV목포평화광장4관",
+  "cood_x": 148058.3144,
+  "cood_y": 144672.7938
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2054,
+  "contact": "745-9155",
+  "address": "전라남도 순천시 장명로 22 (장천동)",
+  "name": "씨제이 씨지브이 주식회사(순천4관)",
+  "cood_x": 244349.1614,
+  "cood_y": 161432.4873
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2055,
+  "contact": "745-9155",
+  "address": "전라남도 순천시 충효로 15 (덕암동)",
+  "name": "메가박스 6관",
+  "cood_x": 246595.8194,
+  "cood_y": 160387.2854
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2056,
+  "address": "전라북도 김제시 도작로 224-32, 청소년 수련관 (검산동)",
+  "name": "지평선시네마 제1관",
+  "cood_x": 190977.2943,
+  "cood_y": 257176.4579
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2057,
+  "contact": "063-547-1501",
+  "address": "전라북도 김제시 도작로 224-32 (검산동)",
+  "name": "지평선시네마 제2관",
+  "cood_x": 190977.2943,
+  "cood_y": 257176.4579
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2058,
+  "contact": "063-471-1368",
+  "address": "전라북도 군산시 나운2길 58, A동 3층 (나운동)",
+  "name": "CGV군산2관",
+  "cood_x": 173355.6721,
+  "cood_y": 273778.169
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2060,
+  "contact": "063-471-1368",
+  "address": "전라북도 군산시 나운2길 58, A동 5층 (나운동)",
+  "name": "CGV군산4관",
+  "cood_x": 173355.6721,
+  "cood_y": 273778.169
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2069,
+  "contact": "1544-8855",
+  "address": "전라북도 군산시 조촌로 130, 롯데몰 군산점 (조촌동)",
+  "name": "롯데시네마 군산몰 1관",
+  "cood_x": 176350.4825,
+  "cood_y": 275156.8818
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2071,
+  "contact": "063-643-9541",
+  "address": "전라북도 임실군 성수면 도인2길 50",
+  "name": "4D 영상관",
+  "cood_x": 227218.8802,
+  "cood_y": 237034.8863
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2072,
+  "contact": "063-263-9012",
+  "address": "전라북도 완주군 봉동읍 둔산3로 94",
+  "name": "완주 휴(休) 시네마 2관",
+  "cood_x": 211534.1064,
+  "cood_y": 273578.5795
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2082,
+  "contact": "063-471-1368",
+  "address": "전라북도 군산시 백토로 166, B동 5,6층 (나운동)",
+  "name": "CGV군산1관",
+  "cood_x": 173365.0647,
+  "cood_y": 273817.5301
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2083,
+  "contact": "063-564-1340",
+  "address": "전라북도 고창군 고창읍 판소리길 20",
+  "name": "동리시네마 제1관",
+  "cood_x": 172919.446,
+  "cood_y": 214720.1023
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2087,
+  "contact": "738-9917",
+  "address": "제주특별자치도 서귀포시 월드컵로 31 (법환동)",
+  "name": "롯데시네마 서귀포 1관",
+  "cood_x": 154166.1303,
+  "cood_y": -27615.18997
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2093,
+  "contact": "031-8082-0930",
+  "address": "경기도 의정부시 평화로 525 (의정부동, 신세계백화점 10층)",
+  "name": "CGV 의정부 제2관",
+  "cood_x": 204011.3019,
+  "cood_y": 470564.0155
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2095,
+  "contact": "031-337-3421",
+  "address": "경기도 용인시 처인구 금령로 86 (김량장동, 시네마일번가)",
+  "name": "CGV 용인 5관",
+  "cood_x": 218209.5417,
+  "cood_y": 414813.228
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2096,
+  "contact": "031-337-3421",
+  "address": "경기도 용인시 처인구 금령로 86 (김량장동,시네마일번가 5~8층)",
+  "name": "CGV 용인 6관",
+  "cood_x": 218209.5417,
+  "cood_y": 414813.228
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2099,
+  "contact": "282-1681",
+  "address": "경기도 용인시 기흥구 신갈로 32 (상갈동)",
+  "name": "루블루시네마 4관",
+  "cood_x": 209320.2516,
+  "cood_y": 418611.389
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2101,
+  "contact": "282-1681",
+  "address": "경기도 용인시 기흥구 신갈로 32  (상갈동)",
+  "name": "루블루시네마 2관",
+  "cood_x": 209320.2516,
+  "cood_y": 418611.389
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2104,
+  "address": "경기도 용인시 기흥구 민속촌로 90 (보라동)",
+  "name": "한국민속촌 자동차극장 1관",
+  "cood_x": 210854.6119,
+  "cood_y": 417497.9894
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2108,
+  "contact": "070-7425-5072",
+  "address": "경기도 의정부시 천보로 44 (민락동, 해동타워 8,9층)",
+  "name": "롯데시네마 의정부민락 7관",
+  "cood_x": 208436.8809,
+  "cood_y": 471310.7075
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2112,
+  "contact": "844-8554",
+  "address": "경기도 의정부시 태평로 75 (의정부동)",
+  "name": "의정부극장 1관",
+  "cood_x": 204454.4011,
+  "cood_y": 470755.2213
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2113,
+  "contact": "844-1211",
+  "address": "경기도 의정부시 태평로 75  (의정부동)",
+  "name": "의정부극장 2관",
+  "cood_x": 204454.4011,
+  "cood_y": 470755.2213
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2115,
+  "address": "경기도 의정부시 시민로131번길 16  (의정부동)",
+  "name": "태흥시네마2 2관",
+  "cood_x": 204327.839,
+  "cood_y": 470698.8467
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2119,
+  "contact": "031-870-2001",
+  "address": "경기도 의정부시 시민로 80 (의정부동,외 6필지)",
+  "name": "CGV 의정부태흥 1관",
+  "cood_x": 203772.8318,
+  "cood_y": 470619.1091
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2129,
+  "contact": "031-337-3421",
+  "address": "경기도 용인시 처인구 금령로 86 (김량장동, 시네마일번가 5~8층)",
+  "name": "CGV 용인 3관",
+  "cood_x": 218209.5417,
+  "cood_y": 414813.228
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2131,
+  "contact": "031-8071-6300",
+  "address": "경기도 파주시 경의로 989, 4층 (야당동, 에스비프라자)",
+  "name": "메가박스 파주운정점 제2관",
+  "cood_x": 178654.7602,
+  "cood_y": 467065.3742
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2134,
+  "contact": "031-540-6000",
+  "address": "경기도 포천시 군내면 청성로 111",
+  "name": "포천반월아트홀",
+  "cood_x": 218456.4665,
+  "cood_y": 488168.8259
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2135,
+  "address": "경기도 포천시 소흘읍 죽엽산로 613",
+  "name": "광릉수목원 자동차 극장",
+  "cood_x": 214433.0658,
+  "cood_y": 475346.386
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2136,
+  "address": "경기도 포천시 소흘읍 광릉수목원로 967",
+  "name": "포천자동차극장",
+  "cood_x": 212193.5393,
+  "cood_y": 474859.1868
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2143,
+  "contact": "070-4880-2068",
+  "address": "경기도 의정부시 오목로205번길 55 (민락동)",
+  "name": "메가박스 의정부 민락점 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2152,
+  "contact": "031-957-8899",
+  "address": "경기도 파주시 중앙로 328, 엠에이치타원 4층 (금촌동)",
+  "name": "메가박스 파주금촌(6관)",
+  "cood_x": 180081.4098,
+  "cood_y": 473626.4208
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2155,
+  "contact": "031-638-6820",
+  "address": "경기도 이천시 중리천로 58 (중리동)",
+  "name": "CGV이천 1관",
+  "cood_x": 239314.5547,
+  "cood_y": 419842.4989
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2164,
+  "contact": "8055-8564",
+  "address": "경기도 오산시 경기대로 198 (원동,씨네마아울렛 5층)",
+  "name": "롯데시네마 오산 1관",
+  "cood_x": 206494.8211,
+  "cood_y": 404499.0085
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2167,
+  "contact": "378-5661",
+  "address": "경기도 오산시 원동로37번길 46 (원동)",
+  "name": "CGV 오산(3관)",
+  "cood_x": 206183.3163,
+  "cood_y": 404918.273
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2171,
+  "contact": "02-3147-3758",
+  "address": "경기도 하남시 미사대로 750 (신장동, 스타필드하남)",
+  "name": "메가박스중앙(주) 하남스타필드지점 3관",
+  "cood_x": 219699.0105,
+  "cood_y": 449270.3712
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2187,
+  "contact": "795-2206",
+  "address": "경기도 하남시 미사강변중앙로 218, 성산타워 5층 (망월동)",
+  "name": "메가박스 미사강변점 제5관",
+  "cood_x": 216684.3408,
+  "cood_y": 451585.5711
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2194,
+  "contact": "031-5177-6451",
+  "address": "경기도 안양시 만안구 만안로 244, 8층 (안양동)",
+  "name": "롯데시네마 안양(1관)"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2205,
+  "contact": "771-2154",
+  "address": "경기도 양평군 양평읍 양근로 167, 지하1층",
+  "name": "양평시네마",
+  "cood_x": 243187.999,
+  "cood_y": 443328.2691
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2206,
+  "contact": "773-7893",
+  "address": "경기도 양평군 양평읍 수목원길 4",
+  "name": "양평자동차극장",
+  "cood_x": 241509.5153,
+  "cood_y": 444541.0218
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2207,
+  "contact": "033-673-7050",
+  "address": "강원도 양양군 양양읍 일출로 570, 3,4층",
+  "name": "양양작은영화관 1관",
+  "cood_x": 342475.4395,
+  "cood_y": 509199.9186
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2210,
+  "contact": "02-371-6800",
+  "address": "서울특별시 성북구 동소문로 106, 유타 10층 (동선동1가)",
+  "name": "CGV 성신여대입구 1관",
+  "cood_x": 201447.4187,
+  "cood_y": 454477.1033
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2211,
+  "contact": "02-371-6800",
+  "address": "서울특별시 성북구 동소문로 106, 유타 12층 (동선동1가)",
+  "name": "CGV 성신여대입구 4관",
+  "cood_x": 201447.4187,
+  "cood_y": 454477.1033
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2213,
+  "contact": "054-654-0023",
+  "address": "경상북도 예천군 호명면 새움3로 70, 경북빌딩 3층",
+  "name": "메가박스 경북도청점 2관",
+  "cood_x": 333556.873,
+  "cood_y": 342623.9014
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2218,
+  "address": "충청북도 충주시 중원대로 3683, 4층 (달천동)",
+  "name": "롯데시네마 충주점 1관",
+  "cood_x": 279921.7969,
+  "cood_y": 384837.5038
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2223,
+  "contact": "032-747-1415",
+  "address": "인천광역시 중구 하늘중앙로195번길 15, 세영프라자 3층 (중산동)",
+  "name": "롯데시네마 영종하늘도시 1관",
+  "cood_x": 161141.6383,
+  "cood_y": 443151.2845
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2226,
+  "contact": "02-3017-3699",
+  "address": "서울특별시 마포구 양화로 147, 아일렉스 7층 (동교동)",
+  "name": "메가박스중앙(주) 홍대지점 1관",
+  "cood_x": 193046.5347,
+  "cood_y": 450424.5645
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2231,
+  "address": "경기도 용인시 수지구 성복2로 38, 롯데몰성복점 5층 (성복동)",
+  "name": "롯데시네마 수지 4관",
+  "cood_x": 207273.4907,
+  "cood_y": 423410.2183
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2236,
+  "contact": "042-545-0038",
+  "address": "대전광역시 서구 도안동로11번길 45, KD U PLAZA 6층 (가수원동)",
+  "name": "CGV 가수원점 1관",
+  "cood_x": 231431.1727,
+  "cood_y": 311691.6058
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2245,
+  "address": "대전광역시 중구 대흥로175번길 25  (대흥동)",
+  "name": "대전극장",
+  "cood_x": 238573.8291,
+  "cood_y": 314011.0204
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2246,
+  "address": "대전광역시 중구 대흥로175번길 25  (대흥동,지상7층)",
+  "name": "대전극장3관",
+  "cood_x": 238573.8291,
+  "cood_y": 314011.0204
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2247,
+  "address": "대전광역시 중구 계백로 1700 (문화동,세이2 지상6~8층)",
+  "name": "CGV대전9 제3관",
+  "cood_x": 236652.1694,
+  "cood_y": 313435.5563
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2256,
+  "address": "부산광역시 동래구 중앙대로 1523, SKHUBSKY 6층 (온천동)",
+  "name": "씨지브이동래 제5관",
+  "cood_x": 389816.233,
+  "cood_y": 193329.6059
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2257,
+  "contact": 7074962416,
+  "address": "부산광역시 동래구 중앙대로 1393 (10,11)층 (온천동)",
+  "name": "롯데시네마 동래관(제9관)",
+  "cood_x": 389097.8009,
+  "cood_y": 192260.8116
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2267,
+  "address": "부산광역시 연제구 종합운동장로 7 (거제동)",
+  "name": "CGV 아시아드 제3관",
+  "cood_x": 387686.1949,
+  "cood_y": 189911.4305
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2271,
+  "contact": "070-7465-3972",
+  "address": "부산광역시 사상구 사상로 201 (괘법동)",
+  "name": "메가박스중앙(주) 사상지점 1관",
+  "cood_x": 380509.7831,
+  "cood_y": 186704.0673
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2285,
+  "contact": "364-0480",
+  "address": "부산광역시 북구 화명대로 16 (화명동)",
+  "name": "CGV 화명 제1관",
+  "cood_x": 382882.2789,
+  "cood_y": 194681.151
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2292,
+  "contact": "051-366-2200",
+  "address": "부산광역시 북구 만덕대로 23 (덕천동)",
+  "name": "메가박스 덕천 1관",
+  "cood_x": 382731.2102,
+  "cood_y": 192059.7456
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2303,
+  "address": "부산광역시 해운대구 해운대로 813, 8층 (좌동, NC백화점)",
+  "name": "메가박스해운대(장산)7관",
+  "cood_x": 398269.0515,
+  "cood_y": 187874.7781
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2311,
+  "contact": "051-745-2883",
+  "address": "부산광역시 해운대구 센텀남대로 35 (우동,신세계백화점 8층)",
+  "name": "CGV 센텀시티 5관",
+  "cood_x": 393952.2645,
+  "cood_y": 187602.9332
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2315,
+  "address": "부산광역시 해운대구 센텀남대로 35, 5층 (우동)",
+  "name": "CGV 센텀시티 CDC 스트레스리스 시네마관",
+  "cood_x": 393952.2645,
+  "cood_y": 187602.9332
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2316,
+  "contact": "704-9871",
+  "address": "부산광역시 해운대구 해운대로 802 (좌동,웅신시네아트 704-1)",
+  "name": "롯데시네마 해운대 제3관",
+  "cood_x": 398237.3635,
+  "cood_y": 187720.5111
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2322,
+  "contact": "051-780-6080",
+  "address": "부산광역시 해운대구 수영강변대로 120 (우동, 영화의전당)",
+  "name": "소극장(CINEMA 2)",
+  "cood_x": 393724.6551,
+  "cood_y": 187847.3488
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2330,
+  "address": "부산광역시 해운대구 센텀남대로 59 (우동)",
+  "name": "롯데시네마 센텀시티 제1관",
+  "cood_x": 394083.5015,
+  "cood_y": 187707.5861
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2344,
+  "contact": "02-371-6670",
+  "address": "부산광역시 해운대구 해운대로 620 (우동, 해운대 라뮤에뜨)",
+  "name": "CGV 해운대 2관",
+  "cood_x": 396596.4435,
+  "cood_y": 186999.8845
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2351,
+  "contact": "255-0770",
+  "address": "강원도 춘천시 중앙로67번길 18 (죽림동)",
+  "name": "롯데시네마춘천 4관",
+  "cood_x": 263954.0757,
+  "cood_y": 486406.8856
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2354,
+  "contact": "033-269-7800",
+  "address": "강원도 춘천시 지석로 80 (퇴계동)",
+  "name": "BodyCare Seat관(CGV춘천 1관)",
+  "cood_x": 265386.6343,
+  "cood_y": 483368.2515
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2359,
+  "contact": "033)241-1000",
+  "address": "강원도 춘천시 춘천로17번길 17 (온의동)",
+  "name": "메가박스 남춘천 7관",
+  "cood_x": 263286.9396,
+  "cood_y": 485123.9106
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2377,
+  "contact": "032-721-5660",
+  "address": "인천광역시 서구 청라루비로 76, 청라스퀘어세븐 3층 350호 (경서동)",
+  "name": "CGV 청라 1관",
+  "cood_x": 168257.1702,
+  "cood_y": 447843.8442
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2383,
+  "contact": "070-7403-9111",
+  "address": "인천광역시 서구 봉수대로 806, 인천아시아드주경기장 (연희동)",
+  "name": "롯데시네마 인천아시아드 1관",
+  "cood_x": 170234.0162,
+  "cood_y": 449416.8783
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2389,
+  "contact": "032-623-4300",
+  "address": "인천광역시 서구 청라에메랄드로 99, 4층 (연희동, 지젤엠청라)",
+  "name": "메가박스 청라점 1관",
+  "cood_x": 169500,
+  "cood_y": 447993.88
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2398,
+  "contact": "761-7177",
+  "address": "인천광역시 중구 개항로 63-2  (경동)",
+  "name": "애관극장 1관",
+  "cood_x": 167185.0871,
+  "cood_y": 441195.4395
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2402,
+  "address": "인천광역시 연수구 송도과학로16번길 33-4 (송도동, 송도트리플스트리트)",
+  "name": "메가박스중앙(주) 송도지점 MX관",
+  "cood_x": 170067.9288,
+  "cood_y": 430784.6238
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2403,
+  "address": "인천광역시 부평구 경원대로 1395, 부평일번가 6~10층 (부평동)",
+  "name": "CINE Q 부평 GH관",
+  "cood_x": 175568.4387,
+  "cood_y": 443344.9189
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2405,
+  "contact": "070-7465-3633",
+  "address": "인천광역시 부평구 대정로 66 (부평동)",
+  "name": "롯데시네마 부평9 9관",
+  "cood_x": 175754.088,
+  "cood_y": 443547.361
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2406,
+  "contact": "032-508-2970",
+  "address": "인천광역시 부평구 광장로 16 (부평동)",
+  "name": "롯데시네마 부평역사 1관",
+  "cood_x": 175405.1137,
+  "cood_y": 443089.591
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2415,
+  "contact": "032-456-7473",
+  "address": "인천광역시 연수구 벚꽃로 106, 8층 (청학동)",
+  "name": "CGV 연수역 4관",
+  "cood_x": 171347.0526,
+  "cood_y": 435117.5234
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2422,
+  "contact": "032-503-3330",
+  "address": "인천광역시 부평구 경원대로 1382, 3,4층 (부평동)",
+  "name": "대한극장 1관",
+  "cood_x": 175370.9644,
+  "cood_y": 443242.9328
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2428,
+  "contact": "032-456-4040",
+  "address": "인천광역시 연수구 청능대로 210, 4층 (동춘동, 스퀘어원)",
+  "name": "CGV 인천연수 1관",
+  "cood_x": 171926.0767,
+  "cood_y": 433811.1364
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2448,
+  "contact": "032-270-2700",
+  "address": "인천광역시 부평구 마장로 489, 3-7층 (청천동)",
+  "name": "아이즈빌씨지브이부평10 1관",
+  "cood_x": 173718.6048,
+  "cood_y": 446665.0644
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2449,
+  "contact": "032-270-2700",
+  "address": "인천광역시 부평구 마장로 489 (청천동)",
+  "name": "아이즈빌씨지브이부평10 2관",
+  "cood_x": 173718.6048,
+  "cood_y": 446665.0644
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2461,
+  "contact": "061-544-7790",
+  "address": "전라남도 진도군 진도읍 동외1길 6-13, 아리랑시네마",
+  "name": "진도아리랑 시네마 1관",
+  "cood_x": 132895.8049,
+  "cood_y": 109406.103
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2463,
+  "address": "전라남도 여수시 웅천로 19-35, 501호 (웅천동)",
+  "name": "CGV여수웅천(제2관)",
+  "cood_x": 262077.5781,
+  "cood_y": 139123.0121
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2467,
+  "address": "전라남도 여수시 좌수영로 69 (광무동)",
+  "name": "여수 시민회관",
+  "cood_x": 266583.403,
+  "cood_y": 138943.3776
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2479,
+  "contact": "061-691-6263",
+  "address": "전라남도 여수시 소호12길 67 (소호동)",
+  "name": "여수자동차극장",
+  "cood_x": 258801.6262,
+  "cood_y": 137072.4045
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2480,
+  "contact": "061-684-6649",
+  "address": "전라남도 여수시 신월로 96 (웅천동)",
+  "name": "메가박스 여수웅천점 1관",
+  "cood_x": 262093.4908,
+  "cood_y": 139162.6764
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2490,
+  "contact": "061-783-8993",
+  "address": "전라남도 구례군 용방면 용산로 107-73, B동",
+  "name": "오가닉메이커협동조합시네마 1관",
+  "cood_x": 237497.9755,
+  "cood_y": 197216.0466
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2491,
+  "address": "광주광역시 남구 봉선중앙로131번길 33  (주월동)",
+  "name": "호남영배사",
+  "cood_x": 191434.9992,
+  "cood_y": 181503.702
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2492,
+  "contact": "02-3477-9923",
+  "address": "서울특별시 서초구 신반포로 189  (잠원동)",
+  "name": "가나시청각",
+  "cood_x": 200346.7746,
+  "cood_y": 444921.7302
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2494,
+  "address": "전라남도 장흥군 장흥읍 흥성로 43 (장흥국민체육센터)",
+  "name": "정남진시네마 1관",
+  "cood_x": 191498.3417,
+  "cood_y": 130811.5358
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2496,
+  "contact": "722-9640~4",
+  "address": "제주특별자치도 제주시 서광로 288 (이도이동,4층(서광로 17))",
+  "name": "씨지브이 제주 1관",
+  "cood_x": 156002.3972,
+  "cood_y": 507.5310548
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2497,
+  "contact": "722-9640~4",
+  "address": "제주특별자치도 제주시 서광로 288 (이도이동,(서광로17))",
+  "name": "씨지브이 제주 2관",
+  "cood_x": 156002.3972,
+  "cood_y": 507.5310548
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2501,
+  "contact": "749-0069",
+  "address": "제주특별자치도 제주시 노형로 407 (노형동)",
+  "name": "CGV제주노형1관",
+  "cood_x": 151441.4474,
+  "cood_y": -1047.378627
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2504,
+  "address": "제주특별자치도 제주시 노형로 407, 5층 (노형동)",
+  "name": "CGV제주노형4관",
+  "cood_x": 151441.4474,
+  "cood_y": -1047.378627
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2507,
+  "address": "경기도 파주시 탄현면 엘지로717번길 59",
+  "name": "자유로 자동차 극장 1관",
+  "cood_x": 176626.6164,
+  "cood_y": 481301.9265
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2509,
+  "contact": "031-952-0351",
+  "address": "경기도 파주시 문산읍 방촌로 1719-10",
+  "name": "씨제이 씨지브이 주식회사 (문산점 1관)",
+  "cood_x": 180932.9084,
+  "cood_y": 484915.1071
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2512,
+  "contact": "031-695-1650",
+  "address": "경기도 용인시 수지구 포은대로 536, 8층 (죽전동, 신세계백화점)",
+  "name": "CGV죽전 1관",
+  "cood_x": 209514.368,
+  "cood_y": 424782.5285
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2520,
+  "contact": "031-337-3421",
+  "address": "경기도 용인시 처인구 금령로 86, 5~8층 (김량장동, 시네마일번가)",
+  "name": "CGV 용인 1관",
+  "cood_x": 218209.5417,
+  "cood_y": 414813.228
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2521,
+  "contact": "070-7017-1083",
+  "address": "경기도 파주시 문발로 220 (문발동)",
+  "name": "메가박스중앙 주식회사 파주출판도시점(5관)",
+  "cood_x": 172401.2518,
+  "cood_y": 467977.5877
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2531,
+  "contact": "070-5102-7794",
+  "address": "경기도 용인시 기흥구 동백죽전대로 444, 7001호 (중동, 쥬네브썬월드빌딩)",
+  "name": "CGV동백 제1관",
+  "cood_x": 213383.9778,
+  "cood_y": 419575.3412
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2532,
+  "address": "경기도 용인시 기흥구 동백죽전대로 444, 7001호 (중동, 쥬네브썬월드)",
+  "name": "CGV동백제2관",
+  "cood_x": 213383.9778,
+  "cood_y": 419575.3412
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2539,
+  "address": "경기도 용인시 처인구 중부대로1392번길 15 (김량장동)",
+  "name": "문예회관",
+  "cood_x": 217578.6165,
+  "cood_y": 414463.5361
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2542,
+  "address": "서울특별시 중구 소공로 36-5  (회현동2가)",
+  "name": "뉴아트프로덕션(이동상영관)",
+  "cood_x": 198456.128,
+  "cood_y": 450735.8679
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2545,
+  "contact": "031-957-8899",
+  "address": "경기도 파주시 중앙로 328 (금촌동, 엠에이치타워)",
+  "name": "메가박스 파주금촌점(1관)",
+  "cood_x": 180081.4098,
+  "cood_y": 473626.4208
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2550,
+  "contact": "031-942-1031",
+  "address": "경기도 파주시 탄현면 헤이리마을길 93-119",
+  "name": "헤이리 시네마",
+  "cood_x": 173299.2911,
+  "cood_y": 476607.4128
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2551,
+  "contact": "070-7433-8881",
+  "address": "경기도 파주시 청암로17번길 17, 3,4층 (목동동)",
+  "name": "롯데시네마 파주운정관 제1관",
+  "cood_x": 176725.2624,
+  "cood_y": 469706.9911
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2562,
+  "address": "제주특별자치도 제주시 구산로 4, 1층 (아라일동, 메가타워)",
+  "name": "롯데시네마 제주아라 6관",
+  "cood_x": 156787.8258,
+  "cood_y": -1295.616285
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2563,
+  "contact": "722-9640",
+  "address": "제주특별자치도 제주시 서광로 288 (이도이동)",
+  "name": "씨지브이 제주 4관",
+  "cood_x": 156002.3972,
+  "cood_y": 507.5310548
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2565,
+  "contact": "753-0041",
+  "address": "제주특별자치도 제주시 구산로 4 (아라일동, 메가타워)",
+  "name": "롯데시네마 제주아라 5관",
+  "cood_x": 156787.8258,
+  "cood_y": -1295.616285
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2567,
+  "contact": "753-0041",
+  "address": "제주특별자치도 제주시 구산로 4 (아라일동,메가타워)",
+  "name": "롯데시네마 제주아라 4관",
+  "cood_x": 156787.8258,
+  "cood_y": -1295.616285
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2570,
+  "address": "부산광역시 부산진구 중앙대로 672, 서면피에스타 11층 (부전동)",
+  "name": "CGV서면삼정타워제1관",
+  "cood_x": 387608.0142,
+  "cood_y": 185703.079
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2578,
+  "contact": 231473894,
+  "address": "경기도 부천시 옥길로 1, 스타필드시티 부천 4-5층 (옥길동)",
+  "name": "메기박스 중앙(주) 부천 스타필드시티지점 2관",
+  "cood_x": 183469.3677,
+  "cood_y": 439944.2232
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2584,
+  "contact": "055-771-2517",
+  "address": "경상남도 진주시 가호로 13 (가좌동, MBC경남진주)",
+  "name": "롯데시네마 엠비씨네 시그니처 M",
+  "cood_x": 300814.3278,
+  "cood_y": 185515.0537
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2585,
+  "contact": 319572278,
+  "address": "경기도 파주시 조리읍 탑삭골길 222",
+  "name": "퍼스트가든 자동차극장",
+  "cood_x": 181846.9596,
+  "cood_y": 470130.3979
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2586,
+  "contact": "070-4801-3967",
+  "address": "경기도 오산시 원동로 22, 르마레시티 3~4층 (원동)",
+  "name": "CGV(오산중앙)6관",
+  "cood_x": 206236.9081,
+  "cood_y": 404466.6956
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2594,
+  "contact": "070-7460-1120",
+  "address": "대전광역시 서구 봉우로8번길 23, 5,6층 (관저동)",
+  "name": "롯데컬처웍스(주)롯데시네마 대전 관저 1관",
+  "cood_x": 229902.1768,
+  "cood_y": 311365.3487
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2601,
+  "contact": "031-534-7053",
+  "address": "경기도 포천시 영북면 운천로23번길 7-8, 2층",
+  "name": "포천)클라우드시네마 1관",
+  "cood_x": 223793.7883,
+  "cood_y": 509795.7858
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2603,
+  "contact": "02-3017-3693",
+  "address": "서울특별시 성동구 왕십리로 50, 메가박스 스퀘어 3층 (성수동1가)",
+  "name": "메가박스중앙(주) 성수지점 1관",
+  "cood_x": 203903.3536,
+  "cood_y": 448846.8202
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2605,
+  "contact": "02-3017-3693",
+  "address": "서울특별시 성동구 왕십리로 50, 메가박스 스퀘어 5층 (성수동1가)",
+  "name": "메가박스중앙(주) 성수지점 MX관",
+  "cood_x": 203903.3536,
+  "cood_y": 448846.8202
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2608,
+  "contact": "02-3017-3693",
+  "address": "서울특별시 성동구 왕십리로 50, 메가박스 스퀘어 7층 (성수동1가)",
+  "name": "메가박스중앙(주) 성수지점 더부티크 101호",
+  "cood_x": 203903.3536,
+  "cood_y": 448846.8202
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2610,
+  "contact": "052-294-9271",
+  "address": "울산광역시 북구 매산1로 17, 신천CGV LEEPLEX 5,6층 (신천동)",
+  "name": "CGV울산신천 1관",
+  "cood_x": 413327.4826,
+  "cood_y": 239791.1942
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2614,
+  "contact": "02-2038-0059",
+  "address": "경기도 화성시 동탄대로5길 21, 라크몽 지하1층 T-01호 (송동)",
+  "name": "안영채X모노플렉스",
+  "cood_x": 209267.8319,
+  "cood_y": 407233.5254
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2615,
+  "contact": "033-482-9612",
+  "address": "강원도 양구군 양구읍 비봉로73번길 52-1, 정중앙시네마 2층",
+  "name": "정중앙시네마 2관",
+  "cood_x": 286317.9038,
+  "cood_y": 512226.1013
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2618,
+  "contact": "051-999-7252",
+  "address": "부산광역시 사하구 낙동남로 1413, 12층 (하단동, 아트몰링)",
+  "name": "CGV하단아트몰링 1관",
+  "cood_x": 379212.0797,
+  "cood_y": 180390.069
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2625,
+  "contact": "241-1202",
+  "address": "부산광역시 중구 비프광장로 36 (남포동5가)",
+  "name": "메가박스 부산극장 1관",
+  "cood_x": 384919.4108,
+  "cood_y": 179609.2078
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2628,
+  "contact": "241-1202",
+  "address": "부산광역시 중구 비프광장로 28 (남포동5가)",
+  "name": "메가박스 부산극장 7관",
+  "cood_x": 384871.0192,
+  "cood_y": 179600.3951
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2633,
+  "contact": "070-7495-8542",
+  "address": "부산광역시 중구 중앙대로 2 (중앙동7가)",
+  "name": "롯데시네마 광복 제1관",
+  "cood_x": 385622.7805,
+  "cood_y": 179452.2248
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2645,
+  "contact": "070-7438-5100",
+  "address": "부산광역시 중구 비프광장로 37, 6층 (남포동5가)",
+  "name": "롯데시네마 대영 제1관",
+  "cood_x": 384985.4481,
+  "cood_y": 179597.593
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2650,
+  "contact": "051-626-0488",
+  "address": "부산광역시 남구 수영로 305, 6층 (대연동, 스파크)",
+  "name": "CGV대연 2관",
+  "cood_x": 391258.8699,
+  "cood_y": 184039.54
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2653,
+  "contact": "051-581-5950",
+  "address": "부산광역시 금정구 장전로12번길 55 (장전동, 라퓨타아일랜드)",
+  "name": "메가박스중앙(주)부산대지점 1관",
+  "cood_x": 390026.7695,
+  "cood_y": 194312.7237
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2658,
+  "contact": "051-507-0202",
+  "address": "부산광역시 금정구 중앙대로 1607 (부곡동)",
+  "name": "롯데컬처웍스(주)롯데시네마오투 1관",
+  "cood_x": 390183.8131,
+  "cood_y": 194117.4657
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2660,
+  "contact": "051-626-0488",
+  "address": "부산광역시 남구 수영로 305, 스파크 8층 (대연동)",
+  "name": "CGV대연 5관",
+  "cood_x": 391258.8699,
+  "cood_y": 184039.54
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2661,
+  "contact": "051-626-0488",
+  "address": "부산광역시 남구 수영로 305, 8층 (대연동, 스파크)",
+  "name": "CGV대연 6관",
+  "cood_x": 391258.8699,
+  "cood_y": 184039.54
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2664,
+  "address": "부산광역시 남구 유엔평화로76번길 26, 가람빌딩 (대연동)",
+  "name": "부산예술관",
+  "cood_x": 390688.5607,
+  "cood_y": 182959.2892
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2673,
+  "address": "경상남도 남해군 남해읍 선소로 12 (남해문화체육센터)",
+  "name": "보물섬시네마",
+  "cood_x": 282200.7208,
+  "cood_y": 149969.1421
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2674,
+  "contact": "640-8811",
+  "address": "경상남도 통영시 안개로 37 (무전동)",
+  "name": "롯데시네마 통영 (1관)",
+  "cood_x": 330722.0113,
+  "cood_y": 152093.4279
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2679,
+  "contact": "646-1503",
+  "address": "경상남도 통영시 원문로 27, 월드지브이존 6층 (북신동)",
+  "name": "CGV통영(1관)",
+  "cood_x": 330294.3763,
+  "cood_y": 151877.485
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2684,
+  "contact": "646-1503",
+  "address": "경상남도 통영시 원문로 27, 월드지브이존 8층 (북신동)",
+  "name": "CGV통영(4관)",
+  "cood_x": 330294.3763,
+  "cood_y": 151877.485
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2687,
+  "contact": "02-741-9782",
+  "address": "서울특별시 중구 정동길 3, 경향신문사 2층 (정동)",
+  "name": "서울아트시네마",
+  "cood_x": 197279.3284,
+  "cood_y": 451765.4265
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2688,
+  "contact": "033-655-7288",
+  "address": "강원도 강릉시 경강로 2120 (옥천동)",
+  "name": "(주) CGV 강릉지점 5관",
+  "cood_x": 367257.0896,
+  "cood_y": 474274.358
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2696,
+  "contact": "033-645-7415",
+  "address": "강원도 강릉시 경강로 2100, 4층 (임당동)",
+  "name": "강릉독립예술극장 신영",
+  "cood_x": 367081.6296,
+  "cood_y": 474168.0956
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2697,
+  "contact": "033-645-7200",
+  "address": "강원도 강릉시 구정면 칠성로 13-8",
+  "name": "(주)강릉자동차극장",
+  "cood_x": 367183.6022,
+  "cood_y": 467401.0166
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2698,
+  "contact": "033-765-2630",
+  "address": "강원도 원주시 서원대로 396 (단구동,(스타월드 6층))",
+  "name": "롯데시네마 남원주5관",
+  "cood_x": 284012.1979,
+  "cood_y": 425846.2563
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2701,
+  "contact": "033-744-2002",
+  "address": "강원도 원주시 서원대로 165-3, 아트스페이스빌딩 7층 (단계동)",
+  "name": "메가박스 원주1관",
+  "cood_x": 282315.6736,
+  "cood_y": 427402.9246
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2703,
+  "address": "강원도 원주시 평원로 120  (학성동)",
+  "name": "문화극장",
+  "cood_x": 283846.4133,
+  "cood_y": 428499.9773
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2708,
+  "contact": "033-738-9052",
+  "address": "강원도 원주시 서원대로 171 (단계동,7~10층)",
+  "name": "CGV원주9관",
+  "cood_x": 282420.4536,
+  "cood_y": 427386.4993
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2710,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 황금로 2, 7층 601호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 1관",
+  "cood_x": 287371.6685,
+  "cood_y": 425538.2944
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2711,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 황금로 2, 7층 602호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 2관",
+  "cood_x": 287371.6685,
+  "cood_y": 425538.2944
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2712,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 황금로 2, 7층 603호 (반곡동)",
+  "name": "메가박스 원주 센트럴점 3관",
+  "cood_x": 287371.6685,
+  "cood_y": 425538.2944
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2723,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 황금로 2, 7층 605호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 5관",
+  "cood_x": 287371.6685,
+  "cood_y": 425538.2944
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2724,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 양지로 80, 7층 608호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 6관",
+  "cood_x": 287336.986,
+  "cood_y": 425561.6915
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2725,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 양지로 80, 7층 609호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 7관",
+  "cood_x": 287336.986,
+  "cood_y": 425561.6915
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2726,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 양지로 80, 7층 605호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 8관",
+  "cood_x": 287336.986,
+  "cood_y": 425561.6915
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2727,
+  "contact": "070-7717-4947",
+  "address": "강원도 원주시 양지로 80, 7층 601호 (반곡동, 센트럴파크)",
+  "name": "메가박스 원주 센트럴점 9관",
+  "cood_x": 287336.986,
+  "cood_y": 425561.6915
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2728,
+  "contact": "033-748-7761",
+  "address": "강원도 원주시 능라동길 51, 9층 (무실동)",
+  "name": "롯데시네마 원주무실점 1관",
+  "cood_x": 282361.6563,
+  "cood_y": 426273.5405
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2742,
+  "contact": "573-0002",
+  "address": "강원도 삼척시 진주로 28-25 (남양동)",
+  "name": "아카데미극장",
+  "cood_x": 391495.416,
+  "cood_y": 440085.7303
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2743,
+  "contact": "433-7053",
+  "address": "강원도 홍천군 홍천읍 연봉중앙로 11-8",
+  "name": "홍천시네마 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2745,
+  "contact": "052-204-2931",
+  "address": "울산광역시 울주군 상북면 알프스온천5길 103-8",
+  "name": "알프스시네마 1관",
+  "cood_x": 387433.0319,
+  "cood_y": 230470.2142
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2746,
+  "contact": "052-246-1245",
+  "address": "울산광역시 울주군 범서읍 두동로 704",
+  "name": "범서온천 자동차극장",
+  "cood_x": 401202.3383,
+  "cood_y": 238459.2254
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2747,
+  "contact": "052-990-5533",
+  "address": "울산광역시 남구 화합로 185, 6층 (삼산동, 업스퀘어)",
+  "name": "CGV울산삼산 제3관",
+  "cood_x": 412037.5114,
+  "cood_y": 229430.4553
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2752,
+  "contact": "960-3000",
+  "address": "울산광역시 남구 삼산로 288 (삼산동)",
+  "name": "롯데시네마 울산9(9관)",
+  "cood_x": 412001.9667,
+  "cood_y": 229039.5633
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2753,
+  "contact": "052-990-5533",
+  "address": "울산광역시 남구 화합로 185, 8층 (삼산동, 업스퀘어)",
+  "name": "CGV울산삼산 제6관",
+  "cood_x": 412037.5114,
+  "cood_y": 229430.4553
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2758,
+  "contact": "052-990-5533",
+  "address": "울산광역시 남구 화합로 185, 7층 (삼산동, 업스퀘어(7층 골드클래스관))",
+  "name": "CGV울산삼산 제11관",
+  "cood_x": 412037.5114,
+  "cood_y": 229430.4553
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2759,
+  "contact": "235-2117",
+  "address": "울산광역시 동구 명덕로 10 (서부동)",
+  "name": "현대예술관",
+  "cood_x": 420448.2356,
+  "cood_y": 227525.7808
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2772,
+  "contact": "032-764-8880",
+  "address": "인천광역시 동구 화도진로 31 (송현동)",
+  "name": "인천미림극장 주식회사",
+  "cood_x": 167584.9854,
+  "cood_y": 441543.3215
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2773,
+  "contact": "823-0000",
+  "address": "경상북도 안동시 경동로 841 (용상동)",
+  "name": "CGV 안동 2관",
+  "cood_x": 356541.0156,
+  "cood_y": 341426.3052
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2774,
+  "address": "전라남도 순천시 해룡면 해광로 199",
+  "name": "CGV순천신대 3관",
+  "cood_x": 250396.8735,
+  "cood_y": 158714.5191
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2780,
+  "contact": "061-244-0668",
+  "address": "전라남도 목포시 영산로59번길 30  (죽동)",
+  "name": "목포극장1관",
+  "cood_x": 143530.571,
+  "cood_y": 143726.4012
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2798,
+  "address": "전라남도 광양시 금호로 26 (금호동)",
+  "name": "CGV 광양 1상영관",
+  "cood_x": 265896.9645,
+  "cood_y": 159854.4967
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2813,
+  "address": "전라남도 목포시 옥암로 95 (상동)",
+  "name": "메가박스 목포하당(포르모) 1관",
+  "cood_x": 147387.7006,
+  "cood_y": 145561.0818
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2816,
+  "contact": "061-243-9111",
+  "address": "전라남도 목포시 수문로 105  (죽교동)",
+  "name": "제일극장",
+  "cood_x": 143032.9381,
+  "cood_y": 144510.5256
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2817,
+  "address": "전라남도 목포시 교육로 63 (상동)",
+  "name": "CGV 목포제3관",
+  "cood_x": 146838.6226,
+  "cood_y": 145032.3528
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2826,
+  "contact": "061-242-0305",
+  "address": "전라남도 목포시 영산로59번길 30 (죽동)",
+  "name": "목포극장1926 GS관",
+  "cood_x": 143530.571,
+  "cood_y": 143726.4012
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2832,
+  "contact": "061-830-6715",
+  "address": "전라남도 고흥군 고흥읍 고흥로 1892-67",
+  "name": "고흥 작은영화관",
+  "cood_x": 227456.7466,
+  "cood_y": 124210.0784
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2834,
+  "contact": "02-8066-2001",
+  "address": "경기도 수원시 권선구 세화로 134 (서둔동, 롯데몰)",
+  "name": "롯데시네마 수원관 제1관",
+  "cood_x": 199673.3786,
+  "cood_y": 418025.5478
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2838,
+  "contact": "054-613-1700",
+  "address": "경상북도 포항시 남구 중흥로 77 (상도동)",
+  "name": "메가박스 포항 컴포트 4관",
+  "cood_x": 411699.7165,
+  "cood_y": 281700.6209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2843,
+  "contact": "054-728-9300",
+  "address": "경상북도 포항시 북구 서동로 93 (덕산동)",
+  "name": "CGV 북포항(3관)",
+  "cood_x": 413362.4224,
+  "cood_y": 284852.5835
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2847,
+  "address": "경상북도 포항시 북구 중앙상가길 16 (대흥동)",
+  "name": "롯데시네마 포항 1관",
+  "cood_x": 412902.6585,
+  "cood_y": 284383.4464
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2862,
+  "address": "경상북도 포항시 남구 오천읍 하원로47번길 9, 109호",
+  "name": "메가박스중앙(주) 남포항점 6관",
+  "cood_x": 416721.0033,
+  "cood_y": 277577.3547
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2864,
+  "address": "경상북도 포항시 북구 서동로 83 (덕산동, 포항시립중앙아트홀)",
+  "name": "인디플러스 포항",
+  "cood_x": 413284.9606,
+  "cood_y": 284873.1953
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2870,
+  "contact": "055-387-7780",
+  "address": "경상남도 양산시 삼호1길 42, 5,6층 (삼호동)",
+  "name": "CGV 양산삼호점 1관",
+  "cood_x": 396840.5494,
+  "cood_y": 214866.5062
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2873,
+  "contact": "02-3017-3689",
+  "address": "세종특별자치시 나성로 38, 세종가로수길 5층 (나성동)",
+  "name": "메가박스중앙(주) 세종나성지점 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2878,
+  "contact": "02-371-6800",
+  "address": "경기도 양주시 옥정로 200, 7,8층 (옥정동)",
+  "name": "CGV 양주옥정 6관",
+  "cood_x": 208043.5,
+  "cood_y": 479654.9
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2885,
+  "address": "전라남도 완도군 완도읍 개포로159번길 55, 완도맞춤형복합문화센터 2층",
+  "name": "완도 빙그레 시네마 1관",
+  "cood_x": 176138.6773,
+  "cood_y": 91814.56738
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2887,
+  "contact": "055-336-9333",
+  "address": "경상남도 김해시 율하2로 111 (율하동)",
+  "name": "CGV김해율하 제1관",
+  "cood_x": 365144.7853,
+  "cood_y": 187151.1233
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2891,
+  "address": "경기도 부천시 옥길로 124, 문영퀸즈파크 C동 9-10층 (옥길동)",
+  "name": "CGV부천옥길1관",
+  "cood_x": 184290.2408,
+  "cood_y": 440618.6533
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2897,
+  "address": "경기도 용인시 기흥구 구성로 357, 용인테크노밸리 (청덕동)",
+  "name": "메가박스(테크노밸리) 6관",
+  "cood_x": 213057.9276,
+  "cood_y": 421057.2355
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2898,
+  "contact": "042-331-1895",
+  "address": "대전광역시 중구 계백로 1712, 기독교연합봉사회관 1층 1호 (문화동)",
+  "name": "대전독립영화전용관 씨네인디 U",
+  "cood_x": 236728.1378,
+  "cood_y": 313443.5058
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2899,
+  "contact": "064-759-9217",
+  "address": "제주특별자치도 제주시 서광로 288, 메카플러스 3층 (이도이동)",
+  "name": "씨지브이 제주 8관",
+  "cood_x": 156002.3972,
+  "cood_y": 507.5310548
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2900,
+  "contact": "054-535-3579",
+  "address": "경상북도 상주시 중앙로 147 (서문동)",
+  "name": "롯데시네마 상주 1관",
+  "cood_x": 303465.9545,
+  "cood_y": 324524.6874
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2904,
+  "contact": "052-204-2931",
+  "address": "울산광역시 울주군 상북면 알프스온천5길 103-8, 산악문화센터",
+  "name": "알프스시네마2관",
+  "cood_x": 387433.0319,
+  "cood_y": 230470.2142
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2905,
+  "contact": "031-979-5943",
+  "address": "경기도 고양시 덕양구 충장로 8, 로터스플레이스 5,6층 (행신동)",
+  "name": "씨지브이(주) 고양행신 제1관",
+  "cood_x": 185318.5575,
+  "cood_y": 456821.6695
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2911,
+  "address": "경기도 평택시 경기대로 945, 평택고덕아이파크 판매시설동 301호 (장당동)",
+  "name": "CGV평택고덕 1관",
+  "cood_x": 206113.4802,
+  "cood_y": 392491.2884
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2919,
+  "contact": "033-680-4068",
+  "address": "강원도 고성군 간성읍 수성로 3, 달홀문화센터",
+  "name": "달홀영화관 1관",
+  "cood_x": 328732.9546,
+  "cood_y": 542805.0473
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2920,
+  "contact": "052-234-7600",
+  "address": "울산광역시 동구 등대로 50, 5층 (방어동)",
+  "name": "씨지브이 울산동구1관",
+  "cood_x": 420536.1668,
+  "cood_y": 223852.8452
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2921,
+  "address": "울산광역시 동구 등대로 50, 6층 (방어동)",
+  "name": "씨지브이 울산동구6키즈관",
+  "cood_x": 420536.1668,
+  "cood_y": 223852.8452
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2922,
+  "address": "울산광역시 동구 등대로 50, 7층 (방어동)",
+  "name": "씨지브이 울산동구3관",
+  "cood_x": 420536.1668,
+  "cood_y": 223852.8452
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2926,
+  "address": "서울특별시 마포구 어울마당로 65, 상상마당빌딩 지하3층, 4층 (서교동)",
+  "name": "KT&G 상상마당 cinema",
+  "cood_x": 192952.4207,
+  "cood_y": 449862.4658
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2927,
+  "contact": "055-912-7001",
+  "address": "경상남도 양산시 덕계북길 35 (덕계동)",
+  "name": "영화공장",
+  "cood_x": 395960.6969,
+  "cood_y": 211362.2806
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2928,
+  "address": "전라남도 순천시 해룡면 상성길 70, 순천만플라자 모다아울렛 3층",
+  "name": "루프탑시네마 모다순천점",
+  "cood_x": 249664.4037,
+  "cood_y": 158698.4695
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2929,
+  "contact": "051-990-7905",
+  "address": "부산광역시 부산진구 서면로 39, KT&G 상상마당부산 8~12층 (부전동)",
+  "name": "CGV서면상상마당 제6관",
+  "cood_x": 387394.968,
+  "cood_y": 185837.3166
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2936,
+  "contact": "051-208-2300",
+  "address": "부산광역시 강서구 명지국제8로10번길 38, 8층 801호 (명지동)",
+  "name": "명지플러스시네마 1관",
+  "cood_x": 373470.6037,
+  "cood_y": 178919.5832
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2938,
+  "contact": "051-208-2300",
+  "address": "부산광역시 강서구 명지국제8로10번길 38, 플러스시네마 8층 801호 (명지동)",
+  "name": "명지플러스시네마 3관",
+  "cood_x": 373470.6037,
+  "cood_y": 178919.5832
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2942,
+  "address": "경기도 가평군 조종면 청군로 1270, 3층",
+  "name": "조종시네마OLC 제2관",
+  "cood_x": 230588.1995,
+  "cood_y": 479535.1118
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2944,
+  "contact": "033-460-8952",
+  "address": "강원도 인제군 북면 금강로11번길 19, 2층",
+  "name": "원통영화관",
+  "cood_x": 305746.2185,
+  "cood_y": 513717.9597
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2945,
+  "contact": "063-635-3927",
+  "address": "전라북도 남원시 요천로 1838, 4층 (고죽동)",
+  "name": "NH시네마 1관",
+  "cood_x": 237293.8591,
+  "cood_y": 214100.2441
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2948,
+  "address": "경기도 남양주시 화도읍 경춘로1876번길 40, 해동본타워",
+  "name": "CGV 남양주 화도"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2949,
+  "contact": "032-460-7285",
+  "address": "인천광역시 서구 가정로 406, 상가동 지하1층 (가정동, 루원지웰시티푸르지오)",
+  "name": "CGV 인천가정 제1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2953,
+  "contact": "601-2941",
+  "address": "대전광역시 서구 계룡로 598 (괴정동)",
+  "name": "롯데시네마 대전(제1관)",
+  "cood_x": 234901.1939,
+  "cood_y": 315605.266
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2961,
+  "contact": "489-2300",
+  "address": "대전광역시 서구 문정로 77, 5층 (탄방동, 로데오 타운)",
+  "name": "메가박스중앙(주) 대전지점 8관",
+  "cood_x": 234758.6004,
+  "cood_y": 316344.9024
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2962,
+  "address": "대전광역시 서구 대덕대로 325 (월평동,스타게이트시네몰)",
+  "name": "롯데시네마 대전둔산(제1관)",
+  "cood_x": 233937.7441,
+  "cood_y": 317963.3479
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2969,
+  "contact": "070-7435-4504",
+  "address": "대전광역시 서구 대덕대로 216, 6층 (둔산동)",
+  "name": "롯데시네마 대전센트럴관 1관",
+  "cood_x": 233985.7912,
+  "cood_y": 316847.1617
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2982,
+  "contact": 424860521,
+  "address": "대전광역시 서구 문정로 85, 세이탄방점 7층 (탄방동)",
+  "name": "CGV 대전탄방 4관",
+  "cood_x": 234834.8548,
+  "cood_y": 316331.8862
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2984,
+  "contact": "863-0104",
+  "address": "대전광역시 서구 벌곡로 294 (오동)",
+  "name": "별빛영화마을 대전자동차극장",
+  "cood_x": 228465.007,
+  "cood_y": 303510.2844
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2990,
+  "contact": "070-5030-3577",
+  "address": "대전광역시 유성구 노은로 144, 6-8층 (지족동, 노은타운)",
+  "name": "CGV 유성노은 1관",
+  "cood_x": 228510.5716,
+  "cood_y": 319123.8319
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2991,
+  "contact": "02-3017-3685",
+  "address": "대전광역시 유성구 계룡로132번길 10, 6층 (봉명동, 도안센트럴프라자)",
+  "name": "메가박스중앙(주)대전유성지점 5관",
+  "cood_x": 230861.7695,
+  "cood_y": 316893.9682
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 2996,
+  "contact": "02-3017-3685",
+  "address": "대전광역시 유성구 계룡로132번길 10, 5층 513호 (봉명동, 도안센트럴프라자)",
+  "name": "메가박스중앙(주)대전유성지점 1관",
+  "cood_x": 230861.7695,
+  "cood_y": 316893.9682
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3000,
+  "contact": "02-3147-3714",
+  "address": "경상남도 창원시 마산합포구 해안대로 51, 유로스퀘어 6층 (해운동)",
+  "name": "메가박스중앙(주)마산지점 1관 컴포트",
+  "cood_x": 342378.5799,
+  "cood_y": 188083.1591
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3006,
+  "contact": "055-600-5400",
+  "address": "경상남도 창원시 성산구 원이대로 320 (대원동,  W224,W306,W401)",
+  "name": "CGV창원더시티 1관",
+  "cood_x": 350381.455,
+  "cood_y": 194669.2038
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3007,
+  "contact": "055-600-5400",
+  "address": "경상남도 창원시 성산구 원이대로 320 (대원동, W224,W306,W401)",
+  "name": "CGV창원더시티 2관",
+  "cood_x": 350381.455,
+  "cood_y": 194669.2038
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3011,
+  "contact": "055-942-9503",
+  "address": "경상남도 거창군 거창읍 중앙로1길 1, 8층",
+  "name": "롯데시네마 거창 2관",
+  "cood_x": 282587.2875,
+  "cood_y": 243437.2659
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3013,
+  "contact": "02-3017-3678",
+  "address": "경상남도 창원시 마산회원구 내서읍 광려천서로 81, ISC 10-11층 10층",
+  "name": "메가박스(주)창원내서지점 5관",
+  "cood_x": 337420.75,
+  "cood_y": 195460.1868
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3016,
+  "contact": "055-911-1480",
+  "address": "경상남도 창원시 성산구 중앙대로100번길 13, 창원 엠포리움 5,6층 (상남동)",
+  "name": "CGV 창원상남(1관)",
+  "cood_x": 353008.424,
+  "cood_y": 192790.4061
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3022,
+  "address": "경상남도 창원시 진해구 진해대로 752 (석동)",
+  "name": "롯데시네마 진해 제1관",
+  "cood_x": 354588.5398,
+  "cood_y": 185722.5292
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3028,
+  "contact": "070-8802-6438",
+  "address": "경상남도 창원시 마산합포구 동서북14길 24, 지하1층 (동성동)",
+  "name": "씨네아트 리좀",
+  "cood_x": 343420.3961,
+  "cood_y": 190784.8897
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3029,
+  "contact": "055-241-0601",
+  "address": "경상남도 창원시 마산합포구 해안대로 7, 경남은행 7층 (월남동5가)",
+  "name": "롯데시네마 프리미엄 경남대 1관",
+  "cood_x": 342008.2122,
+  "cood_y": 187957.5763
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3037,
+  "address": "경상남도 창원시 마산회원구 합성남로 3, 마산시외버스터미널 (합성동)",
+  "name": "롯데시네마 마산(합성동) 1관",
+  "cood_x": 344086.0401,
+  "cood_y": 194443.7023
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3038,
+  "contact": "055-756-0000",
+  "address": "경상남도 진주시 진양호로 521 (중안동)",
+  "name": "메가박스 진주중안 1관",
+  "cood_x": 298526.704,
+  "cood_y": 188715.2839
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3055,
+  "contact": "055-743-7142",
+  "address": "경상남도 진주시 진주대로 1057 (대안동)",
+  "name": "메가박스 진주(태양의 제국)제1관",
+  "cood_x": 298620.4989,
+  "cood_y": 188831.3858
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3060,
+  "contact": "055-638-2091",
+  "address": "경상남도 거제시 고현로11길 20 (고현동)",
+  "name": "스카라 거제 제1관",
+  "cood_x": 348447.0787,
+  "cood_y": 155708.4188
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3062,
+  "contact": "070-7425-4691",
+  "address": "경상남도 창원시 성산구 중앙대로 124 (상남동,롯데백화점3,5층)",
+  "name": "롯데시네마창원7(1관)",
+  "cood_x": 353052.9448,
+  "cood_y": 192993.3378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3069,
+  "contact": "055)292-3001",
+  "address": "경상남도 창원시 마산회원구 합성옛길 147, 마산시외버스터미널 (합성동)",
+  "name": "롯데시네마 마산(합성동) 3관",
+  "cood_x": 344086.0401,
+  "cood_y": 194443.7023
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3072,
+  "contact": "055-632-0114",
+  "address": "경상남도 거제시 동부면 구천5길 23",
+  "name": "거제자동차극장",
+  "cood_x": 349772.6885,
+  "cood_y": 147116.3818
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3077,
+  "contact": "055-680-0601",
+  "address": "경상남도 거제시 장평로 12 (장평동)",
+  "name": "CGV거제 4관",
+  "cood_x": 347704.2059,
+  "cood_y": 155893.0016
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3088,
+  "contact": "070-7432-1470",
+  "address": "경상남도 진주시 동진로 440 (충무공동, 진주롯데몰)",
+  "name": "롯데시네마 진주혁신 제7관",
+  "cood_x": 303762.5593,
+  "cood_y": 187362.8504
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3095,
+  "contact": "635-8701",
+  "address": "강원도 속초시 조양로142번길 20 (조양동)",
+  "name": "메가박스 속초점 1관",
+  "cood_x": 338872.9337,
+  "cood_y": 521870.2622
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3096,
+  "contact": "033-334-7053",
+  "address": "강원도 평창군 용평면 경강로 1689 (해피웨딩홀)",
+  "name": "HAPPY700 평창시네마 2관",
+  "cood_x": 325024.793,
+  "cood_y": 455006.7428
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3098,
+  "contact": "033-482-9175",
+  "address": "강원도 양구군 양구읍 비봉로73번길 52-1, 양구문예회관(작은영화관)2층",
+  "name": "정중앙시네마 2관",
+  "cood_x": 286317.9038,
+  "cood_y": 512226.1013
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3099,
+  "contact": "052-298-4433",
+  "address": "울산광역시 북구 산하길 60 (산하동)",
+  "name": "블루마씨네",
+  "cood_x": 420159.3818,
+  "cood_y": 240543.3885
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3101,
+  "address": "경기도 화성시 동탄중앙로 220, A동 (반송동,메타폴리스)",
+  "name": "CGV 동탄 4관",
+  "cood_x": 206044.3325,
+  "cood_y": 411453.9057
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3106,
+  "contact": "031-240-1602",
+  "address": "경기도 수원시 팔달구 덕영대로 924, 6층 (매산로1가)",
+  "name": "CGV수원8 IMAX",
+  "cood_x": 199920.1947,
+  "cood_y": 418246.9271
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3107,
+  "contact": "031-240-1602",
+  "address": "경기도 수원시 팔달구 덕영대로 924 (매산로1가, 6층)",
+  "name": "CGV 수원8 3관",
+  "cood_x": 199920.1947,
+  "cood_y": 418246.9271
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3108,
+  "contact": "031-240-1602",
+  "address": "경기도 수원시 팔달구 덕영대로 924 (매산로1가)",
+  "name": "CGV 수원8 4관",
+  "cood_x": 199920.1947,
+  "cood_y": 418246.9271
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3113,
+  "contact": "031-240-1602",
+  "address": "경기도 수원시 팔달구 덕영대로 924 (매산로1가, 수원역사 6층)",
+  "name": "CGV 수원8 2관",
+  "cood_x": 199920.1947,
+  "cood_y": 418246.9271
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3114,
+  "contact": "02-2269-6533",
+  "address": "서울특별시 중구 필동로 41-3  (필동3가,A-1)",
+  "name": "태형영화",
+  "cood_x": 199597.6826,
+  "cood_y": 450624.1787
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3115,
+  "contact": "031-221-7611",
+  "address": "경기도 수원시 팔달구 권광로 181, 7층~10층동 (인계동)",
+  "name": "CGV동수원 씨네앤포레",
+  "cood_x": 202803.4663,
+  "cood_y": 418036.0561
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3117,
+  "contact": "070-7016-3700",
+  "address": "경기도 수원시 영통구 봉영로 1579 (영통동, 그랜드백화점 5층)",
+  "name": "메가박스중앙(주) 영통지점 제8관",
+  "cood_x": 206280.422,
+  "cood_y": 416752.2657
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3119,
+  "contact": "070-7016-3700",
+  "address": "경기도 수원시 영통구 봉영로 1579 (영통동)",
+  "name": "메가박스중앙(주) 영통지점 어나더관",
+  "cood_x": 206280.422,
+  "cood_y": 416752.2657
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3121,
+  "contact": "031-246-2222",
+  "address": "경기도 수원시 팔달구 행궁로 71, 2층 (팔달로3가)",
+  "name": "(주)다연(메가박스 수원남문점) 1관",
+  "cood_x": 201340.8887,
+  "cood_y": 419369.9888
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3124,
+  "contact": "070-7443-4211",
+  "address": "경기도 수원시 장안구 천천로 100, 3층 (천천동)",
+  "name": "롯데시네마 북수원 1관",
+  "cood_x": 198520.4175,
+  "cood_y": 422075.1568
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3129,
+  "contact": "031-246-2222",
+  "address": "경기도 수원시 팔달구 행궁로 71, 3층 (팔달로3가)",
+  "name": "(주)다연(메가박스 수원남문점) 4관",
+  "cood_x": 201340.8887,
+  "cood_y": 419369.9888
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3132,
+  "contact": "070-7456-1570",
+  "address": "경기도 수원시 영통구 도청로 10 (이의동)",
+  "name": "롯데시네마 광교아울렛 제6관",
+  "cood_x": 204888.8556,
+  "cood_y": 420476.3916
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3133,
+  "contact": "1544-8855",
+  "address": "경기도 수원시 권선구 금곡로 219, 리더스 빌딩 10층 (금곡동)",
+  "name": "롯데시네마 서수원 1관",
+  "cood_x": 195858.1535,
+  "cood_y": 419228.5768
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3134,
+  "contact": "1544-8855",
+  "address": "경기도 수원시 권선구 금곡로 219, 리더스 빌딩 9층 (금곡동)",
+  "name": "롯데시네마 서수원 6관",
+  "cood_x": 195858.1535,
+  "cood_y": 419228.5768
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3136,
+  "contact": "031-0895-4813",
+  "address": "경기도 수원시 영통구 광교중앙로 124, 갤러리아 광교 10층 (하동)",
+  "name": "CGV광교 1관",
+  "cood_x": 205023.5829,
+  "cood_y": 420361.2482
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3146,
+  "contact": "031-303-6770",
+  "address": "경기도 수원시 장안구 경수대로 950 (조원동,아일렛 4층)",
+  "name": "CGV북수원제1관",
+  "cood_x": 200590.5117,
+  "cood_y": 422392.3846
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3154,
+  "contact": "070-7016-3700",
+  "address": "경기도 수원시 영통구 봉영로 1579 (영통동, 그랜드백화점 7층)",
+  "name": "메가박스중앙(주) 영통지점 MX관",
+  "cood_x": 206280.422,
+  "cood_y": 416752.2657
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3166,
+  "contact": "070-7016-3491",
+  "address": "경기도 수원시 권선구 경수대로 270, 터미널동, 할인점동 4층 (권선동)",
+  "name": "메가박스 수원지점 1관",
+  "cood_x": 201782.7331,
+  "cood_y": 416501.6997
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3178,
+  "contact": "02-3147-3733",
+  "address": "서울특별시 마포구 월드컵로 240 (성산동,월드컵쇼핑몰내 1층)",
+  "name": "메가박스중앙(주) 상암월드컵경기장지점 3관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3185,
+  "contact": "02-3143-6753",
+  "address": "서울특별시 마포구 양화로 153 (동교동)",
+  "name": "CGV홍대 1관",
+  "cood_x": 193105.3351,
+  "cood_y": 450464.4442
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3188,
+  "contact": "3143-7180",
+  "address": "서울특별시 마포구 양화로 176 (동교동)",
+  "name": "롯데시네마 홍대입구관 제6관",
+  "cood_x": 193330.7141,
+  "cood_y": 450564.5132
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3189,
+  "contact": "070-7465-3650",
+  "address": "서울특별시 마포구 양화로 45, 2층 (서교동, 메세나폴리스)",
+  "name": "롯데시네마 합정 제1관",
+  "cood_x": 192311.6426,
+  "cood_y": 449855.6439
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3202,
+  "address": "경기도 용인시 수지구 광교중앙로295번길 9, 3층 (상현동)",
+  "name": "CGV 광교상현 1관",
+  "cood_x": 205967.9253,
+  "cood_y": 421662.9071
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3206,
+  "contact": "02-2024-1646",
+  "address": "서울특별시 광진구 아차산로 272, 더샵스타시티 (자양동)",
+  "name": "롯데시네마 건대입구관 (제2관)",
+  "cood_x": 206349.675,
+  "cood_y": 448396.9397
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3207,
+  "address": "인천광역시 남동구 예술로 198 (구월동)",
+  "name": "CGV인천14 제3관",
+  "cood_x": 173552.3106,
+  "cood_y": 438905.868
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3210,
+  "address": "서울특별시 성동구 왕십리광장로 17, 왕십리민자역사 5층 (행당동)",
+  "name": "CGV 왕십리 9관",
+  "cood_x": 203321.5623,
+  "cood_y": 451001.8687
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3211,
+  "contact": "032-429-9255",
+  "address": "인천광역시 남동구 논현로26번길 34, 4층 (논현동)",
+  "name": "CGV 인천논현1관",
+  "cood_x": 174128.2077,
+  "cood_y": 433391.1299
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3216,
+  "contact": "032-438-2200",
+  "address": "인천광역시 남동구 논고개로 61, 6층 (논현동, 라피에스타)",
+  "name": "메가박스 인천논현 1관",
+  "cood_x": 175793.4067,
+  "cood_y": 432847.4975
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3235,
+  "address": "경기도 포천시 소흘읍 호국로 689, 4,5층",
+  "name": "CGV포천(1관)",
+  "cood_x": 213127.8331,
+  "cood_y": 480798.019
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3236,
+  "contact": "041-555-4895",
+  "address": "충청남도 천안시 동남구 성남면 5산단로 331-17",
+  "name": "천안자동차극장",
+  "cood_x": 223348.7512,
+  "cood_y": 361726.6186
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3237,
+  "contact": "02-3017-3596",
+  "address": "세종특별자치시 도움3로 19, 엠브릿지 지하 1~2층 (어진동)",
+  "name": "메가박스중앙(주) 세종청사지점 제1관",
+  "cood_x": 223042.6263,
+  "cood_y": 333554.4079
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3243,
+  "contact": "070-7493-3203",
+  "address": "서울특별시 강남구 남부순환로 2753 (도곡동)",
+  "name": "도곡7관",
+  "cood_x": 204098.596,
+  "cood_y": 442807.3172
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3254,
+  "contact": "064-727-7800",
+  "address": "제주특별자치도 제주시 한림읍 한림중앙로 71-9, 한림 작은영화관 1층",
+  "name": "한림 작은영화관 제1관",
+  "cood_x": 131888.0233,
+  "cood_y": -9408.66885
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3256,
+  "address": "경기도 용인시 기흥구 신고매로 59, 기흥 리빙파워센터 4층 (고매동)",
+  "name": "메가박스중앙(주)용인기흥지점(컴포트 1관)",
+  "cood_x": 210124.0775,
+  "cood_y": 413542.1299
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3262,
+  "contact": "031-957-8899",
+  "address": "경기도 파주시 중앙로 328, 6층 (금촌동)",
+  "name": "메가박스 파주금촌(7관)",
+  "cood_x": 180081.4098,
+  "cood_y": 473626.4208
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3263,
+  "contact": 632537300,
+  "address": "전라북도 전주시 덕진구 세병2길 10, 로마네시티 현대썬앤빌 전주 4~8층 (송천동2가)",
+  "name": "CGV 전주에코시티 1관",
+  "cood_x": 211179.4213,
+  "cood_y": 263662.3291
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3269,
+  "address": "세종특별자치시 장군면 대교해솔1길 2",
+  "name": "초이자동차극장",
+  "cood_x": 218943.5416,
+  "cood_y": 333540.7638
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3270,
+  "contact": "02-526-8815",
+  "address": "서울특별시 서초구 효령로 391, B2층 (서초동, 서초그랑자이)",
+  "name": "CGV Salon 서초",
+  "cood_x": 202245.3779,
+  "cood_y": 442987.987
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3271,
+  "address": "전라남도 화순군 화순읍 진각로 85, 군민회관,서양정 2층",
+  "name": "화순시네마 제1관",
+  "cood_x": 198581.3292,
+  "cood_y": 173255.1708
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3273,
+  "contact": "041-622-0070",
+  "address": "충청남도 천안시 서북구 불당21로 67-8, 7층 (불당동)",
+  "name": "롯데시네마 천안불당 1관",
+  "cood_x": 209591.4828,
+  "cood_y": 367992.5044
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3279,
+  "contact": "02-3017-3676",
+  "address": "경기도 광명시 양지로 17, B1층 (일직동)",
+  "name": "메가박스 컴포트 1관",
+  "cood_x": 189541.85,
+  "cood_y": 435187.7388
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3285,
+  "address": "경기도 광주시 도척면 도척윗로 278",
+  "name": "CGV DRIVE IN 곤지암",
+  "cood_x": 226747.5146,
+  "cood_y": 426157.4302
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3286,
+  "contact": "070-7404-2085",
+  "address": "경기도 시흥시 장현능곡로 155, 시흥 플랑드르 6층 (능곡동)",
+  "name": "롯데시네마 시흥장현 1관",
+  "cood_x": 182864.7428,
+  "cood_y": 429902.0714
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3291,
+  "contact": 632726800,
+  "address": "전라북도 전주시 덕진구 송천중앙로 225, 파인트리몰 5~6층 (송천동2가)",
+  "name": "롯데시네마 전주송천관 1관",
+  "cood_x": 210850.2698,
+  "cood_y": 262991.6924
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3298,
+  "address": "대구광역시 달서구 달구벌대로 1551, 골든타워 8~11층 (죽전동)",
+  "name": "CGV 대구죽전 1관",
+  "cood_x": 338717.7142,
+  "cood_y": 262242.3856
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3305,
+  "address": "경기도 동두천시 평화로 2346, 6층 (생연동)",
+  "name": "동두천CGV",
+  "cood_x": 205060.0756,
+  "cood_y": 488284.851
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3307,
+  "contact": "062-974-1902",
+  "address": "광주광역시 광산구 임방울대로826번길 29-31 (쌍암동)",
+  "name": "CGV첨단점 1관",
+  "cood_x": 186300.4016,
+  "cood_y": 190814.0515
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3313,
+  "contact": "611-7000",
+  "address": "광주광역시 광산구 풍영철길로 15 (우산동)",
+  "name": "메가박스 하남 7관",
+  "cood_x": 182753.5594,
+  "cood_y": 184879.9299
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3316,
+  "address": "광주광역시 광산구 무진대로 272-8 (우산동)",
+  "name": "롯데시네마 광산 4관",
+  "cood_x": 182582.4651,
+  "cood_y": 184555.2646
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3320,
+  "contact": "616-2901",
+  "address": "광주광역시 광산구 장신로 98 (장덕동)",
+  "name": "롯데시네마 수완 4관",
+  "cood_x": 183530.6411,
+  "cood_y": 187845.5287
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3327,
+  "contact": "055-900-9551",
+  "address": "경상남도 김해시 내외중앙로 137, 4층 (내동, 휴앤락몰)",
+  "name": "CGV 김해9 제1관",
+  "cood_x": 370012.373,
+  "cood_y": 195252.4469
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3334,
+  "contact": "055-365-5885",
+  "address": "경상남도 양산시 강변로 440 (중부동)",
+  "name": "메가박스 양산점 4관",
+  "cood_x": 384210.7454,
+  "cood_y": 206199.7983
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3338,
+  "address": "경상남도 사천시 사천읍 항공로 6",
+  "name": "롯데시네마사천 (제1관)",
+  "cood_x": 298639.3353,
+  "cood_y": 176300.2788
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3340,
+  "address": "경상남도 사천시 사천읍 항공로 8",
+  "name": "롯데시네마사천(제3관)",
+  "cood_x": 298592.2278,
+  "cood_y": 176301.7482
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3342,
+  "contact": "055-832-1228",
+  "address": "경상남도 사천시 해안관광로 109-10 (실안동)",
+  "name": "메가박스삼천포점 3관",
+  "cood_x": 294701.35,
+  "cood_y": 161674.8073
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3345,
+  "contact": "055-372-1265",
+  "address": "경상남도 양산시 물금읍 백호로 68, 5층 (큐엠시네마타워)",
+  "name": "롯데시네마 양산물금관(1관)",
+  "cood_x": 381978.8298,
+  "cood_y": 203906.072
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3352,
+  "contact": "055-312-7418",
+  "address": "경상남도 김해시 삼문로 12 (대청동)",
+  "name": "씨지브이 김해장유 제1관~제6관",
+  "cood_x": 364053.3354,
+  "cood_y": 189566.1012
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3353,
+  "address": "경상남도 밀양시 백민로 75-1 (내이동)",
+  "name": "밀양시네마1관",
+  "cood_x": 358367.4296,
+  "cood_y": 223580.4754
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3355,
+  "contact": "070.7465.3305",
+  "address": "경상남도 김해시 장유로 469, 3~4층 (신문동)",
+  "name": "롯데시네마 김해아울렛 제3관",
+  "cood_x": 366527.6478,
+  "cood_y": 188848.1937
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3358,
+  "contact": "055-270-4801",
+  "address": "경상남도 창원시 의창구 창원대로397번길 6 (팔용동)",
+  "name": "CGV 창원6 제1관",
+  "cood_x": 349399.9707,
+  "cood_y": 194048.3347
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3364,
+  "contact": "02-3147-3772",
+  "address": "경상남도 창원시 성산구 용지로 58 (중앙동)",
+  "name": "메가박스창원6관",
+  "cood_x": 352494.9464,
+  "cood_y": 192629.5837
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3371,
+  "address": "경상남도 창원시 마산회원구 3·15대로 736 (합성동)",
+  "name": "씨지브이마산8 1관",
+  "cood_x": 343966.6217,
+  "cood_y": 194288.6445
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3379,
+  "address": "강원도 동해시 한섬로 111-7 (천곡동)",
+  "name": "롯데시네마동해관2관",
+  "cood_x": 386937.2531,
+  "cood_y": 448759.4186
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3384,
+  "address": "강원도 철원군 갈말읍 삼부연로 42, 철원문화원",
+  "name": "철원작은영화관 뚜루 2관",
+  "cood_x": 227352.3039,
+  "cood_y": 515864.1342
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3385,
+  "contact": "033-563-5703",
+  "address": "강원도 정선군 정선읍 봉양6길 10",
+  "name": "아리아리 정선시네마 2관",
+  "cood_x": 347325.5597,
+  "cood_y": 432025.403
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3386,
+  "contact": "636-7538",
+  "address": "강원도 속초시 미시령로2983번길 111 (장사동)",
+  "name": "태형영화",
+  "cood_x": 333788.7943,
+  "cood_y": 524104.9594
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3387,
+  "contact": "033-334-7053",
+  "address": "강원도 평창군 용평면 경강로 1689, 해피웨딩홀 2층",
+  "name": "HAPPY700 평창시네마 1관",
+  "cood_x": 325024.793,
+  "cood_y": 455006.7428
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3391,
+  "address": "강원도 속초시 번영로 155 (영랑동)",
+  "name": "이스트라인시네마(이동영화)",
+  "cood_x": 339073.5232,
+  "cood_y": 524509.0769
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3393,
+  "contact": "053-608-5000",
+  "address": "대구광역시 달성군 가창면 가창로 891",
+  "name": "씨네밸리",
+  "cood_x": 347783.2404,
+  "cood_y": 255360.4759
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3397,
+  "address": "경기도 화성시 동탄대로 181, 레이크꼬모 B2층 (송동)",
+  "name": "CGV 동탄호수공원 제2관",
+  "cood_x": 209253.3874,
+  "cood_y": 407725.1146
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3403,
+  "address": "경기도 화성시 향남읍 상신하길로298번길 7-21, 7층",
+  "name": "롯데시네마 향남(제4관)",
+  "cood_x": 192141.2896,
+  "cood_y": 401495.4368
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3405,
+  "contact": "031-378-9045",
+  "address": "경기도 화성시 동탄대로 537, 5-7층 (오산동)",
+  "name": "CGV동탄역 제2관",
+  "cood_x": 208572.1677,
+  "cood_y": 411122.5782
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3406,
+  "contact": "031-613-9161",
+  "address": "경기도 화성시 동탄지성로 11 (반송동)",
+  "name": "메가박스 동탄 1관",
+  "cood_x": 206392.0983,
+  "cood_y": 411409.9034
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3420,
+  "contact": 3151833836,
+  "address": "경기도 화성시 봉담읍 동화길 51, 원희캐슬봉담 221호",
+  "name": "CGV화성봉담 1관",
+  "cood_x": 195981.6589,
+  "cood_y": 413019.6248
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3427,
+  "contact": "070-7425-5741",
+  "address": "경기도 화성시 효행로 1052, 씨네샤르망 (병점동)",
+  "name": "롯데시네마 병점관",
+  "cood_x": 203710.058,
+  "cood_y": 412437.8082
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3438,
+  "contact": "070-4914-5901",
+  "address": "서울특별시 노원구 동일로 1414 (상계동)",
+  "name": "롯데시네마 노원(제7관)",
+  "cood_x": 205320.2848,
+  "cood_y": 461419.8818
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3440,
+  "address": "서울특별시 노원구 동일로204가길 12 (중계동, 홈플러스)",
+  "name": "CGV 중계 제7관",
+  "cood_x": 205985.9533,
+  "cood_y": 459730.4378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3447,
+  "contact": "02-935-0930",
+  "address": "서울특별시 노원구 동일로 1660, 3층~9층 (상계동, 롯데시네마 수락산)",
+  "name": "롯데시네마 노원수락산역 제1관",
+  "cood_x": 204839.9779,
+  "cood_y": 463796.3812
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3448,
+  "contact": "02-971-7540",
+  "address": "서울특별시 노원구 섬밭로 258 (중계동)",
+  "name": "CGV 하계 제1관",
+  "cood_x": 205645.892,
+  "cood_y": 459609.0125
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3455,
+  "contact": "02-951-0206",
+  "address": "서울특별시 노원구 노해로 480 (상계동, 조광빌딩)",
+  "name": "더숲 아트시네마 제1관",
+  "cood_x": 205352.2249,
+  "cood_y": 461310.6678
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3456,
+  "contact": "02-951-0206",
+  "address": "서울특별시 노원구 노해로 480, 조광빌딩 지하2층 (상계동)",
+  "name": "더숲 아트시네마 제2관",
+  "cood_x": 205352.2249,
+  "cood_y": 461310.6678
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3457,
+  "address": "서울특별시 강서구 공항대로 247, 4층 (마곡동, 퀸즈파크나인)",
+  "name": "메가박스중앙(주) 마곡지점 4관",
+  "cood_x": 185371.2988,
+  "cood_y": 450793.7712
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3460,
+  "address": "서울특별시 강동구 성내로 48 (성내동)",
+  "name": "메가박스 강동1",
+  "cood_x": 210992.4973,
+  "cood_y": 447372.6172
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3465,
+  "address": "서울특별시 동대문구 왕산로 214, 8층,9층 (전농동, 청량리민자역사)",
+  "name": "롯데시네마청량리 제5관",
+  "cood_x": 204081.2821,
+  "cood_y": 453187.3952
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3469,
+  "address": "서울특별시 강동구 천호옛길 85 (성내동)",
+  "name": "롯데시네마 1관",
+  "cood_x": 211008.0193,
+  "cood_y": 448270.5004
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3475,
+  "contact": "488-1411",
+  "address": "서울특별시 강동구 천호옛길 85  (성내동)",
+  "name": "롯데시네마 7관",
+  "cood_x": 211008.0193,
+  "cood_y": 448270.5004
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3483,
+  "address": "서울특별시 강동구 양재대로 1571, 4층 (천호동)",
+  "name": "CGV 천호 2관",
+  "cood_x": 212501.3691,
+  "cood_y": 449282.3104
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3502,
+  "address": "서울특별시 강남구 도산대로 108  (논현동)",
+  "name": "클래식시네마스페이스(주)",
+  "cood_x": 201753.1885,
+  "cood_y": 446003.4452
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3503,
+  "contact": "2111-1135",
+  "address": "서울특별시 구로구 새말로 97, 12층 (구로동, 테크노마트 신도림점)",
+  "name": "CINE Q 신도림점 제10관",
+  "cood_x": 190232.5245,
+  "cood_y": 444978.6827
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3511,
+  "address": "서울특별시 광진구 아차산로30길 26, 몰오브케이 3층 (자양동)",
+  "name": "CGV 건대입구 제1관",
+  "cood_x": 205845.9467,
+  "cood_y": 448616.8477
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3513,
+  "address": "서울특별시 광진구 아차산로30길 26, 몰오브케이 4층 (자양동)",
+  "name": "CGV 건대입구 제3관",
+  "cood_x": 205845.9467,
+  "cood_y": 448616.8477
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3521,
+  "address": "서울특별시 도봉구 도봉로 558 (창동)",
+  "name": "메가박스 창동 1관",
+  "cood_x": 203351.8658,
+  "cood_y": 461358.4054
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3527,
+  "contact": "6094-9600",
+  "address": "서울특별시 구로구 구로중앙로 152 (구로동, 애경백화점 6층)",
+  "name": "CGV구로10제6관",
+  "cood_x": 189570.3609,
+  "cood_y": 444336.0513
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3535,
+  "contact": "539-9407",
+  "address": "서울특별시 강남구 강남대로 438 (역삼동,스타플렉스 6층)",
+  "name": "CGV 강남제2관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3536,
+  "contact": "539-9407",
+  "address": "서울특별시 강남구 강남대로 438 (역삼동,스타플렉스 8층)",
+  "name": "CGV 강남제3관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3537,
+  "contact": "539-9407",
+  "address": "서울특별시 강남구 강남대로 438 (역삼동,스타플랙스 10층)",
+  "name": "CGV 강남제4관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3539,
+  "contact": "539-9407",
+  "address": "서울특별시 강남구 강남대로 438 (역삼동,스타플렉스 10층)",
+  "name": "CGV 강남제6관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3540,
+  "contact": "3446-0105",
+  "address": "서울특별시 강남구 압구정로30길 45 (신사동)",
+  "name": "씨네 드 쉐프 A관",
+  "cood_x": 202530.1848,
+  "cood_y": 446900.9612
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3541,
+  "address": "서울특별시 강서구 하늘길 38 (방화동, 스카이파크)",
+  "name": "롯데시네마 김포공항 (1관)",
+  "cood_x": 182524.8238,
+  "cood_y": 451438.2509
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3548,
+  "contact": "540-8150",
+  "address": "서울특별시 강남구 도산대로 116 (논현동,외2필지)",
+  "name": "롯데시네마 브로드웨이 6관",
+  "cood_x": 201836.2576,
+  "cood_y": 446034.6865
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3549,
+  "contact": "070-8233-4321",
+  "address": "서울특별시 강남구 압구정로10길 9, 지하2층 (신사동)",
+  "name": "이봄씨어터",
+  "cood_x": 201876.7638,
+  "cood_y": 446752.4509
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3550,
+  "contact": "070-7017-6735",
+  "address": "서울특별시 강남구 영동대로 513 (삼성동, 코엑스)",
+  "name": "코엑스 소상영관 B",
+  "cood_x": 205130.5917,
+  "cood_y": 445590.0968
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3552,
+  "address": "서울특별시 강남구 언주로150길 14  (논현동)",
+  "name": "씨네예술관 1관",
+  "cood_x": 203069.2121,
+  "cood_y": 446531.9041
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3554,
+  "address": "서울특별시 강남구 도산대로 128  (논현동)",
+  "name": "씨네마강남 1관",
+  "cood_x": 201924.4852,
+  "cood_y": 446086.6929
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3556,
+  "contact": "070-7017-6736",
+  "address": "서울특별시 강남구 영동대로 513, 코엑스 지하1층 (삼성동)",
+  "name": "코엑스 부티크 프라이빗 1",
+  "cood_x": 205130.5917,
+  "cood_y": 445590.0968
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3558,
+  "contact": "070-7491-6255",
+  "address": "서울특별시 구로구 경인로 662 (신도림동, 디큐브시티 제타워동 7~8층 일부)",
+  "name": "롯데컬처웍스(주)롯데시네마 제1관",
+  "cood_x": 190107.0454,
+  "cood_y": 445157.6264
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3566,
+  "contact": "070-7017-9893",
+  "address": "서울특별시 강서구 화곡로 142, 401,501호 (화곡동, 메가박스(주)화곡점)",
+  "name": "메가박스중앙(주) 화곡지점 1관",
+  "cood_x": 185574.9372,
+  "cood_y": 448716.2747
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3571,
+  "address": "서울특별시 강서구 양천로 476, 4,5,6층 (등촌동)",
+  "name": "롯데시네마 가양 6관",
+  "cood_x": 186966.0362,
+  "cood_y": 451047.2873
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3580,
+  "address": "서울특별시 광진구 광나루로56길 85, 10층 (구의동, 테크노마트)",
+  "name": "CGV강변11 제5관",
+  "cood_x": 208394.4164,
+  "cood_y": 448165.28
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3593,
+  "contact": "02-461-1941",
+  "address": "서울특별시 광진구 능동로 289 (군자동)",
+  "name": "메가박스 군자9",
+  "cood_x": 206852.3609,
+  "cood_y": 450393.661
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3601,
+  "address": "서울특별시 강남구 도산대로 310  (논현동)",
+  "name": "씨네하우스 2관",
+  "cood_x": 203064.6402,
+  "cood_y": 446594.3191
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3603,
+  "contact": "540-1637",
+  "address": "서울특별시 강남구 강남대로 422 (역삼동)",
+  "name": "메가박스 씨티(강남대로)3관",
+  "cood_x": 202337.2215,
+  "cood_y": 444235.2846
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3606,
+  "address": "서울특별시 강남구 도산대로 152, 2~3층 (논현동, 영동빌딩)",
+  "name": "코엑스 2관",
+  "cood_x": 202160.3319,
+  "cood_y": 446215.9356
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3608,
+  "address": "서울특별시 강남구 학동로 171  (논현동)",
+  "name": "(주)케이엠티브이",
+  "cood_x": 202510.1756,
+  "cood_y": 445767.5124
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3609,
+  "contact": "3446-0105",
+  "address": "서울특별시 강남구 논현로 848 (신사동)",
+  "name": "CGV압구정 IMAX관",
+  "cood_x": 202478.5995,
+  "cood_y": 446927.6243
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3613,
+  "address": "서울특별시 강남구 학동로 118  (논현동)",
+  "name": "강남비디오소극장",
+  "cood_x": 202039.7404,
+  "cood_y": 445481.8844
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3624,
+  "address": "서울특별시 강남구 도산대로 156, 2~3층 (논현동, 중앙엠앤비사옥)",
+  "name": "코엑스 컴포트 6관",
+  "cood_x": 202205.4307,
+  "cood_y": 446211.2208
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3632,
+  "contact": "539-9407",
+  "address": "서울특별시 강남구 강남대로 438 (역삼동, 스타플렉스)",
+  "name": "CGV 강남제1관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3638,
+  "address": "서울특별시 강남구 강남대로 438  (역삼동)",
+  "name": "주공공이 1관",
+  "cood_x": 202262.4579,
+  "cood_y": 444382.5423
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3643,
+  "contact": "540-8150",
+  "address": "서울특별시 강남구 도산대로8길 8 (논현동,2층)",
+  "name": "롯데시네마 브로드웨이 1관",
+  "cood_x": 201869.7776,
+  "cood_y": 446024.4102
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3644,
+  "contact": "540-8150",
+  "address": "서울특별시 강남구 도산대로8길 8 (논현동,4층)",
+  "name": "롯데시네마 브로드웨이 2관",
+  "cood_x": 201869.7776,
+  "cood_y": 446024.4102
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3645,
+  "contact": "3447-0650",
+  "address": "서울특별시 강남구 도산대로8길 8, 1층 (논현동)",
+  "name": "롯데시네마 브로드웨이 3관",
+  "cood_x": 201869.7776,
+  "cood_y": 446024.4102
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3646,
+  "contact": "540-8150",
+  "address": "서울특별시 강남구 도산대로8길 8 (논현동,1층)",
+  "name": "롯데시네마 브로드웨이 4관",
+  "cood_x": 201869.7776,
+  "cood_y": 446024.4102
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3648,
+  "contact": "753-0391",
+  "address": "서울특별시 강남구 도산대로 323 (신사동)",
+  "name": "CGV 청담씨네시티 CINEMA SWEETBOX PREMIUM 관",
+  "cood_x": 203205.417,
+  "cood_y": 446740.5529
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3652,
+  "address": "서울특별시 강남구 도산대로 323  (신사동)",
+  "name": "씨네시티11관",
+  "cood_x": 203205.417,
+  "cood_y": 446740.5529
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3666,
+  "contact": "320-6407",
+  "address": "경기도 부천시 길주로 210, 부천시청 1층 (중동)",
+  "name": "판타스틱큐브",
+  "cood_x": 179231.3785,
+  "cood_y": 444548.8352
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3667,
+  "contact": "02-3147-3741",
+  "address": "대구광역시 동구 팔공로49길 51, 2층 (봉무동)",
+  "name": "메가박스중앙(주) 대구이시아지점 1관",
+  "cood_x": 347543.7468,
+  "cood_y": 270181.3331
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3668,
+  "contact": "02-3147-3741",
+  "address": "대구광역시 동구 팔공로49길 51 (봉무동)",
+  "name": "메가박스중앙(주) 대구이시아지점 3관",
+  "cood_x": 347543.7468,
+  "cood_y": 270181.3331
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3674,
+  "address": "경기도 용인시 기흥구 기흥역로 63, 102동 5층 (구갈동, 힐스테이트 기흥)",
+  "name": "롯데시네마 용인기흥 3관",
+  "cood_x": 210353.7826,
+  "cood_y": 419192.2268
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3681,
+  "address": "전라북도 익산시 무왕로 1052 (영등동)",
+  "name": "씨지브이익산 제3관",
+  "cood_x": 197560.6205,
+  "cood_y": 273085.2106
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3688,
+  "contact": "509-3400",
+  "address": "인천광역시 계양구 장제로 738, 8층 (작전동)",
+  "name": "CGV계양 2관",
+  "cood_x": 176465.2631,
+  "cood_y": 447989.6417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3689,
+  "contact": "509-3400",
+  "address": "인천광역시 계양구 장제로 738 (작전동,8층)",
+  "name": "CGV계양 3관",
+  "cood_x": 176465.2631,
+  "cood_y": 447989.6417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3691,
+  "contact": "509-3400",
+  "address": "인천광역시 계양구 장제로 738 (작전동,10층)",
+  "name": "CGV계양 5관",
+  "cood_x": 176465.2631,
+  "cood_y": 447989.6417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3696,
+  "contact": "02-3017-3673",
+  "address": "대전광역시 유성구 테크노중앙로 123, 현대프리미엄아울렛 대전점 3~4층 (용산동)",
+  "name": "메가박스중앙(주)대전현대아울렛지점 1관",
+  "cood_x": 235682.7182,
+  "cood_y": 324850.0178
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3703,
+  "contact": "031-434-1230",
+  "address": "경기도 시흥시 정왕대로 210, E MART시화점 10층 (정왕동)",
+  "name": "CGV정왕 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3706,
+  "contact": "031-949-3636",
+  "address": "경기도 파주시 경의로 1074, 601호 (야당동)",
+  "name": "CGV 파주야당 1관",
+  "cood_x": 178762.9444,
+  "cood_y": 467888.442
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3711,
+  "address": "경기도 하남시 미사대로 520, 현대지식산업센터 한강미사2차(25BL) 지하 1층 (덕풍동)",
+  "name": "롯데시네마 하남미사 1관",
+  "cood_x": 217964.3538,
+  "cood_y": 450753.9415
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3719,
+  "address": "경상북도 의성군 의성읍 후죽4길 6, 의성 청소년 문화의 집",
+  "name": "의성작은영화관 1관",
+  "cood_x": 352225.2637,
+  "cood_y": 318284.3256
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3721,
+  "address": "경기도 화성시 동탄역로 160, 7층 (오산동)",
+  "name": "롯데시네마 동탄 샤롯데",
+  "cood_x": 208569.6424,
+  "cood_y": 410949.2635
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3728,
+  "contact": "054-774-1133",
+  "address": "경상북도 경주시 유림로5번길 85-46, 황성동복합시설 (황성동)",
+  "name": "롯데시네마 경주황성관 1관",
+  "cood_x": 400240.0532,
+  "cood_y": 266781.9324
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3734,
+  "contact": "02-2214-7718",
+  "address": "전라남도 해남군 해남읍 남부순환로 22, 작은영화관 청소년복합문화센터",
+  "name": "해남시네마 1관",
+  "cood_x": 163761.863,
+  "cood_y": 119065.1832
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3736,
+  "contact": "02-371-6660",
+  "address": "서울특별시 마포구 양화로 186, LC TOWER 7~10층 (동교동)",
+  "name": "CGV연남 6관",
+  "cood_x": 193383.4159,
+  "cood_y": 450602.3823
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3742,
+  "address": "충청남도 천안시 서북구 번영로 201, 3-4층 (불당동)",
+  "name": "CGV 천안시청 1관",
+  "cood_x": 209752.6489,
+  "cood_y": 368640.5444
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3750,
+  "address": "경기도 용인시 기흥구 기흥로 58-1, 기흥ICT밸리 B동 지하2층 (구갈동)",
+  "name": "기흥CGV 1관",
+  "cood_x": 210517.5679,
+  "cood_y": 419792.271
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3756,
+  "contact": "054-780-7800",
+  "address": "경상북도 울진군 후포면 후포삼율로 276, 엠시네마 자동차극장",
+  "name": "엠시네마 자동차극장",
+  "cood_x": 418297.8279,
+  "cood_y": 357509.7606
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3757,
+  "contact": "02-3017-3660",
+  "address": "대전광역시 유성구 엑스포로 1, 8층 (도룡동)",
+  "name": "컴포트 1관",
+  "cood_x": 234414.0079,
+  "cood_y": 319679.5356
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3764,
+  "contact": "053-986-6200",
+  "address": "대구광역시 북구 동화천로 290, 5층 (연경동)",
+  "name": "CGV대구연경 1관",
+  "cood_x": 346360.7078,
+  "cood_y": 272433.9057
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3765,
+  "contact": "053-986-6200",
+  "address": "대구광역시 북구 동화천로 290, 4층 (연경동)",
+  "name": "CGV대구연경 2관",
+  "cood_x": 346360.7078,
+  "cood_y": 272433.9057
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3770,
+  "contact": "054-333-6464",
+  "address": "경상북도 영천시 시장로 96, 고은스퀘어 2층 (완산동)",
+  "name": "롯데시네마 영천관",
+  "cood_x": 375009.8483,
+  "cood_y": 275376.5126
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3771,
+  "contact": "061-382-0305",
+  "address": "전라남도 담양군 담양읍 지침6길 29",
+  "name": "OLC 담양 담빛시네마 2관",
+  "cood_x": 198614.7339,
+  "cood_y": 201877.1753
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3773,
+  "contact": "041-900-5020",
+  "address": "충청남도 천안시 동남구 청수11로 35, 7~8층 (청당동)",
+  "name": "롯데시네마 천안청당 1관",
+  "cood_x": 213863.1817,
+  "cood_y": 364641.4235
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3779,
+  "contact": "032-429-0116",
+  "address": "인천광역시 미추홀구 경인로 372, 지하2층 B2200호 (주안동, 포레나 미추홀)",
+  "name": "CGV인천시민공원 3관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3782,
+  "contact": "031-334-2299",
+  "address": "경기도 용인시 처인구 성산로170번길 23 (역북동)",
+  "name": "CGV DRIVE IN 용인크랙사이드",
+  "cood_x": 216962.0116,
+  "cood_y": 416297.2181
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3785,
+  "contact": "061-472-1117",
+  "address": "전라남도 영암군 영암읍 낭주로 135-1",
+  "name": "영암기찬시네마 1관",
+  "cood_x": 172614.9068,
+  "cood_y": 144662.3744
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3787,
+  "contact": "054-932-7717",
+  "address": "경상북도 성주군 성주읍 경산길 17, 3층",
+  "name": "별고을시네마 2관",
+  "cood_x": 315947.6963,
+  "cood_y": 269282.2733
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3788,
+  "contact": "070-5154-0270",
+  "address": "제주특별자치도 제주시 과원로 128, 지하1층 (연동)",
+  "name": "롯데시네마 제주연동 1관",
+  "cood_x": 152952.6833,
+  "cood_y": -1629.974336
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3795,
+  "contact": "032-721-7053",
+  "address": "인천광역시 서구 중봉대로 610, 마루힐프라자 8~11층 (청라동)",
+  "name": "씨네큐 청라 1관",
+  "cood_x": 169021.5827,
+  "cood_y": 448018.5395
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3802,
+  "contact": "02-3147-3865",
+  "address": "서울특별시 강남구 영동대로 513, 코엑스 2~1층 (삼성동)",
+  "name": "코엑스 부티크 프라이빗 2호",
+  "cood_x": 205130.5917,
+  "cood_y": 445590.0968
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3803,
+  "contact": "041-545-0080",
+  "address": "충청남도 아산시 온천대로 1538, 6층 (온천동)",
+  "name": "CGV아산 1관",
+  "cood_x": 200683.7572,
+  "cood_y": 364318.9062
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3811,
+  "contact": "031-5189-3709",
+  "address": "경기도 화성시 마도면 마도북로 387, 마도문화센터 3층",
+  "name": "화성시 작은영화관 1관",
+  "cood_x": 179538.5103,
+  "cood_y": 411481.3496
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3813,
+  "contact": "1544-1533",
+  "address": "충청북도 보은군 보은읍 뱃들로 68-22, 결초보은 문화누리관",
+  "name": "보은영화관 with 씨네큐 1관",
+  "cood_x": 264725.427,
+  "cood_y": 332057.7089
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3815,
+  "address": "경기도 남양주시 별내중앙로 10, 지하 2층 (별내동)",
+  "name": "롯데시네마 별내 1관",
+  "cood_x": 211165.1672,
+  "cood_y": 460284.288
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3820,
+  "contact": "070-4159-8881",
+  "address": "부산광역시 강서구 명지국제6로 107, 대방디엠시티 센텀오션2차 2층 (명지동)",
+  "name": "롯데시네마 부산 명지점 1관",
+  "cood_x": 374253.1123,
+  "cood_y": 178757.4233
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3821,
+  "contact": "032-866-1003",
+  "address": "인천광역시 미추홀구 숙골로88번길 12, 지하 1층 (도화동, 더샵 인천스카이타워 1단지)",
+  "name": "CGV 인천도화점 1관",
+  "cood_x": 170309.6602,
+  "cood_y": 440927.7482
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3826,
+  "contact": "032-866-1003",
+  "address": "인천광역시 미추홀구 숙골로88번길 12, 지하1층 (도화동, 더샵 인천스카이타워 1단지)",
+  "name": "CGV 인천도화점 2관",
+  "cood_x": 170309.6602,
+  "cood_y": 440927.7482
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3827,
+  "contact": "051-461-4432",
+  "address": "부산광역시 기장군 기장읍 동부산관광로 8, [*미고시]",
+  "name": "오시리아 자동차야외극장",
+  "cood_x": 401648.1724,
+  "cood_y": 190623.5211
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3828,
+  "contact": "070-7404-2070",
+  "address": "경기도 성남시 수정구 창업로 18, 지하1층~3층 (시흥동)",
+  "name": "롯데시네마 판교 1관",
+  "cood_x": 208628.0191,
+  "cood_y": 434627.0392
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3835,
+  "contact": "033-632-8888",
+  "address": "강원도 속초시 중앙로121번길 28, 3층 (금호동)",
+  "name": "롯데시네마 속초1관",
+  "cood_x": 339101.5835,
+  "cood_y": 523440.5995
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3840,
+  "address": "경상남도 함안군 가야읍 가야12길 12, 함안군작은영화관",
+  "name": "함안군 작은영화관 1관",
+  "cood_x": 328281.8131,
+  "cood_y": 198488.9142
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3842,
+  "contact": "033-541-2107",
+  "address": "강원도 삼척시 도계읍 도계로 223, NH농협은행 도계지점 2층",
+  "name": "도계작은영화관(가람영화관 3관)",
+  "cood_x": 381255.8726,
+  "cood_y": 416153.7369
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3847,
+  "contact": "070-4159-8881",
+  "address": "부산광역시 강서구 명지국제6로 107, 대방디엠시티 센텀오션2 2층 (명지동)",
+  "name": "롯데시네마 부산 명지점 5관",
+  "cood_x": 374253.1123,
+  "cood_y": 178757.4233
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3851,
+  "contact": "062-973-9611",
+  "address": "광주광역시 광산구 앰코로 35, 폭스존 (쌍암동)",
+  "name": "메가박스 첨단 1관",
+  "cood_x": 186484.1039,
+  "cood_y": 191340.9596
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3852,
+  "contact": "062-973-9611",
+  "address": "광주광역시 광산구 앰코로 35 (쌍암동)",
+  "name": "메가박스 첨단 2관",
+  "cood_x": 186484.1039,
+  "cood_y": 191340.9596
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3870,
+  "contact": "053-326-0600",
+  "address": "대구광역시 북구 학정로 422, 6층 (구암동, 태을빌딩)",
+  "name": "롯데시네마 프리미엄 칠곡 1관",
+  "cood_x": 341042.0641,
+  "cood_y": 272450.2185
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3873,
+  "contact": "053-324-0600",
+  "address": "대구광역시 북구 학정로 422, 8층 (구암동, 태을빌딩)",
+  "name": "롯데시네마 프리미엄 칠곡 4관",
+  "cood_x": 341042.0641,
+  "cood_y": 272450.2185
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3876,
+  "contact": "070-5057-5928",
+  "address": "대구광역시 북구 동암로 100, 6층 (동천동)",
+  "name": "메가박스 북대구지점 제1관",
+  "cood_x": 340843.6291,
+  "cood_y": 272656.8378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3878,
+  "contact": "070-5057-5928",
+  "address": "대구광역시 북구 동암로 100, 8층 (동천동)",
+  "name": "메가박스 북대구지점 제3관",
+  "cood_x": 340843.6291,
+  "cood_y": 272656.8378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3880,
+  "contact": "070-5057-5928",
+  "address": "대구광역시 북구 동암로 100, 10층 (동천동)",
+  "name": "메가박스 북대구지점 제5관",
+  "cood_x": 340843.6291,
+  "cood_y": 272656.8378
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3882,
+  "address": "대구광역시 북구 침산로 93 (칠성동2가)",
+  "name": "CGV대구 6관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3892,
+  "contact": "054-854-5500",
+  "address": "경상북도 안동시 문화광장길 45 (삼산동)",
+  "name": "중앙시네마",
+  "cood_x": 354870.8987,
+  "cood_y": 341839.8127
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3897,
+  "contact": "070-7477-0032",
+  "address": "경상남도 김해시 김해대로 2352, 4~5층 (부원동, 아이스퀘어몰)",
+  "name": "롯데시네마 김해부원 제1관",
+  "cood_x": 371470.3804,
+  "cood_y": 193470.527
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3907,
+  "contact": "033-441-7057",
+  "address": "강원도 화천군 상서면 영서로 7739, DMZ시네마, 다목적체육관",
+  "name": "화천읍관(산천어시네마)",
+  "cood_x": 257959.6107,
+  "cood_y": 523204.6505
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3910,
+  "contact": "033-375-7053",
+  "address": "강원도 영월군 영월읍 관풍헌길 66",
+  "name": "영월시네마 1관",
+  "cood_x": 330509.1786,
+  "cood_y": 410194.3273
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3915,
+  "contact": "033-681-4146",
+  "address": "강원도 고성군 간성읍 간성로 71-7",
+  "name": "고성문화의 집",
+  "cood_x": 328115.669,
+  "cood_y": 542759.3291
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3917,
+  "contact": "070-7405-2491",
+  "address": "경기도 광명시 오리로 970, 7,8층 (광명동, 크로앙스)",
+  "name": "롯데시네마 광명6관",
+  "cood_x": 187160.8742,
+  "cood_y": 441928.3533
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3918,
+  "contact": "02-6226-2701",
+  "address": "경기도 광명시 일직로 17, 6,7층 (일직동)",
+  "name": "롯데시네마 광명아울렛 5관",
+  "cood_x": 189614.4451,
+  "cood_y": 435789.264
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3924,
+  "contact": "070-7439-2201",
+  "address": "경기도 성남시 수정구 위례광장로 104, 지하1층 (창곡동, 위례한화오벨리스크센트럴스퀘어)",
+  "name": "롯데컬처웍스(주) 롯데시네마위례 3관",
+  "cood_x": 212425.5601,
+  "cood_y": 441216.3704
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3925,
+  "contact": "031-319-0902",
+  "address": "경기도 시흥시 마유로418번길 10 (정왕동,외1필지 4층)",
+  "name": "롯데시네마(시화관) 제1관",
+  "cood_x": 177047.2889,
+  "cood_y": 427744.5565
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3927,
+  "address": "경기도 성남시 분당구 성남대로925번길 16 (야탑동,테마폴리스 지하2층)",
+  "name": "CGV야탑8 제5관",
+  "cood_x": 211202.1488,
+  "cood_y": 434560.9118
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3930,
+  "contact": "031-499-8372",
+  "address": "경기도 시흥시 서울대학로278번길 61, 서영베니스스퀘어 7~8층 (정왕동)",
+  "name": "CGV 배곧3관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3938,
+  "contact": "070-4288-1918",
+  "address": "경기도 성남시 중원구 성남대로 1136, 9층 (성남동)",
+  "name": "CGV 성남모란1관",
+  "cood_x": 211415.2468,
+  "cood_y": 436591.6391
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3943,
+  "contact": "070-4288-1918",
+  "address": "경기도 성남시 중원구 성남대로 1136, 9층 (성남동, 롯데시네마)",
+  "name": "CGV 성남모란6관",
+  "cood_x": 211415.2468,
+  "cood_y": 436591.6391
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3944,
+  "contact": 231473754,
+  "address": "경기도 성남시 분당구 황새울로 332 (서현동, 씨네프라자)",
+  "name": "메가박스중앙(주) 분당지점 (스위트룸)",
+  "cood_x": 210762.7525,
+  "cood_y": 431501.4476
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3945,
+  "address": "경기도 성남시 분당구 서현로180번길 19, 1층 (서현동)",
+  "name": "CGV 서현점 1관",
+  "cood_x": 210773.548,
+  "cood_y": 431704.1073
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3951,
+  "address": "경기도 광주시 중앙로 89 (역동)",
+  "name": "CGV 경기광주점 4관",
+  "cood_x": 222812.8759,
+  "cood_y": 433972.2643
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3954,
+  "address": "경기도 성남시 분당구 판교역로146번길 20, 8층 (백현동, 현대백화점)",
+  "name": "CGV 판교 제1관",
+  "cood_x": 209850.447,
+  "cood_y": 432304.1494
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3964,
+  "address": "경기도 안성시 공도읍 서동대로 4478",
+  "name": "롯데시네마 안성관",
+  "cood_x": 217695.6371,
+  "cood_y": 389592.8954
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3965,
+  "address": "경기도 안성시 아양2로 109 (석정동)",
+  "name": "CGV 안성 8관",
+  "cood_x": 222819.6917,
+  "cood_y": 390088.2464
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3973,
+  "contact": "031-404-0186",
+  "address": "경기도 시흥시 복지로 90 (대야동,7층)",
+  "name": "CGV 시흥 제1관",
+  "cood_x": 181498.4961,
+  "cood_y": 438335.2257
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3983,
+  "contact": "02-2684-7080",
+  "address": "경기도 광명시 철산로30번길 14 (철산동)",
+  "name": "OLC광명철산극장 제GH관",
+  "cood_x": 188408.9794,
+  "cood_y": 441443.5179
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3986,
+  "contact": "031-506-3800",
+  "address": "경기도 시흥시 배곧3로 96, 7-8F층 (정왕동, M-플러스)",
+  "name": "메가박스 시흥배곧 1관",
+  "cood_x": 176060.7069,
+  "cood_y": 429766.4176
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 3987,
+  "address": "경기도 광주시 광주대로 30, 광주종합터미널 (경안동)",
+  "name": "롯데시네마 광주터미널(제2관)",
+  "cood_x": 223061.3892,
+  "cood_y": 434193.7091
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4000,
+  "contact": "031-506-3800",
+  "address": "경기도 시흥시 배곧3로 96 (정왕동, M-플러스 7-8F)",
+  "name": "메가박스 시흥배곧 3관",
+  "cood_x": 176060.7069,
+  "cood_y": 429766.4176
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4005,
+  "address": "경기도 성남시 분당구 탄천상로151번길 20 (구미동,분당월드유통센타4층)",
+  "name": "시.지.브이오리11 제1관",
+  "cood_x": 209409.1602,
+  "cood_y": 426451.3589
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4011,
+  "address": "경기도 동두천시 동광로 33 (생연동)",
+  "name": "문화극장 3관",
+  "cood_x": 204506.3093,
+  "cood_y": 489573.8951
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4012,
+  "contact": "031-863-3000",
+  "address": "경기도 동두천시 동광로 66 (생연동)",
+  "name": "문화극장 1관",
+  "cood_x": 204836.4219,
+  "cood_y": 489515.059
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4020,
+  "contact": "031-554-5285",
+  "address": "경기도 구리시 경춘로 243, 2층 (인창동, CGV구리)",
+  "name": "CGV 구리 1관",
+  "cood_x": 212475.6457,
+  "cood_y": 455508.1101
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4021,
+  "address": "경기도 구리시 경춘로 243, 4층 (인창동, CGV구리)",
+  "name": "CGV 구리 2관",
+  "cood_x": 212475.6457,
+  "cood_y": 455508.1101
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4023,
+  "address": "경기도 구리시 경춘로 243, 6층 (인창동, CGV구리)",
+  "name": "CGV 구리 4관",
+  "cood_x": 212475.6457,
+  "cood_y": 455508.1101
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4025,
+  "address": "경기도 구리시 경춘로 243, 7층 (인창동, CGV구리)",
+  "name": "CGV 구리 6관",
+  "cood_x": 212475.6457,
+  "cood_y": 455508.1101
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4027,
+  "address": "경기도 안산시 상록구 항가울로 422 (성포동)",
+  "name": "롯데시네마 안산4관",
+  "cood_x": 186396.0677,
+  "cood_y": 423947.2364
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4030,
+  "contact": "031-475-0801",
+  "address": "경기도 안산시 단원구 고잔로 108, 901호 (고잔동,조이월드상가)",
+  "name": "롯데시네마센트럴락8관",
+  "cood_x": 185573.7018,
+  "cood_y": 424075.3375
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4031,
+  "contact": "032-656-7030",
+  "address": "경기도 부천시 부천로 11, 7층 (심곡동, 해태쇼핑)",
+  "name": "롯데시네마 부천역관 제8관",
+  "cood_x": 180695.6906,
+  "cood_y": 442609.6509
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4032,
+  "contact": "401-7700",
+  "address": "경기도 안산시 단원구 고잔2길 41 (고잔동)",
+  "name": "메가박스 안산 중앙 1관",
+  "cood_x": 185360.9775,
+  "cood_y": 424005.7102
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4047,
+  "contact": "480-3827",
+  "address": "경기도 안산시 단원구 중앙대로 921, 지하2층 209,210호 (고잔동, 동서코아)",
+  "name": "명화극장",
+  "cood_x": 185656.8443,
+  "cood_y": 423918.1313
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4051,
+  "contact": "414-8899",
+  "address": "경기도 안산시 단원구 광덕대로 137 (고잔동)",
+  "name": "롯데시네마 안산고잔관 제1관",
+  "cood_x": 184763.8988,
+  "cood_y": 422990.5098
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4053,
+  "contact": "031-436-4574",
+  "address": "경기도 안산시 단원구 광덕대로 194 (고잔동)",
+  "name": "CGV안산 5관",
+  "cood_x": 184953.1217,
+  "cood_y": 423556.9601
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4067,
+  "contact": "032-656-7030",
+  "address": "경기도 부천시 부천로 11, 6층 (심곡동, 해태쇼핑)",
+  "name": "롯데시네마 부천역관 제3관",
+  "cood_x": 180695.6906,
+  "cood_y": 442609.6509
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4072,
+  "contact": "032-624-7804",
+  "address": "경기도 부천시 송내대로 239, 6,7,8층 (상동, 부천터미널소풍)",
+  "name": "CGV소풍 2관",
+  "cood_x": 178411.4421,
+  "cood_y": 444684.4053
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4076,
+  "contact": "032-624-7804",
+  "address": "경기도 부천시 송내대로 239, 6,7,8,층 (상동, 부천터미널소풍)",
+  "name": "CGV소풍 6관",
+  "cood_x": 178411.4421,
+  "cood_y": 444684.4053
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4082,
+  "contact": "310-3093",
+  "address": "경기도 부천시 길주로 1, 1층 (상동, 한국만화영상진흥원)",
+  "name": "만화영화상영관",
+  "cood_x": 177525.4579,
+  "cood_y": 445566.1183
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4083,
+  "contact": "070-7465-3626",
+  "address": "경기도 부천시 길주로 280 (중동, 프리머스 부천타워)",
+  "name": "롯데시네마 부천 제1관",
+  "cood_x": 179874.935,
+  "cood_y": 444538.5593
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4090,
+  "contact": "032-623-1780",
+  "address": "경기도 부천시 길주로 180, 6층 (중동, 현대백화점부천중동점)",
+  "name": "CGV부천8  5관",
+  "cood_x": 178901.9913,
+  "cood_y": 444701.5572
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4091,
+  "contact": "614-5883",
+  "address": "경기도 부천시 부일로 460, 6층 (심곡동, 씨네마홀)",
+  "name": "CGV부천역 2관",
+  "cood_x": 180574.4511,
+  "cood_y": 442653.4956
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4092,
+  "contact": "652-6007",
+  "address": "경기도 부천시 부일로 460, 7층 (심곡동, 씨네마홀)",
+  "name": "CGV부천역 3관",
+  "cood_x": 180574.4511,
+  "cood_y": 442653.4956
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4095,
+  "contact": "652-6007",
+  "address": "경기도 부천시 부일로 460, 8층 (심곡동, 씨네마홀)",
+  "name": "CGV부천역 6관",
+  "cood_x": 180574.4511,
+  "cood_y": 442653.4956
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4106,
+  "contact": "032-348-4307",
+  "address": "경기도 부천시 경인로 505, 6층 (괴안동)",
+  "name": "CGV역곡 1관",
+  "cood_x": 183213.6656,
+  "cood_y": 442488.8611
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4107,
+  "contact": "032-348-4307",
+  "address": "경기도 부천시 경인로 505, 6층 (괴안동, 역곡하이뷰)",
+  "name": "CGV역곡 2관",
+  "cood_x": 183213.6656,
+  "cood_y": 442488.8611
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4117,
+  "contact": "070-7465-3811",
+  "address": "서울특별시 관악구 남부순환로 1820, 12층 (봉천동, 에그엘로우)",
+  "name": "롯데시네마 서울대입구제2관",
+  "cood_x": 195703.0437,
+  "cood_y": 442094.0858
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4121,
+  "contact": "070-7461-8286",
+  "address": "서울특별시 관악구 신림로 330 (신림동,14층)",
+  "name": "롯데시네마 신림 제6관",
+  "cood_x": 193754.4274,
+  "cood_y": 442407.2012
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4130,
+  "address": "서울특별시 강북구 도봉로 308 (번동)",
+  "name": "롯데시네마 수유관 제2관",
+  "cood_x": 202032.7576,
+  "cood_y": 459259.444
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4135,
+  "contact": "986-1375",
+  "address": "서울특별시 강북구 도봉로 34, 9층 (미아동, 트레지오빌딩)",
+  "name": "씨지브이 미아점 1관",
+  "cood_x": 202642.446,
+  "cood_y": 456636.3082
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4136,
+  "contact": "986-1375",
+  "address": "서울특별시 강북구 도봉로 34 (미아동,트레지오 쇼핑몰 10층)",
+  "name": "씨지브이 미아점 2관",
+  "cood_x": 202642.446,
+  "cood_y": 456636.3082
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4137,
+  "contact": "986-1375",
+  "address": "서울특별시 강북구 도봉로 34, 10층 (미아동, 트레지오빌딩)",
+  "name": "씨지브이 미아점 3관",
+  "cood_x": 202642.446,
+  "cood_y": 456636.3082
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4138,
+  "address": "서울특별시 강북구 도봉로 34, 11층 (미아동, 트레지오빌딩)",
+  "name": "씨지브이 미아점 4관",
+  "cood_x": 202642.446,
+  "cood_y": 456636.3082
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4141,
+  "address": "서울특별시 강북구 도봉로 399, 4층 (수유동)",
+  "name": "CGV 수유 1관",
+  "cood_x": 202565.2368,
+  "cood_y": 460003.1177
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4142,
+  "address": "서울특별시 강북구 도봉로 399, 8층 (수유동)",
+  "name": "CGV 수유 9관",
+  "cood_x": 202565.2368,
+  "cood_y": 460003.1177
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4147,
+  "address": "서울특별시 강북구 도봉로 399, 6층 (수유동)",
+  "name": "CGV 수유 6관",
+  "cood_x": 202565.2368,
+  "cood_y": 460003.1177
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4149,
+  "contact": "02-3017-3884",
+  "address": "서울특별시 동작구 동작대로 89 (사당동,골든씨네마 7층)",
+  "name": "메가박스(주) 이수지점",
+  "cood_x": 198295.8433,
+  "cood_y": 442507.6991
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4150,
+  "contact": "02-3286-9495",
+  "address": "서울특별시 금천구 시흥대로 399 (독산동)",
+  "name": "롯데시네마 독산 제1관",
+  "cood_x": 190858.6495,
+  "cood_y": 440808.5413
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4160,
+  "contact": "070-7465-3822",
+  "address": "서울특별시 금천구 디지털로10길 9, 현대시티아울렛 가산점 (가산동)",
+  "name": "롯데시네마 가산디지털(제3관)",
+  "cood_x": 190119.4634,
+  "cood_y": 441716.6846
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4164,
+  "contact": "070-7017-3311",
+  "address": "서울특별시 동작구 동작대로 89 (사당동,골든시네마타워 12층)",
+  "name": "아트나인 9관",
+  "cood_x": 198295.8433,
+  "cood_y": 442507.6991
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4166,
+  "address": "서울특별시 구로구 개봉로3길 109  (개봉동)",
+  "name": "떼아뜨르 이동영화",
+  "cood_x": 186729.5886,
+  "cood_y": 442612.4245
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4174,
+  "contact": "033-460-8952",
+  "address": "강원도 인제군 인제읍 비봉로44번길 100, 하늘내린센터",
+  "name": "하늘관",
+  "cood_x": 302196.8616,
+  "cood_y": 507078.2791
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4176,
+  "address": "광주광역시 광산구 용아로400번길 30, TERRACE56  PICNICMALL 2층 (하남동)",
+  "name": "CGV 광주하남 2관",
+  "cood_x": 182301.7727,
+  "cood_y": 186588.2421
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4182,
+  "contact": "02-3147-3736",
+  "address": "경기도 김포시 김포한강9로75번길 180 (구래동, 두원타워)",
+  "name": "메가박스 중앙(주)김포한강신도시점 5관",
+  "cood_x": 166791.2816,
+  "cood_y": 460351.2984
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4187,
+  "contact": "062-369-3570",
+  "address": "광주광역시 서구 무진대로 904, 유스퀘어(광천터미널) (광천동)",
+  "name": "CGV 광주터미널 10관",
+  "cood_x": 189004.9682,
+  "cood_y": 184579.5536
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4189,
+  "contact": "032-460-7270",
+  "address": "인천광역시 미추홀구 매소홀로 255, 8층 (학익동)",
+  "name": "CGV 인천학익점 1관",
+  "cood_x": 169119.1809,
+  "cood_y": 438218.4189
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4195,
+  "contact": "055-670-2202",
+  "address": "경상남도 고성군 고성읍 송학로 58, 고성군 작은영화관",
+  "name": "CGV고성 1관",
+  "cood_x": 320083.2789,
+  "cood_y": 165018.4113
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4198,
+  "contact": "033-563-5703",
+  "address": "강원도 정선군 정선읍 봉양6길 10, 아리아리정선시네마",
+  "name": "아리아리 정선시네마 1관",
+  "cood_x": 347325.5597,
+  "cood_y": 432025.403
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4199,
+  "contact": "033-563-5703",
+  "address": "강원도 정선군 정선읍 봉양6길 10, 아리아리정선시네마 1층",
+  "name": "아리아리 정선시네마 2관",
+  "cood_x": 347325.5597,
+  "cood_y": 432025.403
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4200,
+  "contact": "033-592-7053",
+  "address": "강원도 정선군 고한읍 고한10길 28-12, 고한작은영화관 2층",
+  "name": "고한시네마 1관",
+  "cood_x": 364813.5172,
+  "cood_y": 412459.4078
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4202,
+  "contact": "041-736-0123",
+  "address": "충청남도 논산시 중앙로 255, 메가타운 3, 4층 (내동)",
+  "name": "메가박스 논산 제2관",
+  "cood_x": 208835.4204,
+  "cood_y": 298813.8932
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4207,
+  "contact": "041-901-1543",
+  "address": "충청남도 논산시 시민로 181, CGV타워 3층 (내동)",
+  "name": "CGV논산 제1관",
+  "cood_x": 208700.222,
+  "cood_y": 298057.825
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4209,
+  "contact": "041-901-1543",
+  "address": "충청남도 논산시 시민로 181, CGV타워 4층 (내동)",
+  "name": "CGV논산 제3관",
+  "cood_x": 208700.222,
+  "cood_y": 298057.825
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4212,
+  "address": "경상남도 진주시 에나로127번길 30, 어반스퀘어 4,5층 (충무공동)",
+  "name": "CGV 진주혁신 1관",
+  "cood_x": 304128.1408,
+  "cood_y": 187423.9961
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4219,
+  "address": "경상남도 산청군 신안면 원지강변로 67-10, 2층",
+  "name": "산청군 작은영화관 1관",
+  "cood_x": 288257.9247,
+  "cood_y": 200649.2415
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4221,
+  "contact": "070-5038-4565",
+  "address": "충청남도 천안시 서북구 불당33길 28, 지앤지홀딩스타워 5~8층 (불당동)",
+  "name": "씨네큐 천안 불당 1관",
+  "cood_x": 209519.5617,
+  "cood_y": 367907.5942
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4225,
+  "address": "경기도 안성시 공도읍 서동대로 3930-39, 스타필드 안성 3층",
+  "name": "메가박스중앙(주)안성스타필드지점 1관",
+  "cood_x": 213062.919,
+  "cood_y": 388093.0367
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4232,
+  "contact": "02-971-6602",
+  "address": "서울특별시 중랑구 동일로 951 (묵동)",
+  "name": "롯데시네마 중랑관 1관",
+  "cood_x": 206641.2692,
+  "cood_y": 456981.0858
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4240,
+  "contact": "054-337-7053",
+  "address": "경상북도 영천시 시장2길 10, 영천공설시장 2층 202호 (완산동)",
+  "name": "영천공설시장 별빛영화관",
+  "cood_x": 374718.509,
+  "cood_y": 275459.8989
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4241,
+  "contact": "070-4268-7168",
+  "address": "전라북도 전주시 덕진구 기지로 77, 303동 2층 (장동, 전북혁신도시 더 M city 센텀)",
+  "name": "메가박스 전주혁신점 1관",
+  "cood_x": 205360.6428,
+  "cood_y": 259875.9531
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4248,
+  "contact": "054-683-7300",
+  "address": "경상북도 영양군 영양읍 군민회관길 7, 영양문화원 2층",
+  "name": "영양 작은영화관",
+  "cood_x": 389258.5252,
+  "cood_y": 353447.662
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4249,
+  "address": "경기도 남양주시 다산순환로 50, 현대프리미엄아울렛 SPACE1 3~5층 (다산동)",
+  "name": "메가박스중앙(주)남양주현대아울렛스페이스원지점 1관",
+  "cood_x": 213414.2656,
+  "cood_y": 457095.53
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4256,
+  "contact": "063-433-7050",
+  "address": "전라북도 진안군 진안읍 중앙로 40, 마이골작은영화관",
+  "name": "마이골작은영화관 1관",
+  "cood_x": 238178.8764,
+  "cood_y": 254432.0452
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4259,
+  "address": "강원도 횡성군 횡성읍 앞들서3로 6, 횡성시네마",
+  "name": "횡성시네마 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4261,
+  "contact": "031-795-6344",
+  "address": "경기도 하남시 미사강변동로 95, 힐스테이트 미사역 그랑파사쥬(12-1BL) 3074호 (망월동)",
+  "name": "CGV하남미사 1관",
+  "cood_x": 216873.6705,
+  "cood_y": 451296.3107
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4268,
+  "contact": "031-855-6050",
+  "address": "경기도 양주시 장흥면 권율로 120, 1층",
+  "name": "장흥 자동차극장 1관",
+  "cood_x": 195564.7375,
+  "cood_y": 469122.957
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4270,
+  "contact": "063-640-2314",
+  "address": "전라북도 임실군 임실읍 호국로 1703, 지하1층 임실작은별영화관",
+  "name": "임실한마당 작은별영화관(고추관)",
+  "cood_x": 225927.9362,
+  "cood_y": 235060.2943
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4272,
+  "contact": "031-869-3311",
+  "address": "경기도 남양주시 다산순환로 20, 다산 현대프리미어캠퍼스 지하2층 (다산동)",
+  "name": "CGV 다산 2관 (인케이 다산시네마)",
+  "cood_x": 213352.6388,
+  "cood_y": 456784.2681
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4282,
+  "contact": "031-540-2400",
+  "address": "경기도 고양시 일산서구 킨텍스로 255-3, K-TREE 201호 (대화동)",
+  "name": "케이트리호텔 X 모노플렉스",
+  "cood_x": 177706.382,
+  "cood_y": 462926.6325
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4283,
+  "contact": "070-7525-0037",
+  "address": "충청북도 충주시 국원대로 107, 한스타워 5~8층 (교현동)",
+  "name": "CGV 충주교현 1관",
+  "cood_x": 282540.7147,
+  "cood_y": 387001.5008
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4290,
+  "contact": "041-531-1010",
+  "address": "충청남도 아산시 신정호길 46 (방축동)",
+  "name": "큐브시네마",
+  "cood_x": 198006.1134,
+  "cood_y": 363927.4762
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4291,
+  "address": "전라남도 곡성군 곡성읍 중앙로 59",
+  "name": "곡성극장 2관",
+  "cood_x": 226269.053,
+  "cood_y": 197812.289
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4293,
+  "address": "경상북도 칠곡군 석적읍 석적로 646, 칠곡호이영화관및청소년문화의집",
+  "name": "칠곡호이영화관(씨네Q) 1관",
+  "cood_x": 326919.1798,
+  "cood_y": 284356.1248
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4295,
+  "contact": "053-812-8970",
+  "address": "경상북도 경산시 대학로28길 6-5 (중방동)",
+  "name": "CGV경산 1관",
+  "cood_x": 356853.4919,
+  "cood_y": 260604.6759
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4301,
+  "contact": 547837053,
+  "address": "경상북도 울진군 울진읍 울진중앙로 115-21, 울진군청별관",
+  "name": "울진작은영화관",
+  "cood_x": 413606.0251,
+  "cood_y": 390535.8207
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4302,
+  "contact": "044-866-8702",
+  "address": "세종특별자치시 조치원읍 새내로 122 (4층~6층)",
+  "name": "(주)버킷스튜디오 메가박스 세종 1관",
+  "cood_x": 226602.7941,
+  "cood_y": 344698.3587
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4309,
+  "contact": "044-868-4850",
+  "address": "세종특별자치시 도움1로 108, 7층 (종촌동, 몰리브)",
+  "name": "CGV 세종1관",
+  "cood_x": 222107.6019,
+  "cood_y": 333536.0375
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4310,
+  "contact": "044-868-4850",
+  "address": "세종특별자치시 도움1로 108, 8층 (종촌동, 몰리브)",
+  "name": "CGV 세종5관",
+  "cood_x": 222107.6019,
+  "cood_y": 333536.0375
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4317,
+  "contact": "031-559-1421",
+  "address": "경기도 남양주시 늘을2로 26 (호평동)",
+  "name": "메가박스 남양주 9관",
+  "cood_x": 221468.586,
+  "cood_y": 461438.0648
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4318,
+  "contact": "070-7465-3621",
+  "address": "경기도 남양주시 진접읍 해밀예당1로 36 (래일스타 10층)",
+  "name": "롯데컬처웍스(주)롯데시네마진접",
+  "cood_x": 216390.2001,
+  "cood_y": 467747.2198
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4321,
+  "address": "경기도 남양주시 화도읍 경춘로 1992",
+  "name": "롯데시네마 마석 1관",
+  "cood_x": 227234.545,
+  "cood_y": 460930.696
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4323,
+  "contact": "031-528-7481",
+  "address": "경기도 남양주시 두물로 19 (별내동, 황산빌딩 7층)",
+  "name": "메가박스 별내점(제1관)",
+  "cood_x": 211100.7801,
+  "cood_y": 461499.2581
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4326,
+  "address": "경기도 구리시 동구릉로136번길 47, 6~8층 (인창동, 롯데시네마 구리아울렛)",
+  "name": "롯데시네마 구리아울렛 6관",
+  "cood_x": 212338.5166,
+  "cood_y": 456623.1791
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4333,
+  "contact": "031-398-4200",
+  "address": "경기도 군포시 번영로 505, 4층 (산본동)",
+  "name": "CGV 산본(2관)",
+  "cood_x": 194028.372,
+  "cood_y": 428538.8749
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4338,
+  "contact": "070-7430-9051",
+  "address": "경기도 군포시 번영로 485, 10층 (산본동)",
+  "name": "롯데시네마 산본피트인(제1관)",
+  "cood_x": 193789.4107,
+  "cood_y": 428419.5783
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4347,
+  "address": "경기도 남양주시 두물로 19, 6층 (별내동)",
+  "name": "메가박스 별내점 제4관",
+  "cood_x": 211100.7801,
+  "cood_y": 461499.2581
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4350,
+  "contact": "988-0340",
+  "address": "경기도 김포시 사우중로 52, 지하2층 (사우동)",
+  "name": "김포극장   GS관",
+  "cood_x": 175157.8984,
+  "cood_y": 457486.1736
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4366,
+  "contact": "992-0070",
+  "address": "경기도 김포시 걸포로 6, 7층 (걸포동)",
+  "name": "CGV 김포한강 1관",
+  "cood_x": 174092.8329,
+  "cood_y": 458913.3134
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4370,
+  "contact": "031-996-6593",
+  "address": "경기도 김포시 김포한강11로 288-31, 8층~9층 (운양동)",
+  "name": "CGV김포운양 2관",
+  "cood_x": 172052.9683,
+  "cood_y": 461430.9601
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4380,
+  "contact": "032-746-1216",
+  "address": "인천광역시 중구 영종대로 184, 영종예스타워복합상영관 (운서동)",
+  "name": "메가박스 영종 1관",
+  "cood_x": 155605.4976,
+  "cood_y": 443460.5761
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4386,
+  "address": "충청북도 괴산군 칠성면 자연드림길 240, 지원센터 b동",
+  "name": "오가닉메이커 협동조합 괴산극장 1관",
+  "cood_x": 276919.1043,
+  "cood_y": 363591.2631
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4389,
+  "contact": "755-5800",
+  "address": "제주특별자치도 제주시 삼봉로 11 (삼양이동)",
+  "name": "제주 롯데시네마 삼화점 제1관",
+  "cood_x": 161670.0321,
+  "cood_y": 2752.67814
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4394,
+  "contact": 2550066,
+  "address": "충청북도 청주시 상당구 상당로81번길 63 (서문동)",
+  "name": "CGV청주서문10관",
+  "cood_x": 243478.522,
+  "cood_y": 348308.9333
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4395,
+  "address": "충청북도 청주시 청원구 충청대로 114 (율량동)",
+  "name": "CGV청주율량 2관",
+  "cood_x": 244184.9446,
+  "cood_y": 351834.5957
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4396,
+  "contact": "043-215-1200",
+  "address": "충청북도 청주시 청원구 오창읍 중심상업1로 8-9, 메가시티 3~4층",
+  "name": "메가박스 오창 제8관",
+  "cood_x": 238220.1861,
+  "cood_y": 356859.2669
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4404,
+  "contact": "043-256-6900",
+  "address": "충청북도 청주시 상당구 상당로81번길 33 (북문로1가, 쥬네쓰)",
+  "name": "CGV청주성안길 1관",
+  "cood_x": 243582.088,
+  "cood_y": 348339.2185
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4405,
+  "address": "충청북도 청주시 흥덕구 오송읍 미호천길 295",
+  "name": "오송자동차극장",
+  "cood_x": 228080.1465,
+  "cood_y": 342717.5051
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4406,
+  "contact": "043-233-9525",
+  "address": "충청북도 청주시 흥덕구 2순환로 1233, 8층 (가경동)",
+  "name": "CGV청주터미널 1관",
+  "cood_x": 238501.3394,
+  "cood_y": 347307.9521
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4418,
+  "contact": "070-7465-3802",
+  "address": "충청북도 청주시 흥덕구 2순환로 1004 (비하동)",
+  "name": "롯데시네마 서청주 제1관",
+  "cood_x": 237628.5276,
+  "cood_y": 349407.6757
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4426,
+  "contact": "043-271-3201",
+  "address": "충청북도 청주시 서원구 1순환로 682, 지하 2층 (사창동)",
+  "name": "메가박스 청주사창 컴포트 1관",
+  "cood_x": 241110.6778,
+  "cood_y": 348029.6701
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4429,
+  "address": "충청북도 청주시 서원구 1순환로 682, 4층 (사창동)",
+  "name": "메가박스 청주사창 컴포트 4관",
+  "cood_x": 241110.6778,
+  "cood_y": 348029.6701
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4430,
+  "contact": "043-252-6577",
+  "address": "충청북도 청주시 상당구 성안로 22-2 (북문로1가)",
+  "name": "씨네월드",
+  "cood_x": 243657.1534,
+  "cood_y": 348301.0729
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4436,
+  "contact": "02-371-6670",
+  "address": "충청북도 청주시 흥덕구 대농로 47-1, 3층 (복대동)",
+  "name": "CGV 청주지웰시티 1관",
+  "cood_x": 238310.2022,
+  "cood_y": 349177.6459
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4444,
+  "contact": "070-7460-8890",
+  "address": "충청북도 청주시 상당구 1순환로 1233 (용암동)",
+  "name": "롯데시네마 청주용암 제1관",
+  "cood_x": 244938.9969,
+  "cood_y": 345214.1851
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4467,
+  "address": "경기도 군포시 엘에스로 143, 지하1층~지상2층 (금정동, 힐스테이트 금정역)",
+  "name": "메가박스(주)금정AK플라자지점(컴포트2관)",
+  "cood_x": 195045.8402,
+  "cood_y": 430029.8757
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4474,
+  "contact": "02-3017-3677",
+  "address": "경기도 광명시 소하로 190, 광명G타워 B1층 G177, G181, G281호 (소하동)",
+  "name": "1관",
+  "cood_x": 190562.2611,
+  "cood_y": 438191.3607
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4480,
+  "contact": "070-4757-7977",
+  "address": "서울특별시 동작구 시흥대로 606, 지2층 (신대방동, 동작 협성휴포레 시그니처)",
+  "name": "롯데시네마 신대방 1관",
+  "cood_x": 191548.5358,
+  "cood_y": 442684.5314
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4490,
+  "contact": "062-261-5398",
+  "address": "광주광역시 북구 문화소통로 170 (용봉동)",
+  "name": "CJ CGV 광주용봉1관",
+  "cood_x": 191975.4185,
+  "cood_y": 187025.3545
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4501,
+  "contact": "054-852-0600",
+  "address": "경상북도 안동시 경북대로 418 (옥동,(테마프라자501호))",
+  "name": "롯데시네마 프리미엄 안동 1관",
+  "cood_x": 352110.9509,
+  "cood_y": 341912.5875
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4504,
+  "contact": "054-852-0600",
+  "address": "경상북도 안동시 경북대로 418, 테마프라자 401호 (옥동)",
+  "name": "롯데시네마 프리미엄 안동 4관",
+  "cood_x": 352110.9509,
+  "cood_y": 341912.5875
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4511,
+  "contact": "054-439-9133",
+  "address": "경상북도 김천시 김천로 74 (평화동)",
+  "name": "메가박스 김천 1관",
+  "cood_x": 299922.1736,
+  "cood_y": 292204.4264
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4512,
+  "address": "경상북도 김천시 혁신2로 15 (율곡동, 더스퀘어)",
+  "name": "CGV  김천율곡 4관",
+  "cood_x": 306479.0645,
+  "cood_y": 291131.5889
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4520,
+  "contact": "031-8082-0930",
+  "address": "경기도 의정부시 평화로 525 (의정부동, 신세계백화점10층)",
+  "name": "CGV 의정부 제1관",
+  "cood_x": 204011.3019,
+  "cood_y": 470564.0155
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4521,
+  "contact": "043-742-7053",
+  "address": "충청북도 영동군 영동읍 계산로2길 24",
+  "name": "영동레인보우영화관 1관",
+  "cood_x": 269874.6249,
+  "cood_y": 297216.5417
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4523,
+  "contact": "043-731-7050",
+  "address": "충청북도 옥천군 옥천읍 문정1길 47, 향수시네마",
+  "name": "향수시네마 2관",
+  "cood_x": 251600.7185,
+  "cood_y": 311612.0065
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4525,
+  "address": "충청북도 충주시 번영대로 211 (연수동)",
+  "name": "씨네Q 충주연수점 1관",
+  "cood_x": 283717.053,
+  "cood_y": 387731.9209
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4533,
+  "contact": "857-7020",
+  "address": "충청북도 충주시 예성로 151 (성서동)",
+  "name": "메가박스씨앤씨점(11관)",
+  "cood_x": 283023.384,
+  "cood_y": 385839.5245
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4548,
+  "contact": "070-7017-9581",
+  "address": "서울특별시 서초구 신반포로 176 (반포동,센트럴시티 지하1층)",
+  "name": "메가박스중앙(주) 센트럴 더부티크 103호",
+  "cood_x": 200250.4478,
+  "cood_y": 444683.2205
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4555,
+  "contact": "02)2670-8240",
+  "address": "서울특별시 영등포구 경인로 846, A동 7~9층 (영등포동, 롯데백화점 영등포점)",
+  "name": "롯데시네마 영등포 3관",
+  "cood_x": 191741.3458,
+  "cood_y": 445970.3076
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4557,
+  "contact": "3783-5541",
+  "address": "서울특별시 중구 명동길 14 (명동2가,아바타빌딩 8층)",
+  "name": "CGV 명동 3관",
+  "cood_x": 198418.7417,
+  "cood_y": 451237.1686
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4562,
+  "contact": "2236-2024",
+  "address": "서울특별시 중구 장충단로 72 (장충동2가)",
+  "name": "씨너스 이오이(EOE)4 남산자동차극장",
+  "cood_x": 200154.6929,
+  "cood_y": 449919.6278
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4564,
+  "address": "서울특별시 중구 명동8나길 15  (충무로1가,캣츠빌딩)",
+  "name": "씨큐엔(CQN)명동1관",
+  "cood_x": 198527.0993,
+  "cood_y": 450998.0734
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4571,
+  "contact": "070-7016-3401",
+  "address": "서울특별시 서초구 서초대로77길 3 (서초동)",
+  "name": "메가박스중앙(주) 강남 1관",
+  "cood_x": 202276.9172,
+  "cood_y": 443970.968
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4576,
+  "contact": "02-2012-3002",
+  "address": "서울특별시 용산구 한강대로23길 55 (한강로3가, 현대아이파크몰)",
+  "name": "씨지브이 용산아이파크몰 제9관",
+  "cood_x": 196762.0774,
+  "cood_y": 447480.0396
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4579,
+  "contact": "2118-5443",
+  "address": "서울특별시 중구 남대문로 73, 6~7층 (남대문로2가, AVENUEL)",
+  "name": "롯데시네마 에비뉴엘 <2관>",
+  "cood_x": 198333.4709,
+  "cood_y": 451313.4129
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4583,
+  "contact": "02-3470-3493",
+  "address": "서울특별시 용산구 청파로 74, 4~5층 (한강로3가)",
+  "name": "롯데시네마 용산 제7관",
+  "cood_x": 196370.7464,
+  "cood_y": 447841.6988
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4586,
+  "contact": "02-2638-2752",
+  "address": "서울특별시 영등포구 영중로 15, 6층 (영등포동4가, 타임스퀘어)",
+  "name": "CGV 영등포 12관(SPHERE X)",
+  "cood_x": 191385.0574,
+  "cood_y": 446098.5559
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4591,
+  "address": "서울특별시 중구 퇴계로 211-5  (충무로4가)",
+  "name": "극동극장"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4622,
+  "address": "서울특별시 중구 마른내로 41  (초동,초동빌딩3층)",
+  "name": "시네아스트극장",
+  "cood_x": 199267.1079,
+  "cood_y": 451366.7791
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4630,
+  "contact": "02-2012-3002",
+  "address": "서울특별시 용산구 한강대로23길 55 (한강로3가, 현대아이파크몰 6층)",
+  "name": "씨지브이 용산아이파크몰 제1관",
+  "cood_x": 196762.0774,
+  "cood_y": 447480.0396
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4637,
+  "contact": "6363-2900",
+  "address": "서울특별시 중구 명동8나길 15  (충무로1가,8,9,10층)",
+  "name": "명동시네마",
+  "cood_x": 198527.0993,
+  "cood_y": 450998.0734
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4640,
+  "contact": "934-7053",
+  "address": "인천광역시 강화군 강화읍 고비고개로19번길 12",
+  "name": "강화작은영화관",
+  "cood_x": 153562.218,
+  "cood_y": 471636.3772
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4641,
+  "contact": "031-929-2604",
+  "address": "경기도 고양시 일산서구 호수로 817 (대화동, 레이킨스 몰 3층)",
+  "name": "메가박스중앙(주)킨텍스지점 COMFORT 1관",
+  "cood_x": 178006.0803,
+  "cood_y": 462865.8125
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4642,
+  "contact": "031-929-2603",
+  "address": "경기도 고양시 일산서구 호수로 817 (대화동,레이킨스 몰 3층)",
+  "name": "메가박스중앙(주)킨텍스지점 8관",
+  "cood_x": 178006.0803,
+  "cood_y": 462865.8125
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4648,
+  "contact": "070-7016-3451",
+  "address": "경기도 고양시 일산동구 중앙로 1036 (백석동)",
+  "name": "CGV고양백석 4관",
+  "cood_x": 181369.9672,
+  "cood_y": 460117.3546
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4655,
+  "contact": "070-7016-3451",
+  "address": "경기도 고양시 일산동구 강송로 33, 1,2층 (백석동, 일산 요진 와이시티)",
+  "name": "메가박스중앙(주)백석벨라시타지점 101호",
+  "cood_x": 181637.1892,
+  "cood_y": 460029.0134
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4661,
+  "contact": "031-931-6600",
+  "address": "경기도 고양시 일산동구 정발산로 24, 10층 (장항동, 웨스턴돔 3층 CGV 일산)",
+  "name": "CGV일산(4관)",
+  "cood_x": 179810.179,
+  "cood_y": 461526.1644
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4668,
+  "contact": "031-914-5580",
+  "address": "경기도 고양시 일산서구 덕이로 20, 가동 (덕이동)",
+  "name": "메가박스일산 2관",
+  "cood_x": 178490.4129,
+  "cood_y": 465282.1192
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4670,
+  "contact": "031-914-5580",
+  "address": "경기도 고양시 일산서구 덕이로 24 (덕이동)",
+  "name": "메가박스일산 4관",
+  "cood_x": 178459.2214,
+  "cood_y": 465253.1354
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4672,
+  "contact": "031-914-5580",
+  "address": "경기도 고양시 일산서구 덕이로 30-8 (덕이동)",
+  "name": "메가박스일산 6관",
+  "cood_x": 178429.4379,
+  "cood_y": 465276.387
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4676,
+  "contact": "031-966-6663",
+  "address": "경기도 고양시 덕양구 화중로104번길 28 (화정동)",
+  "name": "(주)씨지브이 화정1관",
+  "cood_x": 185206.2941,
+  "cood_y": 459287.0068
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4677,
+  "address": "경기도 고양시 덕양구 화중로104번길 28 (화정동,씨네마플러스 4\/5\/6층)",
+  "name": "(주)씨지브이 화정2관",
+  "cood_x": 185206.2941,
+  "cood_y": 459287.0068
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4684,
+  "contact": "031-904-0901",
+  "address": "경기도 고양시 일산동구 무궁화로 32-34, 라페스타C 3층 (장항동)",
+  "name": "롯데시네마 라페스타(1관)",
+  "cood_x": 179511.6963,
+  "cood_y": 462156.7491
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4692,
+  "contact": "031-910-2901",
+  "address": "경기도 고양시 일산서구 중앙로 1436, 그랜드백화점일산점 10층 (주엽동)",
+  "name": "롯데시네마주엽(일산)2관",
+  "cood_x": 178859.7914,
+  "cood_y": 463205.2272
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4700,
+  "contact": "1544-0070",
+  "address": "경기도 고양시 덕양구 고양대로 1955, 4,5층 (동산동, 스타필드고양)",
+  "name": "메가박스중앙(주) 고양스타필드지점 8관",
+  "cood_x": 190645.3143,
+  "cood_y": 460528.948
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4709,
+  "contact": "052-955-2226",
+  "address": "울산광역시 북구 진장유통로 51-10, CGV (진장동)",
+  "name": "CGV 울산진장 제1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4716,
+  "contact": "055-853-6300",
+  "address": "경상남도 사천시 사천읍 사천대로 1843",
+  "name": "롯데시네마사천 (제7관)",
+  "cood_x": 298627.9034,
+  "cood_y": 176343.4093
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4718,
+  "address": "제주특별자치도 제주시 도공로 136 (이호이동)",
+  "name": "제주 자동차 극장",
+  "cood_x": 150408.0257,
+  "cood_y": 40.61627294
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4719,
+  "address": "경기도 하남시 위례대로 200, 스타필드시티 위례점 (학암동)",
+  "name": "CGV스타필드시티위례1관",
+  "cood_x": 213056.0419,
+  "cood_y": 441993.3775
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4725,
+  "address": "강원도 삼척시 엑스포로 50, 가람영화관 (성남동)",
+  "name": "가람영화관 1관",
+  "cood_x": 390949.2115,
+  "cood_y": 439719.707
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4727,
+  "contact": "032-832-0510",
+  "address": "인천광역시 연수구 하모니로 158, 송도타임스페이스 지하1, 2층 (송도동)",
+  "name": "CGV송도타임스페이스 1관",
+  "cood_x": 168216.5778,
+  "cood_y": 431393.912
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4734,
+  "contact": "063-653-7057",
+  "address": "전라북도 순창군 순창읍 남계로 83, 작은 영화관",
+  "name": "천재의 공간 영화산책 1관",
+  "cood_x": 213084.7196,
+  "cood_y": 208297.7786
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4736,
+  "address": "전라남도 함평군 함평읍 함장로 1162, 황금박쥐관·나비관 영상관",
+  "name": "함평자동차극장",
+  "cood_x": 156378.2652,
+  "cood_y": 173424.6306
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4737,
+  "contact": "031-629-1937",
+  "address": "경기도 김포시 풍무로 128, 5층 (풍무동)",
+  "name": "CGV김포 1관"
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4743,
+  "contact": "02-323-1718",
+  "address": "전라북도 부안군 부안읍 예술회관길 11",
+  "name": "마실영화관 1관",
+  "cood_x": 175149.3586,
+  "cood_y": 247177.7776
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4745,
+  "address": "경기도 포천시 신북면 청신로947번길 51",
+  "name": "포천허브아일랜드 자동차극장",
+  "cood_x": 211638.1305,
+  "cood_y": 496074.3822
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4746,
+  "address": "전라남도 영광군 영광읍 천년로13길 2-26",
+  "name": "영광 작은영화관",
+  "cood_x": 155122.404,
+  "cood_y": 197119.9771
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4747,
+  "contact": "070-7780-0962",
+  "address": "서울특별시 서대문구 연희로8길 18, 지하1층동 (연희동)",
+  "name": "라이카시네마 S관",
+  "cood_x": 193828.4361,
+  "cood_y": 451433.7896
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4748,
+  "address": "충청남도 당진시 시청2로 49-19 (수청동)",
+  "name": "롯데시네마 당진 1관",
+  "cood_x": 168433.8132,
+  "cood_y": 376251.3744
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4755,
+  "address": "경상남도 하동군 하동읍 시장1길 17",
+  "name": "CINE Q 하동점 1관",
+  "cood_x": 268271.3833,
+  "cood_y": 174723.3119
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4756,
+  "contact": 436531778,
+  "address": "충청북도 제천시 장평천로 27-13 (강제동)",
+  "name": "CGV 제천 1관",
+  "cood_x": 308522.7923,
+  "cood_y": 403111.0675
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4762,
+  "address": "강원도 춘천시 후석로 120, 춘천NH타운_ENTA 2층 (석사동)",
+  "name": "메가박스 중앙(주) 춘천석사지점 1관",
+  "cood_x": 265760.7509,
+  "cood_y": 484782.143
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4763,
+  "address": "강원도 춘천시 후석로 120, 춘천NH타운_ENTA  2층 (석사동)",
+  "name": "메가박스중앙(주)춘천석사지점 2관",
+  "cood_x": 265760.7509,
+  "cood_y": 484782.143
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4766,
+  "address": "강원도 춘천시 후석로 120, 춘천 NH타운_ENAT 2층 (석사동)",
+  "name": "메가박스 중앙(주)춘천석사지점 5관",
+  "cood_x": 265760.7509,
+  "cood_y": 484782.143
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4768,
+  "contact": "070-7704-7788",
+  "address": "충청북도 음성군 음성읍 수정로 37, 설성문화회관 3층",
+  "name": "설성시네마 1관",
+  "cood_x": 261451.3538,
+  "cood_y": 381700.2204
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4770,
+  "address": "경기도 수원시 권선구 호매실로90번길 76 (호매실동)",
+  "name": "메가박스 수원 호매실점 1관",
+  "cood_x": 196765.9205,
+  "cood_y": 417424.1975
+ }},
+ {
+  "model":"movies.cinema", "fields":{"id": 4775,
+  "contact": "041-751-7668",
+  "address": "충청남도 금산군 금산읍 비단로 91",
+  "name": "금산시네마 1관",
+  "cood_x": 244120.3425,
+  "cood_y": 288864.758
+ }
+}
+]

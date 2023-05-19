@@ -62,7 +62,7 @@ export default {
     this.getCine()
     if(this.isLogin){
       this.getMBTI()
-      console.log('getmbti function initiated!')
+      // console.log('getmbti function initiated!')
     }
   },
   methods : {
