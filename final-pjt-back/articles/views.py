@@ -69,8 +69,8 @@ def article_like(request, article_pk):
 @api_view(['GET'])
 def comment_list(request):
     if request.method == 'GET':
-        # comments = Comment.objects.all()
-        comments = get_list_or_404(Comment)
+        comments = Comment.objects.all()
+        # comments = get_list_or_404(Comment)
         serializer = CommentSerializer(comments, many=True)
         return Response(serializer.data)
 
@@ -93,26 +93,10 @@ def comment_detail(request, comment_pk):
             serializer.save()
             return Response(serializer.data)
 
-def comment_create(request):
-    if request.method == 'POST':
-        serializer = CommentSerializer(data=request.data)
-        if serializer.is_valid(raise_exception=True):
-            serializer.save()
-            # serializer.save(user=request.user)
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-
-
-
-# 로그인 했을 시에 게시글 좋아요
-''' 
-@login_required
 @api_view(['POST'])
-def article_like(request,article_pk):
-
-    article = Article.objects.get(pk = article_pk)
-    if article.like_users.filter(pk=request.user.pk).exists():
-        article.like_users.remove(request.user)
-    else:
-        article.like_users.add(request.user)
-'''
-
+def comment_create(request, article_pk):
+    if request.method == 'POST':
+        serializer = CommentSerializer(data=request.data, article=article_pk)
+        if serializer.is_valid(raise_exception=True):
+            serializer.save(user=request.user)
+            return Response(serializer.data, status=status.HTTP_201_CREATED)

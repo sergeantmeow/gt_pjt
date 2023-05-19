@@ -3,11 +3,13 @@
     <h1>Detail</h1>
     <p>글 번호 : {{ article?.id }}</p>
     <p>제목 : {{ article?.title }}</p>
+    <div v-if="article && article.username">
     <p>작성자 : 
       <router-link :to="{ name: 'OtherProfileView', params: { username: article?.username } }">
       {{ article?.username }}
-    </router-link>
+      </router-link>
     </p>
+    </div>  
     <div v-if="article && article.image">
     <p>이미지:</p>
     <img :src="'http://127.0.0.1:8000' + article.image" alt="게시글 이미지" class="image-preview">
@@ -21,12 +23,14 @@
     <button @click="editArticle">수정</button>
     <button @click="deleteArticle">삭제</button>
     </div>
+    <ArticleComment :comments="comments" :articleId="articleId"/>
     <!-- 로그인했을 경우만 댓글 달 수 있게 하기 -->
   </div>
 </template>
 
 <script>
 import axios from 'axios'
+import ArticleComment from '@/components/ArticleComment'
 const API_URL = 'http://127.0.0.1:8000'
 
 export default {
@@ -34,9 +38,15 @@ export default {
   data() {
     return {
       article: null,
+      articleId : '',
+      comments: [],
     }
   },
+  components: {
+    ArticleComment,
+  },
   created() {
+    this.articleId = this.$route.params.id
     this.getArticleDetail()
   },
   computed:{
@@ -58,8 +68,9 @@ export default {
         url: `${API_URL}/articles/${ this.$route.params.id }/`,
         })
         .then((res) => {
-          console.log(res.data)
+          console.log(res)
           this.article = res.data
+          this.comments = res.data.comments
         })
         .catch((err) => {
           console.log(err)
