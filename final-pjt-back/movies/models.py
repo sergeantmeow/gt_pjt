@@ -19,4 +19,11 @@ class Movie(models.Model):
     video = models.BooleanField()
     vote_average = models.FloatField()
     vote_count = models.IntegerField()
-    
+
+class Cinema(models.Model):
+    id = models.IntegerField(primary_key=True)
+    contact = models.CharField(max_length=30, null=True)
+    address = models.CharField(max_length=200, null=True)
+    name = models.CharField(max_length=200)
+    cood_x = models.FloatField(null=True)
+    cood_y = models.FloatField(null=True)
