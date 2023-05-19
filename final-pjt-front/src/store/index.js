@@ -24,7 +24,13 @@ export default new Vuex.Store({
     ],
     cinemaList: [
     ],
-    user : {
+    userGEO: [
+    ],
+    user: {
+      token: null,
+      username: null,
+      mbti: null
+
     },
   },
   getters: {
@@ -78,15 +84,34 @@ export default new Vuex.Store({
       })
     },
 
-    getCinemas(context){
-      axios({
-        method: 'get',
-        url: `${API_URL}/movies/cinema/`,
-      })
-      .then((response)=>{
-        context.commit('GET_CINEMAS', response.data)
-      })
+    getUserGeo(context){
+      if("geolocation" in navigator){
+        navigator.geolocation.getCurrentPosition((position)=>{
+          this.state.userGEO = [position.coords.latitude, position.coords.longitude]
+        })
+        console.log(context)
+        // console.log(this.state.userGEO)
+        // console.log(this.state.userGEO[0])
+        // console.log(this.state.userGEO[1])
+      }else{
+        console.log('>>>>>GEO data does not work<<<<<<')
+      }
     },
+
+    // getCinemas(context){
+    //   axios({
+    //     method: 'get',
+    //     url: `${API_URL}/movies/cinema/`,
+    //     params: {
+    //       co_x : this.state.userGEO[0],
+    //       co_y : this.state.userGEO[1],
+    //     }
+    //   })
+    //   .then((response)=>{
+    //     console.log('loaded!')
+    //     context.commit('GET_CINEMAS', response.data)
+    //   })
+    // },
 
     getMBTIMovies(context){
       axios({

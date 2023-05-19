@@ -73,13 +73,26 @@ def movie_mbti(request):
     serializer = MovieListSerializer(moviesList, many=True)
     return Response(serializer.data)
 
-@api_view(['GET'])
-def movie_cinema(request):
-    userCoor = request.Get.get('coor', '')
-    cinemas = get_list_or_404(Cinema)
-    cinemaList = []
-    for i in cinemas:
-        if ((i.cood_x - userCoor[0]) ** 2 + (i.cood_y - userCoor[1]) ** 2) <= 10:
-            cinemaList.append(i)
-    serializer = CinemaListSerializer(cinemaList, many=True)
-    return Response(serializer.data)
+# @api_view(['GET'])
+# def movie_cinema(request):
+#     # print(request.GET.get('co_y', ''))
+#     # print(request.GET.get('co_x', ''))
+#     # print(request.GET.get('co_y', ''))
+#     # print(request.GET.get('co_x', ''))
+#     # print(request.GET.get('co_y', ''))
+#     # print(request.GET.get('co_x', ''))
+#     co_x = float(request.GET.get('co_x', ''))
+#     co_y = float(request.GET.get('co_y', ''))
+#     cinemas = get_list_or_404(Cinema)
+#     cinemaList = []
+#     for i in cinemas:
+#         if i.cood_x != None:
+            
+#             if ((float(i.cood_x) - co_x) ** 2 + (float(i.cood_y) - co_y) ** 2) ** (1/2) <= 10:
+#                 cinemaList.append(i)
+#     print('cinemaList formed!')
+#     print(cinemaList)
+#     for i in cinemaList:
+#         print(i.name)
+#     serializer = CinemaListSerializer(cinemaList, many=True)
+#     return Response(serializer.data)
