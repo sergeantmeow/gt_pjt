@@ -4,6 +4,10 @@ from rest_framework import status
 from rest_framework.response import Response
 from .serializers import CustomRegisterSerializer
 from rest_framework.authtoken.models import Token
+from rest_framework.views import APIView
+from django.contrib.auth import get_user_model
+
+User = get_user_model()
 
 class CustomRegisterView(RegisterView):
     serializer_class = CustomRegisterSerializer
@@ -35,7 +39,9 @@ class CustomLoginView(LoginView):
             'user': {
                 'id': user.id,
                 'username': user.username,
-                'mbti': user.mbti
+                'mbti': user.mbti,
+                'date_joined' : user.date_joined,
+                'last_login' : user.last_login,
             }
         }
 
@@ -43,3 +49,17 @@ class CustomLoginView(LoginView):
 
 class LogoutView(LogoutView):
     pass
+
+class UserProfileView(APIView):
+    def get(self, request, username):
+        try:
+            user = User.objects.get(username=username)
+            data = {
+                'username': user.username,
+                'mbti': user.mbti,
+                'date_joined' : user.date_joined,
+                'last_login' : user.last_login, 
+            }
+            return Response(data)
+        except User.DoesNotExist:
+            return Response({'error': 'User not found'}, status=404)

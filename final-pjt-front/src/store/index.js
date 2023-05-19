@@ -24,10 +24,7 @@ export default new Vuex.Store({
     ],
     cinemaList: [
     ],
-    user: {
-      token: null,
-      username: null,
-      mbti: null
+    user : {
     },
   },
   getters: {
@@ -62,9 +59,7 @@ export default new Vuex.Store({
       state.user = user
     },
     RESET_USER(state) {
-      state.user.token = null
-      state.user.username = null
-      state.user.mbti = null
+      state.user = {}
     },
 
   },
@@ -177,11 +172,20 @@ export default new Vuex.Store({
           token: res.data.key,
           username: res.data.user.username,
           mbti: res.data.user.mbti,
+          date_joined : res.data.user.date_joined,
+          last_login : res.data.user.last_login,
         }
+        console.log(user)
         context.commit('SET_USER', user)
         router.push('/')
       })
-      .catch((err) => console.log(err))
+      .catch((error) => {
+        if (error.response && error.response.status === 400) {
+          alert('잘못된 username 또는 password를 입력하셨습니다.')
+        } else {
+          console.log(error)
+        }
+      })
     },
     logout(context){
       axios({

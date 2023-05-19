@@ -13,7 +13,7 @@
       
       <label for="mbti"> mbti : </label>
       <input type="text" id="mbti" v-model="mbti"><br>
-
+      <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC" target="_blank">MBTI 유형 검사하기</a><br>
       <input type="submit" value="SignUp">
     </form>
     <div v-if="passwordsMatchError" class="error-message">

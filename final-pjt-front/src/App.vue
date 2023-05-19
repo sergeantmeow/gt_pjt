@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
     <nav id="top_navbar" class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a href="" class="text-decoration-none fw-bold">

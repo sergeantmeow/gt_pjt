@@ -30,6 +30,8 @@ export default {
       const payload = {
         username, password
       }
+      this.username = ''
+      this.password = ''
       this.$store.dispatch('login', payload)
     }
   },
