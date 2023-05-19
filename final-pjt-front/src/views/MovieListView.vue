@@ -60,6 +60,7 @@ export default {
   created(){
     this.getLink()
     this.getCine()
+    this.getUserGeo()
     if(this.isLogin){
       this.getMBTI()
       // console.log('getmbti function initiated!')
@@ -84,6 +85,9 @@ export default {
     getMBTI(){
       this.$store.dispatch('getMBTIMovies')
     },
+    getUserGeo(){
+      this.$store.dispatch('getUserGeo')
+    }
   },
 
 }
