@@ -51,15 +51,18 @@ export default {
   methods: {
     signUp() {
       const mbtiList = ['INTJ', 'INTP', 'INFJ','INFP','ISTJ','ISTP','ISFJ','ISFP','ENTJ','ENTP','ENFJ','ENFP','ESTJ','ESTP','ESFJ','ESFP']
-      const upperMBTI = this.mbti.toUpperCase()
+      let upperMBTI = null
+      if(this.mbti != null){
+        upperMBTI = this.mbti.toUpperCase()
+      }
       this.passwordsMatchError = false
       this.mbtiNullError = false
-       this.mbtiWrongError = false
+      this.mbtiWrongError = false
       if (this.password1 !== this.password2) {
         this.passwordsMatchError = true; // 비밀번호 불일치 오류 플래그 설정
         return; // 함수 종료
       }
-      if (upperMBTI == null){
+      if (this.mbti == null){
         this.mbtiNullError = true;
       }else if(mbtiList.includes(upperMBTI) == false){
           this.mbtiWrongError = true;
