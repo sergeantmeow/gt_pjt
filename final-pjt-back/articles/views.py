@@ -28,7 +28,9 @@ def article_create(request):
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
-
+        else:
+            return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+        
 # 로그인하고 작성자와 같은 경우만 수정, 삭제 가능
 @api_view(['GET', 'DELETE', 'PUT'])
 # @permission_classes([IsAuthenticated])

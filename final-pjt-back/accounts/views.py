@@ -39,7 +39,9 @@ class CustomLoginView(LoginView):
             'user': {
                 'id': user.id,
                 'username': user.username,
-                'mbti': user.mbti
+                'mbti': user.mbti,
+                'date_joined' : user.date_joined,
+                'last_login' : user.last_login,
             }
         }
 
@@ -54,7 +56,9 @@ class UserProfileView(APIView):
             user = User.objects.get(username=username)
             data = {
                 'username': user.username,
-                'mbti': user.mbti, 
+                'mbti': user.mbti,
+                'date_joined' : user.date_joined,
+                'last_login' : user.last_login, 
             }
             return Response(data)
         except User.DoesNotExist:

@@ -6,9 +6,14 @@
     <form @submit.prevent="editArticle">
       <label for="title">제목 : </label>
       <input type="text" id="title" v-model.trim="title"><br>
+      <div v-if="image">
+        <img :src="image" alt="이미지" class="image-preview">
+      </div>
       <label for="content">내용 : </label>
-      <textarea id="content" cols="30" rows="10" v-model="content"></textarea><br>
-      <input type="submit" id="submit">
+      <textarea id="content" cols="50" rows="10" v-model="content"></textarea><br>
+      <label for="content">이미지 선택 : </label>
+      <input type="file" id="image" ref="image" @change="handleImageChange"><br>
+      <input type="submit" id="submit" value="수정">
     </form>
   </div>
 </template>
@@ -24,6 +29,7 @@ export default {
     return {
       title: '',
       content: '',
+      image: '',
     }
   },
   computed:{
@@ -32,51 +38,55 @@ export default {
     }
   },
   created(){
-    // 기존 게시글의 내용을 가져와서 데이터에 할당
-    this.getArticleDetail();
+    const { title, image, content } = this.$route.query;
+    this.title = title;
+    this.image = API_URL + image;
+    this.content = content;
   },
   methods: {
-    getArticleDetail() {
-      const articleId = this.$route.params.id;
-      axios({
-        method: 'get',
-        url: `${API_URL}/articles/${articleId}/`,
-      })
-      .then((res) => {
-        const article = res.data;
-        this.title = article.title;
-        this.content = article.content;
-      })
-      .catch((err) => {
-        console.log(err);
-      });
-    },
-    editArticle() {
-      const title = this.title
-      const content = this.content
+  editArticle() {
 
-      if (!title) {
-        alert('제목 입력해주세요')
-        return
-      } else if (!content){
-        alert('내용 입력해주세요')
-        return
-      }
-      axios({
-        method: 'put',
-        url: `${API_URL}/articles/${ this.$route.params.id }/`,
-        headers: {
-          Authorization: `Token ${this.$store.state.user.token}`
-        },
-        data: { title, content},
-      })
-      .then(() => {
-        this.$router.push({name: 'ArticleView'})
-      })
-      .catch((err) => {
-        console.log(err)
-      })
+    if (!this.title) {
+      alert('제목 입력해주세요')
+      return
+    } else if (!this.content){
+      alert('내용 입력해주세요')
+      return
     }
+
+    const formData = new FormData();
+    formData.append('title', this.title);
+    formData.append('content', this.content);
+    if (this.image) {
+    formData.append('image', this.$refs.image.files[0]);
+    }
+
+    axios({
+      method: 'put',
+      url: `${API_URL}/articles/${ this.$route.params.id }/`,
+      headers: {
+        Authorization: `Token ${this.$store.state.user.token}`,
+        'Content-Type': 'multipart/form-data',
+      },
+      data: formData
+    })
+    .then(() => {
+      this.$router.push({name: 'ArticleView'})
+    })
+    .catch((err) => {
+      console.log(err)
+    })
+    },
+    handleImageChange(event) {
+      const file = event.target.files[0]
+      const reader = new FileReader()
+
+      reader.onload = (e) => {
+        this.image = e.target.result
+      }
+
+      reader.readAsDataURL(file)
+    },
   }
 }
 </script>

@@ -8,7 +8,8 @@ import MovieListView from '@/views/MovieListView'
 import MovieDetailView from '@/views/MovieDetailView'
 import LogInView from '../views/LogInView'
 import SignUpView from '../views/SignUpView'
-import ProfileView from '@/views/ProfileView'
+import MyProfileView from '@/views/MyProfileView'
+import OtherProfileView from '@/views/OtherProfileView'
 
 Vue.use(VueRouter)
 
@@ -61,9 +62,15 @@ const routes = [
   },
   
   {
-    path: '/profile/:username',
-    name: 'ProfileView',
-    component: ProfileView
+    path: '/myprofile',
+    name: 'MyProfileView',
+    component: MyProfileView
+  },
+
+  {
+    path: '/otherprofile/:username',
+    name: 'OtherProfileView',
+    component: OtherProfileView
   },
 ]
 

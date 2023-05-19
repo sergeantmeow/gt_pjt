@@ -4,10 +4,14 @@
     <p>글 번호 : {{ article?.id }}</p>
     <p>제목 : {{ article?.title }}</p>
     <p>작성자 : 
-      <router-link :to="{ name: 'ProfileView', params: { username: article?.username } }">
+      <router-link :to="{ name: 'OtherProfileView', params: { username: article?.username } }">
       {{ article?.username }}
     </router-link>
-    </p>  
+    </p>
+    <div v-if="article && article.image">
+    <p>이미지:</p>
+    <img :src="'http://127.0.0.1:8000' + article.image" alt="게시글 이미지" class="image-preview">
+    </div>
     <p>내용 : {{ article?.content }}</p>
     <p>좋아요 : {{ article?.like_users.length }}</p>
     <p>작성시간 : {{ article?.created_at }}</p>
@@ -29,7 +33,7 @@ export default {
   name: 'ArticleDetailView',
   data() {
     return {
-      article: null
+      article: null,
     }
   },
   created() {
@@ -54,6 +58,7 @@ export default {
         url: `${API_URL}/articles/${ this.$route.params.id }/`,
         })
         .then((res) => {
+          console.log(res.data)
           this.article = res.data
         })
         .catch((err) => {
@@ -71,8 +76,7 @@ export default {
       method: 'delete',
       url: `${API_URL}/articles/${ this.$route.params.id }/`
     })
-    .then((res) => {
-      console.log(res)
+    .then(() => {
       this.$router.push({name: 'ArticleView'})
     })
     .catch((err) => {
@@ -81,7 +85,13 @@ export default {
     }
     },
     editArticle(){
-      this.$router.push({name: 'ArticleEditView', params: { id: this.article.id }})
+      const params = {
+        id: this.article.id,
+        title: this.article.title,
+        image: this.article.image,
+        content: this.article.content
+      }
+      this.$router.push({name: 'ArticleEditView', params: { id: this.article.id }, query: params })
     },
     likeArticle(){
       axios({
@@ -101,3 +111,10 @@ export default {
   }
 }
 </script>
+
+<style>
+.image-preview {
+  max-width: 500px;
+  max-height: 500px;
+}
+</style>
