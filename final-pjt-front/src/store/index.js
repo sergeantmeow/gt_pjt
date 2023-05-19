@@ -22,6 +22,8 @@ export default new Vuex.Store({
     ],
     mbtiMovies: [
     ],
+    cinemaList: [
+    ],
     user: {
       token: null,
       username: null,
@@ -78,6 +80,16 @@ export default new Vuex.Store({
       })
       .catch((err)=>{
         console.log(err)
+      })
+    },
+
+    getCinemas(context){
+      axios({
+        method: 'get',
+        url: `${API_URL}/movies/cinema/`,
+      })
+      .then((response)=>{
+        context.commit('GET_CINEMAS', response.data)
       })
     },
 

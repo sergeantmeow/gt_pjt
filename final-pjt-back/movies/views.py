@@ -2,8 +2,8 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404, get_list_or_404
-from .serializers import MovieListSerializer, MovieSerializer
-from .models import Movie
+from .serializers import MovieListSerializer, MovieSerializer, CinemaListSerializer
+from .models import Movie, Cinema
 import random
 
 # Create your views here.
@@ -71,4 +71,15 @@ def movie_mbti(request):
             moviesList.append(tmpMovie)
             cnt += 1
     serializer = MovieListSerializer(moviesList, many=True)
+    return Response(serializer.data)
+
+@api_view(['GET'])
+def movie_cinema(request):
+    userCoor = request.Get.get('coor', '')
+    cinemas = get_list_or_404(Cinema)
+    cinemaList = []
+    for i in cinemas:
+        if ((i.cood_x - userCoor[0]) ** 2 + (i.cood_y - userCoor[1]) ** 2) <= 10:
+            cinemaList.append(i)
+    serializer = CinemaListSerializer(cinemaList, many=True)
     return Response(serializer.data)

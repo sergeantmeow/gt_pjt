@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2>TEST - KAKAOMAP 영화관들</h2>
-    <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
+    지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
     <div class="kmap" ref="map">
     </div>
       <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' @click="showPlace(rs)">
