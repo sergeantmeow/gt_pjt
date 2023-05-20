@@ -61,6 +61,8 @@ export default {
     this.getLink()
     this.getCine()
     this.getUserGeo()
+    this.getRetro()
+    this.getHighRating()
     if(this.isLogin){
       this.getMBTI()
       // console.log('getmbti function initiated!')
@@ -87,6 +89,12 @@ export default {
     },
     getUserGeo(){
       this.$store.dispatch('getUserGeo')
+    },
+    getHighRating(){
+      this.$store.dispatch('getHighRating')
+    },
+    getRetro(){
+      this.$store.dispatch('getRetro')
     }
   },
 

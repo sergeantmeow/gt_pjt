@@ -10,6 +10,8 @@
     </div>
     <MovieFromDB/>
     <MovieMBTI v-if="isLogin"/>
+    <MovieRetro/>
+    <MovieHigh/>
   </div>
   
 </template>
@@ -17,6 +19,8 @@
 <script>
 import MovieFromDB from '@/components/MovieFromDB'
 import MovieMBTI from '@/components/MovieMBTI'
+import MovieRetro from '@/components/MovieRetro'
+import MovieHigh from '@/components/MovieHigh'
 
 export default {
   name: 'MovieCard',
@@ -32,7 +36,9 @@ export default {
   },
   components: {
     MovieFromDB,
-    MovieMBTI
+    MovieMBTI,
+    MovieRetro,
+    MovieHigh,
   },
 }
 </script>

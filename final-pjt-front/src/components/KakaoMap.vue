@@ -2,11 +2,21 @@
   <div>
     <h2>TEST - KAKAOMAP 영화관들</h2>
     지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
+    <button>
+      <div @click="loadNearCinema">
+        근처영화관 조회하기
+      </div>
+    </button>
+    <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' @click="showPlace(rs)" style="cursor: pointer">
+      <h4>{{ rs.place_name }}</h4>
+    </div>
+    <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' 
+    @click="showPlace2(rs)" 
+    style="cursor: pointer">
+      <h4>{{ rs.name }}</h4>
+    </div>
     <div class="kmap" ref="map">
     </div>
-      <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' @click="showPlace(rs)" style="cursor: pointer">
-          <h4>{{ rs.place_name }}</h4>
-      </div>
   </div>
 </template>
 
@@ -27,7 +37,7 @@ export default {
   mounted(){
     console.log(this.options.center)
     this.renderMap()
-    // this.nearbyCinema()
+    this.nearbyCinema()
   },
   
   methods : {
@@ -43,9 +53,13 @@ export default {
       console.log(mapInstance)
     },
 
-    // nearbyCinema(){
-    //   this.$store.dispatch('getCinemas')
-    // },
+    nearbyCinema(){
+      this.$store.dispatch('getCinemas')
+    },
+
+    loadNearCinema(){
+      this.cinemaList = this.$store.state.cinemaList
+    },
 
     searchCinema(e){
       const keyword = `${e.target.value} 영화관`
@@ -65,6 +79,15 @@ export default {
       }
       this.options.level = 3
       this.renderMap()
+    },
+
+    showPlace2(){
+      // this.options.center = {
+      //   lat: place.cood_y,
+      //   lng: place.cood_x,
+      // }
+      // this.options.level = 3
+      // this.renderMap()
     },
   }
 }
