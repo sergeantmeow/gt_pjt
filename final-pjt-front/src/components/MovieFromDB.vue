@@ -153,6 +153,8 @@
                     내용: {{this.$store.state.movie?.overview}}
                     <br>
                     평점: {{this.$store.state.movie?.popularity}}
+                    <br>
+                    개봉일: {{this.$store.state.movie?.release_date}}
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -164,6 +166,7 @@
 </template>
 
 <script>
+
 export default {
 
   name: 'MovieCard',
@@ -172,6 +175,7 @@ export default {
       movies : this.$store.state.movies
     }
   },
+
   methods : {
     getMovie(pk){
         this.$store.dispatch('getMovie', pk)
