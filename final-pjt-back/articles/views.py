@@ -94,9 +94,10 @@ def comment_detail(request, comment_pk):
             return Response(serializer.data)
 
 @api_view(['POST'])
+@permission_classes([IsAuthenticated])
 def comment_create(request, article_pk):
     if request.method == 'POST':
-        serializer = CommentSerializer(data=request.data, article=article_pk)
+        serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
