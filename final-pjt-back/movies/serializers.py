@@ -15,7 +15,7 @@ class MovieSerializer(serializers.ModelSerializer):
 class CinemaListSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cinema
-        fields = 'name'  
+        fields = '__all__'  
 
 class CinemaSerializer(serializers.ModelSerializer):
     class Meta:
