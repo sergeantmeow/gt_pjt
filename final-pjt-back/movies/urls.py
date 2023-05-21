@@ -7,4 +7,6 @@ urlpatterns = [
     path('<int:movie_pk>/', views.movie_detail),
     path('mbti/', views.movie_mbti),
     path('cinema/', views.movie_cinema),
+    path('high/', views.movie_high),
+    path('retro/', views.movie_retro),
 ]

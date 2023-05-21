@@ -1,11 +1,11 @@
 <template>
     <div>
-        <h4 id="recommend_title">{{mbti}}인 당신에게 맞는 추천 영화</h4>
+        <h4 id="recommend_title">높은 평점의 영화</h4>
         <div class="wrapper">
-            <section id="section4">
-            <a href="#section6" class="arrow__btn left-arrow">‹</a>
+            <section id="section10">
+            <a href="#section12" class="arrow__btn left-arrow">‹</a>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[0].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[0]?.poster_path}`"
                   alt="Describe Image">
@@ -13,7 +13,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[1].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[1]?.poster_path}`"
                   alt="Describe Image">
@@ -21,7 +21,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[2].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[2]?.poster_path}`"
                   alt="Describe Image">
@@ -29,7 +29,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[3].id)">
-              <div class="item1">
+                <div class="item3">
                     <img
                     :src="`https://image.tmdb.org/t/p/w500/${movies[3]?.poster_path}`"
                     alt="Describe Image">
@@ -37,20 +37,20 @@
                 </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[4].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[4]?.poster_path}`"
                   alt="Describe Image">
                   <h5 class="heading">{{ movies[4]?.title }}</h5>
               </div>
             </div>
-            <a href="#section5" class="arrow__btn right-arrow">›</a>
+            <a href="#section11" class="arrow__btn right-arrow">›</a>
             </section>
 
-            <section id="section5">
-            <a href="#section4" class="arrow__btn left-arrow">‹</a>
+            <section id="section11">
+            <a href="#section10" class="arrow__btn left-arrow">‹</a>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[5].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[5]?.poster_path}`"
                   alt="Describe Image">
@@ -58,7 +58,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[6].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[6]?.poster_path}`"
                   alt="Describe Image">
@@ -66,7 +66,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[7].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[7]?.poster_path}`"
                   alt="Describe Image">
@@ -74,7 +74,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[8].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[8]?.poster_path}`"
                   alt="Describe Image">
@@ -82,20 +82,20 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[9].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[9]?.poster_path}`"
                   alt="Describe Image">
                   <h5 class="heading">{{ movies[9]?.title }}</h5>
               </div>
             </div>
-            <a href="#section6" class="arrow__btn right-arrow">›</a>
+            <a href="#section12" class="arrow__btn right-arrow">›</a>
             </section>
 
-            <section id="section6">
-            <a href="#section5" class="arrow__btn left-arrow">‹</a>
+            <section id="section12">
+            <a href="#section11" class="arrow__btn left-arrow">‹</a>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[10].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[10]?.poster_path}`"
                   alt="Describe Image">
@@ -103,7 +103,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[11].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[11]?.poster_path}`"
                   alt="Describe Image">
@@ -111,7 +111,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[12].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[12]?.poster_path}`"
                   alt="Describe Image">
@@ -119,7 +119,7 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[13].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[13]?.poster_path}`"
                   alt="Describe Image">
@@ -127,16 +127,17 @@
               </div>
             </div>
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[14].id)">
-              <div class="item1">
+              <div class="item3">
                   <img
                   :src="`https://image.tmdb.org/t/p/w500/${movies[14]?.poster_path}`"
                   alt="Describe Image">
                   <h5 class="heading">{{ movies[14]?.title }}</h5>
               </div>
             </div>
-            <a href="#section4" class="arrow__btn right-arrow">›</a>
+            <a href="#section10" class="arrow__btn right-arrow">›</a>
             </section>
         </div>
+
         <!-- Modal -->
         <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullsize">
@@ -165,8 +166,7 @@ export default {
   name: 'MovieCard',
   data(){
     return {
-      movies : this.$store.state.mbtiMovies,
-      mbti : this.$store.state.user.mbti
+      movies : this.$store.state.highRatingMovies,
     }
   },
   methods : {
@@ -219,7 +219,7 @@ export default {
     grid-template-columns: repeat(5, auto);
     margin: 20px 0;
   }
-  .wrapper section .item1 {
+  .wrapper section .item3 {
     position: relative;
     padding: 0 2px;
     transition: 250ms all;
@@ -227,11 +227,11 @@ export default {
   .wrapper section img{
     width: 100%;
   }
-  .wrapper section .item1:hover {
+  .wrapper section .item3:hover {
     margin: 0 40px;
     transform: scale(1.2);
   }
-  .wrapper section .item1 .heading {
+  .wrapper section .item3 .heading {
     position: absolute;
     bottom: 20px;
     color: black;
@@ -239,7 +239,7 @@ export default {
     width: 100%;
     font-size: var(--font-size-md)
   }
-  .wrapper section .item1 .heading:hover {
+  .wrapper section .item3 .heading:hover {
     position: absolute;
     bottom: 20px;
     color: black;
@@ -261,7 +261,7 @@ export default {
     
   }
   
-  /* .wrapper section .item1 .duration {
+  /* .wrapper section .item3 .duration {
     position: absolute;
     bottom: 0;
     left: 20px;
