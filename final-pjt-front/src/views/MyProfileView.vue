@@ -5,6 +5,7 @@
     <p>사용자 MBTI: {{ currentUser.mbti }}</p>
     <p>가입일: {{ currentUser.date_joined }}</p>
     <p>최근 로그인: {{ currentUser.last_login }}</p>
+    <router-link :to="{ name: 'MyProfileEditView' , params: { username: currentUser.username } }">[회원정보 수정]</router-link>
   </div>
 </template>
 

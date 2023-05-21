@@ -63,6 +63,7 @@ export default {
           const newComment = res.data
           this.localComments.push(newComment)
           this.newCommentContent = ''
+          location.reload();
         })
         .catch((err) => {
           console.log(err)

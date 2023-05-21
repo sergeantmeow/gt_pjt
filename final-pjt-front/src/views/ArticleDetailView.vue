@@ -68,7 +68,6 @@ export default {
         url: `${API_URL}/articles/${ this.$route.params.id }/`,
         })
         .then((res) => {
-          console.log(res)
           this.article = res.data
           this.comments = res.data.comments
         })

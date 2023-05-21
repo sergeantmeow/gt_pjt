@@ -10,6 +10,7 @@ import LogInView from '../views/LogInView'
 import SignUpView from '../views/SignUpView'
 import MyProfileView from '@/views/MyProfileView'
 import OtherProfileView from '@/views/OtherProfileView'
+import MyProfileEditView from '@/views/MyProfileEditView'
 
 Vue.use(VueRouter)
 
@@ -71,6 +72,12 @@ const routes = [
     path: '/otherprofile/:username',
     name: 'OtherProfileView',
     component: OtherProfileView
+  },
+
+  {
+    path: '/myprofile-edit',
+    name: 'MyProfileEditView',
+    component: MyProfileEditView
   },
 ]
 

@@ -6,6 +6,8 @@
       <p>사용자 MBTI: {{ user.mbti }}</p>
       <p>가입일: {{ user.date_joined }}</p>
       <p>최근 로그인: {{ user.last_login }}</p>
+      <p>팔로워 : {{ user.followers }}</p>
+      <button @click="followUser">팔로잉</button>
     </template>
   </div>
 </template>
@@ -32,6 +34,22 @@ export default {
       })
       .then((response) => {
         this.user = response.data;
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+    },
+    followUser() {
+      const id = this.user.id
+      axios({
+        method: 'post',
+        url: `${API_URL}/accounts/follow/${id}/`,
+        headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+        }
+      })
+      .then(() => {
+        this.getUserProfile(this.$route.params.username);
       })
       .catch((error) => {
         console.log(error);
