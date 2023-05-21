@@ -51,7 +51,7 @@ export default {
       }
       axios({
         method: 'post',
-        url: `${API_URL}/articles/${this.articleId}/comments/`,
+        url: `${API_URL}/articles/${this.articleId}/comments/create`,
         headers: {
           Authorization: `Token ${this.$store.state.user.token}`,
         },

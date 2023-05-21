@@ -97,7 +97,8 @@ def comment_detail(request, comment_pk):
 @permission_classes([IsAuthenticated])
 def comment_create(request, article_pk):
     if request.method == 'POST':
+        article = Article.objects.get(pk=article_pk)
         serializer = CommentSerializer(data=request.data)
         if serializer.is_valid(raise_exception=True):
-            serializer.save(user=request.user)
+            serializer.save(user=request.user, article=article)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
