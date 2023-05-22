@@ -5,13 +5,13 @@
       <router-link :to="{ name: 'MovieOnCinema' }">지금 상영 중</router-link> |
       <router-link :to="{ name: 'ArticleView' }">맞춤 추천</router-link> -->
       <button class="movie_nav">
-        <a href="" @click.prevent="popular" class="text-decoration-none fw-bold">Recommendations</a>
+        <a href="" @click.prevent="popular" class="movie_menu text-decoration-none fw-bold">Recommendations</a>
       </button>|
       <button class="movie_nav">
-        <a href="" @click.prevent="cinema" class="text-decoration-none fw-bold">Now On Cinema</a>
+        <a href="" @click.prevent="cinema" class="movie_menu text-decoration-none fw-bold">Now On Cinema</a>
       </button>|
       <button class="movie_nav">
-        <a href="" @click.prevent="mbti" class="text-decoration-none fw-bold">Cinema Info</a>
+        <a href="" @click.prevent="mbti" class="movie_menu text-decoration-none fw-bold">Cinema Info</a>
       </button>
     </nav>
     <hr id="spacer">
@@ -109,9 +109,13 @@ export default {
 }
 
 .movie_nav{
-  background-color: #9effb8;
+  background-color: #261639;
   border-radius: 5px;
   border: none;
+}
+
+.movie_menu{
+  color: #ff2679
 }
 
 </style>

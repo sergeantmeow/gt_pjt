@@ -148,11 +148,11 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <img :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt="">
+                    <img :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.backdrop_path}`" alt="">
                     <br>
                     내용: {{this.$store.state.movie?.overview}}
                     <br>
-                    평점: {{this.$store.state.movie?.popularity}}
+                    평점: {{this.$store.state.movie?.vote_average}}
                     <br>
                     개봉일: {{this.$store.state.movie?.release_date}}
                 </div>
@@ -189,6 +189,7 @@ export default {
   :root{
     --font-size-md: calc(0.5rem + 2vw);
   }
+
   #recommend_title{
     margin-top: 15px;
     margin-bottom: 0;

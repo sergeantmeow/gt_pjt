@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="topEle">
     <h2>TEST - KAKAOMAP 영화관들</h2>
     <div>
        지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
@@ -170,4 +170,5 @@ export default {
   #infoBox{
     text-align: center;
   }
+  
 </style>
