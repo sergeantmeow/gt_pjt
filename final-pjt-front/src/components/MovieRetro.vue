@@ -126,9 +126,6 @@
                   <h5 class="heading">{{ movies[13]?.title }}</h5>
               </div>
             </div>
-            <!-- <div :to="{
-                 name: 'MovieDetailView',
-                 params: { id: movies[14].id }}"> -->
             <div class="" data-bs-toggle="modal" data-bs-target="#movieModal" @click="getMovie(movies[14].id)">
               <div class="item3">
                   <img
@@ -136,30 +133,10 @@
                   alt="Describe Image">
                   <h5 class="heading">{{ movies[14]?.title }}</h5>
               </div>
-            <!-- </div> -->
             </div>
             <a href="#section7" class="arrow__btn right-arrow">›</a>
             </section>
         </div>
-
-        <!-- Modal -->
-        <!-- <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullsize">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="movieModalLabel">{{this.$store.state.movie?.title}}</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-         
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                </div>
-                </div>
-            </div>
-        </div> -->
     </div>
 </template>
 

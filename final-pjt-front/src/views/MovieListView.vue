@@ -11,7 +11,7 @@
         <a href="" @click.prevent="cinema" class="text-decoration-none fw-bold">Now On Cinema</a>
       </button>|
       <button class="movie_nav">
-        <a href="" @click.prevent="mbti" class="text-decoration-none fw-bold">To Be Added</a>
+        <a href="" @click.prevent="mbti" class="text-decoration-none fw-bold">Cinema Info</a>
       </button>
     </nav>
     <hr id="spacer">
@@ -19,11 +19,10 @@
       <MovieCard/>
     </div>
     <div v-else-if="link === 2">
-      <KakaoMap :options="mapOptions"/>
       <MovieOnCinema/>
     </div>
     <div v-else>
-      <p>기능 추가 예정</p>
+      <KakaoMap :options="mapOptions"/>
     </div>
   </div>
 </template>

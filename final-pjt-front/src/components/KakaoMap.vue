@@ -99,7 +99,7 @@ export default {
 
       // create infoWindow
       let iwContent = 
-        '<div style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank">더보기</a></div></div>',
+        '<div id="infoBox" style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a></div></div>',
           iwRemoveable = true // to close infoWindow
 
       let infowindow = new kakao.maps.InfoWindow({
@@ -140,7 +140,7 @@ export default {
           })
           console.log(marker)
           let iwContent = 
-            '<div style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank">더보기</a></div></div>',
+            '<div style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a></div></div>',
               iwRemoveable = true // to close infoWindow
 
           let infowindow = new kakao.maps.InfoWindow({
@@ -165,5 +165,9 @@ export default {
     width: 60%;
     height: 400px;
     margin: auto
+  }
+
+  #infoBox{
+    text-align: center;
   }
 </style>

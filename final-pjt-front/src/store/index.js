@@ -184,6 +184,21 @@ export default new Vuex.Store({
       })
     },
 
+    getFilm(context, pk){
+      const API_URL = `http://api.themoviedb.org/3/movie/${pk}`
+      axios({
+        url: API_URL,
+        params: {
+          api_key : 'ce3376151cdca276068439ff358212cb',
+          language : 'ko-KO',
+        }
+      })
+      .then((response)=>{
+        // console.log(response.data)
+        context.commit('GET_MOVIE', response.data)
+      })
+    },
+
     getMoviesCinema(context){
       const API_URL = 'http://api.themoviedb.org/3/movie/now_playing'
       axios({
