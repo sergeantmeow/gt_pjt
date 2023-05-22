@@ -6,8 +6,10 @@
       <p>사용자 MBTI: {{ user.mbti }}</p>
       <p>가입일: {{ user.date_joined }}</p>
       <p>최근 로그인: {{ user.last_login }}</p>
-      <p>팔로워 : {{ user.followers }}</p>
+      <p>팔로워 : {{ user.followers.length }}</p>
+      <div v-if="isNotAuthor">
       <button @click="followUser">팔로잉</button>
+      </div>
     </template>
   </div>
 </template>
@@ -22,6 +24,17 @@ export default {
     return {
       user : null
     }
+  },
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
+    },
+    currentUser(){
+      return this.$store.getters.currentUser
+    },
+    isNotAuthor() {
+      return this.isLogin && this.user?.username != this.currentUser.username
+    },
   },
   created(){
       this.getUserProfile(this.$route.params.username);

@@ -88,6 +88,9 @@ export default new Vuex.Store({
     RESET_USER(state) {
       state.user = {}
     },
+    UPDATE_USER(state, data){
+      state.user.mbti = data.mbti
+    }
 
   },
   actions: {
@@ -302,6 +305,13 @@ export default new Vuex.Store({
           }
       })
       .catch((err) => console.log(err))
+    },
+    updateUser(context, payload) {
+      const { mbti } = payload;
+      const data = {
+        mbti : mbti
+      }
+      context.commit('UPDATE_USER', data)
     },
   },
   modules: {
