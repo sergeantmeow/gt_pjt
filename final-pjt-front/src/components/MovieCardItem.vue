@@ -25,4 +25,8 @@ export default {
     transform: scale(1.1);
   }
 
+  .card{
+    border: solid 2px #7c6891
+  }
+
 </style>
