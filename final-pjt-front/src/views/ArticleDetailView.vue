@@ -1,8 +1,6 @@
 <template>
   <div>
-    <h1>Detail</h1>
-    <p>글 번호 : {{ article?.id }}</p>
-    <p>제목 : {{ article?.title }}</p>
+    <h2>제목 : {{ article?.title }}</h2>
     <div v-if="article && article.username">
     <p>작성자 : 
       <router-link :to="{ name: 'OtherProfileView', params: { username: article?.username } }">
@@ -11,19 +9,19 @@
     </p>
     </div>  
     <div v-if="article && article.image">
-    <p>이미지:</p>
     <img :src="'http://127.0.0.1:8000' + article.image" alt="게시글 이미지" class="image-preview">
     </div>
     <p>내용 : {{ article?.content }}</p>
     <p>좋아요 : {{ article?.like_users.length }}</p>
-    <p>작성시간 : {{ article?.created_at }}</p>
-    <p>수정시간 : {{ article?.updated_at }}</p>
+    <p>작성일 : {{ formatDateTime(article?.created_at) }}</p>
+    <p>수정일 :  {{ formatDateTime(article?.updated_at) }}</p>
     <button @click="likeArticle">좋아요</button>
     <div v-if="isAuthor">
     <button @click="editArticle">수정</button>
     <button @click="deleteArticle">삭제</button>
+    <hr>
     </div>
-    <ArticleComment :comments="comments" :articleId="articleId"/>
+    <ArticleComment :articleId="articleId"/>
     <!-- 로그인했을 경우만 댓글 달 수 있게 하기 -->
   </div>
 </template>
@@ -39,7 +37,6 @@ export default {
     return {
       article: null,
       articleId : '',
-      comments: [],
     }
   },
   components: {
@@ -61,6 +58,19 @@ export default {
     },
   },
   methods: {
+    formatDateTime(dateTime) {
+      if (!dateTime) return '';
+
+      const date = new Date(dateTime);
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      const seconds = date.getSeconds().toString().padStart(2, '0');
+
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    },
     getArticleDetail() {
       if (this.isLogin) {
         axios({
@@ -69,7 +79,6 @@ export default {
         })
         .then((res) => {
           this.article = res.data
-          this.comments = res.data.comments
         })
         .catch((err) => {
           console.log(err)

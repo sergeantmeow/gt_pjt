@@ -49,7 +49,7 @@ export default new Vuex.Store({
   mutations: {
     // articles
     GET_ARTICLES(state, articles) {
-      state.articles = articles
+      state.articles = Array.reverse(articles)
     },
 
     // movies

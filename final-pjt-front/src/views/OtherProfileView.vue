@@ -4,8 +4,8 @@
     <template v-if="user">
       <p>이름: {{ user.username }}</p>
       <p>MBTI: {{ user.mbti }}</p>
-      <p>가입일: {{ user.date_joined }}</p>
-      <p>최근 로그인: {{ user.last_login }}</p>
+      <p>가입일: {{ formatDateTime(user.date_joined) }}</p>
+      <p>최근 로그인: {{ formatDateTime(user.last_login) }}</p>
       <hr>
       <UserArticle :username="user.username" />
       <hr>
@@ -49,6 +49,19 @@ export default {
       this.getUserProfile(this.$route.params.username);
   },
   methods: {
+    formatDateTime(dateTime) {
+      if (!dateTime) return '';
+
+      const date = new Date(dateTime);
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      const seconds = date.getSeconds().toString().padStart(2, '0');
+
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    },
     getUserProfile(username) {
       axios({
         method: 'get',

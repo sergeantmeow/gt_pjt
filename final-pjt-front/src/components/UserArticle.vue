@@ -8,7 +8,7 @@
           params: {id: article.id }}">
           <h6>{{ article.title }}</h6>
         </router-link>
-        <p>{{ article.created_at }}</p>
+        <p>{{ formatDateTime(article.created_at) }}</p>
         <!-- 게시물의 이미지 등 다른 필드들을 표시할 수 있음 -->
       </li>
     </ul>
@@ -34,6 +34,19 @@ export default {
     this.fetchUserArticles();
   },
   methods: {
+    formatDateTime(dateTime) {
+      if (!dateTime) return '';
+
+      const date = new Date(dateTime);
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      const seconds = date.getSeconds().toString().padStart(2, '0');
+
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    },
     fetchUserArticles() {
       axios({
         method: 'get',

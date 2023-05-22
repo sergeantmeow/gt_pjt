@@ -1,7 +1,8 @@
 <template>
   <div>
-    <h1>Article Page</h1>
-    <router-link :to="{ name: 'ArticleCreateView' }">[CREATE]</router-link>
+    <h2 style="color: #ff2679;">Community</h2>
+    <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view">새 글쓰기</router-link>
+    <hr>
     <ArticleList />
   </div>
 </template>
@@ -26,5 +27,12 @@ export default {
 </script>
 
 <style>
+.btn-article-view {
+  background-color: #261639;
+  color: #bfbfbf;
+}
 
+.btn-article-view:hover {
+  background-color: #7c6891;
+}
 </style>

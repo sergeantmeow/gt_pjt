@@ -1,14 +1,14 @@
 <template>
   <div v-if="comment">
     <hr>
-    <h5>{{ comment.content }}</h5>
+    <h5>댓글: {{ comment.content }}</h5>
     <p>작성자 : 
       <router-link :to="{ name: 'OtherProfileView', params: { username: comment.username } }">
         {{ comment.username }}
       </router-link>
     </p>
-    <p>작성일 : {{ comment.created_at }}</p>
-    <p>수정일 : {{ comment.updated_at }}</p>
+    <p>작성일 : {{ formatDateTime(comment.created_at) }}</p>
+    <!-- <p>수정일 : {{ formatDateTime(comment.updated_at) }}</p> -->
     <div v-if="isAuthor">
       <button @click="editArticle">수정</button>
       <button @click="deleteComment">삭제</button>
@@ -37,20 +37,19 @@ export default {
     },
   },
   methods: {
-    // 댓글 단방향말고 양방향으로 만들기 위해서 props 제거하기
-    // getComment(){
-    //   const id = this.comment.id;
-    //   axios({
-    //       method: 'get',
-    //       url: `${API_URL}/articles/comments/${ id }/`
-    //     })
-    //     .then((respons) => {
-          
-    //     })
-    //     .catch((err) => {
-    //       console.log(err)
-    //     })
-    // },
+    formatDateTime(dateTime) {
+      if (!dateTime) return '';
+
+      const date = new Date(dateTime);
+      const year = date.getFullYear();
+      const month = (date.getMonth() + 1).toString().padStart(2, '0');
+      const day = date.getDate().toString().padStart(2, '0');
+      const hours = date.getHours().toString().padStart(2, '0');
+      const minutes = date.getMinutes().toString().padStart(2, '0');
+      const seconds = date.getSeconds().toString().padStart(2, '0');
+
+      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+    },
     deleteComment(){ 
       if (confirm('댓글을 삭제하시겠습니까?')) {
         const id = this.comment.id;
@@ -59,7 +58,7 @@ export default {
           url: `${API_URL}/articles/comments/${ id }/`
         })
         .then(() => {
-          location.reload();
+          this.$eventBus.$emit('commentDeleted');
         })
         .catch((err) => {
           console.log(err)
@@ -78,7 +77,7 @@ export default {
           }
         })
         .then(() => {
-          location.reload();
+          this.$eventBus.$emit('commentDeleted');
         })
         .catch((err) => {
           console.log(err)

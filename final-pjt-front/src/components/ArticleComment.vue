@@ -27,22 +27,33 @@ export default {
     ArticleCommentItem,
   },
   props: {
-    comments: {
-      type: Array,
-      default: () => [],
-    },
     articleId : String,
     },
   data() {
     return {
       newCommentContent: '',
-      localComments: [],
+      comments: [],
     }
   },
   created() {
-    this.localComments = this.comments
+    this.getComment()
+    this.$eventBus.$on('commentDeleted', () => {
+      this.getComment();
+    });
   },
   methods: {
+    getComment(){
+      axios({
+          method: 'get',
+          url: `${API_URL}/articles/${ this.articleId }/comments/`
+        })
+        .then((res) => {
+          this.comments = res.data
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    },
     addComment() {
       const content = this.newCommentContent.trim();
       if (!content) {
@@ -61,9 +72,9 @@ export default {
       })
         .then((res) => {
           const newComment = res.data
-          this.localComments.push(newComment)
+          this.comments.push(newComment)
           this.newCommentContent = ''
-          location.reload();
+          this.getComment
         })
         .catch((err) => {
           console.log(err)
