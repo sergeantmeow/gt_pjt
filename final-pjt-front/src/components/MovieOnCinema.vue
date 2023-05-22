@@ -48,27 +48,27 @@
     </div>
     <!-- Modal -->
     <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-fullsize">
-            <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="movieModalLabel">{{this.$store.state.movie?.title}}</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt="">
-                <br>
-                내용: {{this.$store.state.movie?.overview}}
-                <br>
-                평점: {{this.$store.state.movie?.vote_average}}
-                <br>
-                개봉일: {{this.$store.state.movie?.release_date}}
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+            <div class="modal-dialog modal-fullsize">
+              <img id="modal_bg_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.backdrop_path}`" alt="">
+                <div class="modal-body bg-transparent container">
+                    <div class="row">
+                      <div class="col"><img id="modal_poster_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt=""></div>
+                      <div id="modal_content" class="col text-black fw-bold">
+                        <h3 class="modal-title fs-7 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
+                        <br>
+                        <p>{{this.$store.state.movie?.overview}}</p>
+                        <br>
+                        <p>평점: {{this.$store.state.movie?.vote_average}}</p> 
+                        <br>
+                        <p>개봉일: {{this.$store.state.movie?.release_date}}</p> 
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
-    </div>
   </div>
 </template>
 
