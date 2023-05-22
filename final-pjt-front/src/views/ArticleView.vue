@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 style="color: #ff2679;">Community</h2>
-    <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view">새 글쓰기</router-link>
+    <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view fw-bold">새 글쓰기</router-link>
     <hr>
     <ArticleList />
   </div>
