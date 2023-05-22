@@ -1,7 +1,7 @@
 <template>
   <div id="topEle">
     <div id="searchByArea">
-      지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
+      지역명으로 검색하기: <input type="text" id="areaSearch" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
     </div>
     또는
     <button class="btn_search_cinema">
@@ -10,15 +10,23 @@
       </div>
     </button>
     <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' @click="showPlace(rs)" style="cursor: pointer">
-      <div class="cinemaCard">
+      <div class="cinemaCard" v-if="searchMethod === 1">
         <h5>{{ rs.place_name }}</h5>
+        <div id="cinemaInfo">
+          <div>주소: {{ rs.road_address_name }}</div>
+          <div>연락처: {{ rs.phone }}</div>
+        </div>
       </div>
     </div>
     <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' 
     @click="showPlace2(rs)" 
     style="cursor: pointer">
-      <div class="cinemaCard">
+      <div class="cinemaCard2" v-if="searchMethod === 2">
         <h5>{{ rs.name }}</h5>
+        <div id="cinemaInfo">
+          <div>주소: {{ rs.address}}</div>
+          <div>연락처: {{ rs.contact }} </div>
+        </div>
       </div>  
     </div>
     <div id="kmap" class="kmap" ref="map">
@@ -37,7 +45,8 @@ export default {
           lng: this.$store.state.userGEO[1],
         },
         level: 4,
-      }
+      },
+      searchMethod : 1,
     }
   },
   mounted(){
@@ -64,10 +73,12 @@ export default {
     },
 
     loadNearCinema(){
+      this.searchMethod = 2
       this.cinemaList = this.$store.state.cinemaList
     },
 
     searchCinema(e){
+      this.searchMethod = 1
       const keyword = `${e.target.value} 영화관`
       const ps = new window.kakao.maps.services.Places()  
       ps.keywordSearch(keyword, (data, status, pgn)=>{
@@ -75,6 +86,7 @@ export default {
         console.log(status)
         console.log(pgn)
         this.cinemaList = data
+        console.log(data)
       })
     },
 
@@ -114,7 +126,7 @@ export default {
       kakao.maps.event.addListener(marker, 'click', function(){
         infowindow.open(mapInstance, marker)
       })
-      console.log(place)
+      // console.log(place)
     },
 
 
@@ -150,12 +162,12 @@ export default {
             content : iwContent,
             removable: iwRemoveable
           })
-          //////////////////////////////// 수정필 /////////////////////////////////
+          //////////////////////////////// 수정필 ////////함수밖(위에) 신규 마커를 선언하고 함수 안에서 그 마커에 신규 마커정보를 넣어주면?/////////////////////////
           // set clickevent on the marker
           kakao.maps.event.addListener(marker, 'click', function(){
             infowindow.open(mapInstance, marker)
           })
-          console.log(place)
+          // console.log(place)
         }
       }
     },
@@ -192,6 +204,21 @@ export default {
   }
 
   #searchByArea{
+    margin-bottom: 10px;
+  }
+
+  #areaSearch{
+    border : solid 2px #ff2679;
+    border-radius: 4px;
+    background-color: #261639;
+    color: white;
+    outline: none;
+  }
+  
+  .cinemaCard{
+    margin-bottom: 10px;
+  }
+  .cinemaCard2{
     margin-bottom: 10px;
   }
   

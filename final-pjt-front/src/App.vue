@@ -4,21 +4,21 @@
     <nav id="top_navbar" class="navbar navbar-expand-md">
       <div class="container-fluid">
         <a href="" class="text-decoration-none fw-bold">
-          <img alt="VCR Logo" src="./assets/vcr.png" class="logo_img">
-          <a id="service_name" class="navbar-brand" href="#">SOME LIKE IT 90'S</a>
+          <img alt="VCR Logo" src="./assets/vcr_img.png" class="logo_img">
+          <a id="service_name" class="navbar-brand align-middle" href="#">SOME LIKE IT 90'S</a>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active align-middle" aria-current="page" href="#">
                 <router-link :to="{ name: 'MovieListView'}" class="app_nav text-decoration-none fw-bold">Movie</router-link>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">
+              <a class="nav-link active align-middle" aria-current="page" href="#">
                 <router-link :to="{ name: 'ArticleView' }" class="app_nav text-decoration-none fw-bold">Community</router-link>
               </a>
             </li>
@@ -89,6 +89,7 @@ export default {
   text-align: center;
   color: #bfbfbf;
   background-image: url("/src/assets/blue-gradient.jpg");
+  background-repeat: repeat-y;
 }
 #header_image{
   width : 100%;
@@ -98,7 +99,7 @@ export default {
 }
 
 .logo_img{
-  height: 80px;
+  height: 50px;
 }
 
 #top_navbar {
@@ -111,5 +112,17 @@ export default {
 .app_nav:hover{
   color: #ff9ec3;
 }
+
+.navbar-toggler{
+  color:#ff2679;
+  border: solid 1px 	#bfbfbf;
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+.navbar-toggler-icon{
+  background-image: url('/src/assets/hamburg_icon.png');
+}
+
 
 </style>

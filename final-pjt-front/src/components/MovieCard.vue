@@ -1,13 +1,5 @@
 <template>
   <div id="outerLine">
-    <div class="row row-cols-1 row-cols-md-3 g-4">
-      <!-- <MovieCardItem
-      v-for="movieItem in movies"
-      :key="movieItem.id"
-      :movieItem="movieItem"
-      class="col-md-4"
-      /> -->
-    </div>
     <MovieFromDB/>
     <MovieMBTI v-if="isLogin"/>
     <MovieRetro/>
