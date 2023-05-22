@@ -1,6 +1,6 @@
-from django.shortcuts import get_list_or_404, render
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
+from django.contrib.auth import get_user_model
 
 # permission Decorators
 from rest_framework.decorators import permission_classes
@@ -10,6 +10,8 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404, get_list_or_404
 from .serializers import ArticleListSerializer, ArticleSerializer, CommentSerializer
 from .models import Article, Comment
+
+User = get_user_model()
 
 # 로그인안해도 게시글 볼 수 있게 하기
 @api_view(['GET'])
@@ -102,3 +104,26 @@ def comment_create(request, article_pk):
         if serializer.is_valid(raise_exception=True):
             serializer.save(user=request.user, article=article)
             return Response(serializer.data, status=status.HTTP_201_CREATED)
+
+@api_view(['GET', 'POST'])
+@permission_classes([IsAuthenticated])
+def user_articles(request, username):
+    if request.method == 'GET':
+        try:
+            user = User.objects.get(username=username)
+            articles = user.articles.all()
+            serializer = ArticleSerializer(articles, many=True)
+            return Response(serializer.data)
+        except User.DoesNotExist:
+            return Response(status=status.HTTP_404_NOT_FOUND)
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def user_comments(request, username):
+    try:
+        user = User.objects.get(username=username)
+        comments = Comment.objects.filter(user=user)
+        serializer = CommentSerializer(comments, many=True)
+        return Response(serializer.data)
+    except User.DoesNotExist:
+        return Response(status=status.HTTP_404_NOT_FOUND)

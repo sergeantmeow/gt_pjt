@@ -2,10 +2,14 @@
   <div>
     <h1>OtherProfile Page</h1>
     <template v-if="user">
-      <p>사용자 이름: {{ user.username }}</p>
-      <p>사용자 MBTI: {{ user.mbti }}</p>
+      <p>이름: {{ user.username }}</p>
+      <p>MBTI: {{ user.mbti }}</p>
       <p>가입일: {{ user.date_joined }}</p>
       <p>최근 로그인: {{ user.last_login }}</p>
+      <hr>
+      <UserArticle :username="user.username" />
+      <hr>
+      <UserComment :username="user.username" />
       <p>팔로워 : {{ user.followers.length }}</p>
       <div v-if="isNotAuthor">
       <button @click="followUser">팔로잉</button>
@@ -16,10 +20,15 @@
 
 <script>
 import axios from 'axios'
+import UserArticle from '@/components/UserArticle'
+import UserComment from '@/components/UserComment'
 const API_URL = 'http://127.0.0.1:8000'
 
 export default {
   name: 'OtherProfileView',
+  components: {
+    UserArticle, UserComment
+  },
   data() {
     return {
       user : null

@@ -33,9 +33,9 @@ export default new Vuex.Store({
     ],
     user: {
       token: null,
+      id : null,
       username: null,
       mbti: null
-
     },
   },
   getters: {
@@ -245,13 +245,7 @@ export default new Vuex.Store({
           username, password1, password2, mbti
         }
       })
-        .then((res) => {
-          const user = {
-            token: res.data.key,
-            username,
-            mbti
-          }
-          context.commit('SET_USER', user)
+        .then(() => {
           context.dispatch('login', { username, password: password1 })
         })
         .catch((err) => {
@@ -271,6 +265,7 @@ export default new Vuex.Store({
       .then((res) => {
         const user = {
           token: res.data.key,
+          id : res.data.user.id,
           username: res.data.user.username,
           mbti: res.data.user.mbti,
           date_joined : res.data.user.date_joined,
