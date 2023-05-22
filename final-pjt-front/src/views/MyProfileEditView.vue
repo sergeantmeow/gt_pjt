@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>MyProfileEdit Page</h1>
-    <form @submit.prevent="updateProfile">
+    <form @submit.prevent="changePassword">
       <label for="currentPassword">기존 비밀번호: </label>
       <input type="password" id="currentPassword" v-model="currentPassword" required><br>
 
@@ -11,10 +11,13 @@
       <label for="confirmPassword">비밀번호 확인: </label>
       <input type="password" id="confirmPassword" v-model="confirmPassword" required><br>
 
+      <button type="submit">수정</button>
+    </form>
+    <hr>
+    <form @submit.prevent="changeUserInfo">
       <label for="mbti">MBTI: </label>
-      <input type="text" id="mbti" v-model="mbti" required><br>
-
-      <button type="submit">저장</button>
+      <input type="text" id="mbti" v-model="mbti" :placeholder="mbti || 'MBTI를 입력하세요'" required><br>
+      <button type="submit">수정</button>
     </form>
   </div>
 </template>
@@ -34,52 +37,69 @@ export default {
       mbti: '',
     };
   },
-  mounted() {
-    this.getUserProfile(this.$route.params.username)
+  created() {
+    this.mbti = this.$store.getters.currentUser.mbti || '';
   },
   methods: {
-    getUserProfile(username) {
-      axios({
-        method: 'get',
-        url: `${API_URL}/accounts/profile/${username}/`,
-      })
-      .then((response) => {
-        this.user = response.data;
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-    },
-    updateProfile() {
+    changePassword() {
       // 비밀번호 일치 확인
       if (this.newPassword !== this.confirmPassword) {
-        console.error('새로운 비밀번호와 비밀번호 확인이 일치하지 않습니다.');
+        alert('새로운 비밀번호와 비밀번호 확인이 일치하지 않습니다.');
         return;
       }
 
-      const { id, username } = this.user;
       const updatedData = {
-        id,
-        username,
-        currentPassword: this.currentPassword,
-        newPassword: this.newPassword,
-        mbti: this.mbti
+        new_password1 : this.newPassword,
+        new_password2 : this.confirmPassword
       };
       
 
       axios({
-        method: 'put',
-        url: `${API_URL}/accounts/edit/${username}/`,
+        method: 'post',
+        url: `${API_URL}/accounts/password/change/`,
         headers: {
         Authorization: `Token ${this.$store.state.user.token}`,
       },
         data: updatedData
       })
-      .then(response => {
-        console.log('프로필이 업데이트되었습니다.', response.data);
+      .then(() => {
+        alert('비밀번호가 변경되었습니다.')
+        this.currentPassword = ''
+        this.newPassword = ''
+        this.confirmPassword=  ''
       })
       .catch(error => {
-        console.error('프로필 업데이트 중 오류가 발생했습니다.', error);
+        console.error('비밀번호 업데이트 중 오류가 발생했습니다.', error);
+      });
+    },
+    changeUserInfo() {
+      const mbtiList = ['INTJ', 'INTP', 'INFJ','INFP','ISTJ','ISTP','ISFJ','ISFP','ENTJ','ENTP','ENFJ','ENFP','ESTJ','ESTP','ESFJ','ESFP']
+      let upperMBTI = this.mbti.toUpperCase()
+      if (mbtiList.indexOf(upperMBTI) === -1) {
+        alert('올바른 mbti를 입력해주세요')
+        this.mbti = ''
+        return
+      }
+      const updatedData = {
+        mbti: upperMBTI
+      };
+
+      axios({
+        method: 'patch',
+        url: `${API_URL}/accounts/edit/`,
+        headers: {
+        Authorization: `Token ${this.$store.state.user.token}`,
+      },
+        data: updatedData
+      })
+      .then(() => {
+        alert('mbti가 변경되었습니다.')
+        const payload = updatedData
+        this.$store.dispatch('updateUser', payload)
+        this.mbti = this.$store.getters.currentUser.mbti || '';
+      })
+      .catch(error => {
+        console.error('유저정보 업데이트 중 오류가 발생했습니다.', error);
       });
     }
   }

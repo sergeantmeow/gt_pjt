@@ -1,4 +1,5 @@
 from dj_rest_auth.registration.serializers import RegisterSerializer
+from dj_rest_auth.serializers import UserDetailsSerializer
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from allauth.account.adapter import get_adapter
@@ -29,3 +30,8 @@ class CustomRegisterSerializer(RegisterSerializer):
         adapter.save_user(request, user, self)
         self.custom_signup(request, user)  # save 메서드 내에서 custom_signup 메서드를 다시 호출
         return user
+class CustomUserDetailsSerializer(UserDetailsSerializer):
+    mbti = serializers.CharField(max_length=4, allow_blank=True)
+
+    class Meta(UserDetailsSerializer.Meta):
+        fields = UserDetailsSerializer.Meta.fields + ('mbti',)

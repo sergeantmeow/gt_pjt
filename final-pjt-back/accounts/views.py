@@ -1,15 +1,14 @@
 from dj_rest_auth.registration.views import RegisterView
-from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView
+from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView, PasswordChangeView
 from rest_framework import status, permissions
 from rest_framework.response import Response
-from .serializers import CustomRegisterSerializer
+from .serializers import CustomRegisterSerializer, User, CustomUserDetailsSerializer
 from rest_framework.authtoken.models import Token
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
-from .serializers import User
 
 User = get_user_model()
 
@@ -54,16 +53,28 @@ class CustomLoginView(LoginView):
 class LogoutView(LogoutView):
     pass
 
-class MyProfileEditView(UserDetailsView):
-    permission_classes = [permissions.IsAuthenticated]
+class CustomUserDetailsView(UserDetailsView):
+    serializer_class = CustomUserDetailsSerializer
 
-    def put(self, request, *args, **kwargs):
-        partial = kwargs.pop('partial', False)
+    def update(self, request, *args, **kwargs):
+        partial = True # 부분 업데이트를 허용
         instance = self.get_object()
         serializer = self.get_serializer(instance, data=request.data, partial=partial)
         serializer.is_valid(raise_exception=True)
+
+        # 추가적으로 업데이트할 필드
+        instance.mbti = serializer.validated_data.get('mbti', instance.mbti)
+        
+        # 업데이트할 것들 저장
         self.perform_update(serializer)
+
+        if getattr(instance, '_prefetched_objects_cache', None):
+            instance._prefetched_objects_cache = {}
+
         return Response(serializer.data)
+
+class CustomPasswordChangeView(PasswordChangeView):
+    pass
 
 class UserProfileView(APIView):
     def get(self, request, username):
