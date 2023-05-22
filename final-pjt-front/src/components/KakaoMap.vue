@@ -1,22 +1,25 @@
 <template>
   <div id="topEle">
-    <h2>TEST - KAKAOMAP 영화관들</h2>
-    <div>
-       지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
+    <div id="searchByArea">
+      지역명으로 검색하기: <input type="text" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
     </div>
     또는
-    <button>
+    <button class="btn_search_cinema">
       <div @click="loadNearCinema">
         근처영화관 조회하기
       </div>
     </button>
     <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' @click="showPlace(rs)" style="cursor: pointer">
-      <h4>{{ rs.place_name }}</h4>
+      <div class="cinemaCard">
+        <h5>{{ rs.place_name }}</h5>
+      </div>
     </div>
     <div class="cinemas" v-for="rs in cinemaList" :key='rs.id' 
     @click="showPlace2(rs)" 
     style="cursor: pointer">
-      <h4>{{ rs.name }}</h4>
+      <div class="cinemaCard">
+        <h5>{{ rs.name }}</h5>
+      </div>  
     </div>
     <div id="kmap" class="kmap" ref="map">
     </div>
@@ -169,6 +172,27 @@ export default {
 
   #infoBox{
     text-align: center;
+  }
+
+  .btn_search_cinema{
+    background-color: #261639;
+    color: #ff2679;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+  .btn_search_cinema:hover{
+    background-color: #352c41;
+    color: #ff9ec3;
+    font-weight: bold;
+    border: transparent;
+    border-radius: 6px;
+    margin-bottom: 10px;
+  }
+
+  #searchByArea{
+    margin-bottom: 10px;
   }
   
 </style>

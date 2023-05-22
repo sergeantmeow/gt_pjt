@@ -113,9 +113,17 @@ export default {
   border-radius: 5px;
   border: none;
 }
+.movie_nav:hover{
+  background-color: #352c41;
+  border-radius: 5px;
+  border: none;
+}
 
 .movie_menu{
   color: #ff2679
+}
+.movie_menu:hover{
+  color: #ff9ec3;
 }
 
 </style>

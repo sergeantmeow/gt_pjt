@@ -108,5 +108,8 @@ export default {
 .app_nav{
   color: #ff2679
 }
+.app_nav:hover{
+  color: #ff9ec3;
+}
 
 </style>
