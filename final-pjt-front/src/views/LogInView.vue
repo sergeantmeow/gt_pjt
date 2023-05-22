@@ -1,15 +1,23 @@
 <template>
   <div>
-    <h1>LogIn Page</h1>
-    <form @submit.prevent="login">
-      <label for="username">username : </label>
-      <input type="text" id="username" v-model="username"><br>
-
-      <label for="password"> password : </label>
-      <input type="password" id="password" v-model="password"><br>
-
-      <input type="submit" value="logIn">
-    </form>
+    <h2 style="color: #ff2679;">Login</h2>
+    <div class="container fw-bold login-color">
+      <div class="row justify-content-center">
+        <div class="col-md-4">
+          <form @submit.prevent="login" class="mt-4">
+            <div class="form-group">
+            <label for="username">username : </label>
+            <input type="text" id="username" v-model="username" class="form-control"><br>
+            </div>
+            <div class="form-group">
+            <label for="password"> password : </label>
+            <input type="password" id="password" v-model="password" class="form-control"><br>
+            </div>
+            <input type="submit" value="로그인" class="btn btn-login fw-bold">
+          </form>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -37,3 +45,18 @@ export default {
   },
 }
 </script>
+
+<style>
+.btn-login {
+  background-color: #261639;
+  color: #bfbfbf;
+}
+
+.btn-login:hover {
+  background-color: #7c6891;
+}
+
+.login-color{
+  color : #bfbfbf;
+}
+</style>
