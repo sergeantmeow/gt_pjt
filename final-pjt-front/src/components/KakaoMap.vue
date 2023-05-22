@@ -1,5 +1,7 @@
 <template>
   <div id="topEle">
+    <div id="kmap" class="kmap" ref="map">
+    </div>
     <div id="searchByArea">
       지역명으로 검색하기: <input type="text" id="areaSearch" placeholder="장소를 넣으세요" @keyup.enter="searchCinema">
     </div>
@@ -13,8 +15,12 @@
       <div class="cinemaCard" v-if="searchMethod === 1">
         <h5>{{ rs.place_name }}</h5>
         <div id="cinemaInfo">
-          <div>주소: {{ rs.road_address_name }}</div>
-          <div>연락처: {{ rs.phone }}</div>
+          <div>
+            <h6>주소: {{ rs.road_address_name }}</h6>
+          </div> 
+          <div>
+            <h6>연락처: {{ rs.phone }}</h6>
+          </div>
         </div>
       </div>
     </div>
@@ -24,17 +30,20 @@
       <div class="cinemaCard2" v-if="searchMethod === 2">
         <h5>{{ rs.name }}</h5>
         <div id="cinemaInfo">
-          <div>주소: {{ rs.address}}</div>
-          <div>연락처: {{ rs.contact }} </div>
+          <div>
+            <h6>주소: {{ rs.address}}</h6>
+          </div>
+          <div>
+            <h6>연락처: {{ rs.contact }}</h6>
+          </div>
         </div>
       </div>  
-    </div>
-    <div id="kmap" class="kmap" ref="map">
     </div>
   </div>
 </template>
 
 <script>
+
 export default {
   data(){
     return{
@@ -59,7 +68,6 @@ export default {
     renderMap(){
       let kakao = window.kakao;
       const container = this.$refs.map
-      // 33.450701, 126.570667
       const {center, level} = this.options
       const mapInstance = new kakao.maps.Map(container, {
         center: new kakao.maps.LatLng(center.lat, center.lng),
@@ -86,7 +94,6 @@ export default {
         console.log(status)
         console.log(pgn)
         this.cinemaList = data
-        console.log(data)
       })
     },
 
@@ -108,13 +115,25 @@ export default {
         position: markerPosition,
         clickable: true
       })
-
       // show marker on map
       marker.setMap(mapInstance)
 
+
+      // let overlayContent = '<div class="label"><span class="left"></span><span class="center">YEAH</span><span class="right"></span></div>'
+      // let overlayPosition = new kakao.maps.LatLng(Y, X)
+      // let customOverlay = new kakao.maps.CustomOverlay({
+      //   position: overlayPosition,
+      //   content: overlayContent,
+      // })
+      // kakao.maps.event.addListener(marker, 'click', function(){
+      //   customOverlay.setMap(mapInstance)
+      // })
+
       // create infoWindow
       let iwContent = 
-        '<div id="infoBox" style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a></div></div>',
+        '<div id="infoBox" style="padding:5px; height: 100px; width: 300px; color: #ff2679; border-radius: 5px; background-color: #261639">' +
+        ' <div>'+place.place_name+'<br>'+place.road_address_name+'<br>'+place.phone+'<br>' +
+        '<a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a></div></div>',
           iwRemoveable = true // to close infoWindow
 
       let infowindow = new kakao.maps.InfoWindow({
@@ -126,7 +145,7 @@ export default {
       kakao.maps.event.addListener(marker, 'click', function(){
         infowindow.open(mapInstance, marker)
       })
-      // console.log(place)
+      console.log(place)
     },
 
 
@@ -141,6 +160,7 @@ export default {
         output_coord: kakao.maps.services.Coords.WGS84
       })
       const container = this.$refs.map
+      const placeOb = place
         
       function transCoordCB(result, status){
         const mapInstance = new kakao.maps.Map(container, {
@@ -153,9 +173,11 @@ export default {
             map: mapInstance,
             clickable: true,
           })
-          console.log(marker)
           let iwContent = 
-            '<div style="padding:5px"><div>'+place.place_name+'<br><a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a></div></div>',
+            '<div id="infoBox" style="padding:5px; height: 100px; width: 300px; color: #ff2679; border-radius: 5px; background-color: #261639">' +
+            ' <div>'+placeOb.name+'<br>'+place.address+'<br>'+place.contact+'<br>' +
+            // '<a href="'+place.place_url+'" target="_blank" class="text-decoration-none">더보기</a>' + 
+            '</div></div>',
               iwRemoveable = true // to close infoWindow
 
           let infowindow = new kakao.maps.InfoWindow({
@@ -167,7 +189,6 @@ export default {
           kakao.maps.event.addListener(marker, 'click', function(){
             infowindow.open(mapInstance, marker)
           })
-          // console.log(place)
         }
       }
     },
@@ -184,6 +205,12 @@ export default {
 
   #infoBox{
     text-align: center;
+  }
+
+  #kmap{
+    border : solid 2px #ff2679;
+    border-radius: 4px;
+    margin-bottom: 10px;
   }
 
   .btn_search_cinema{
@@ -216,10 +243,10 @@ export default {
   }
   
   .cinemaCard{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .cinemaCard2{
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   
 </style>

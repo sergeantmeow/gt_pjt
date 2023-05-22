@@ -5,7 +5,7 @@
       <div class="container-fluid">
         <a href="" class="text-decoration-none fw-bold">
           <img alt="VCR Logo" src="./assets/vcr_img.png" class="logo_img">
-          <a id="service_name" class="navbar-brand align-middle" href="#">SOME LIKE IT 90'S</a>
+          <!-- <a id="service_name" class="navbar-brand align-middle" href="#">SOME LIKE IT 90'S</a> -->
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -40,12 +40,12 @@
                 {{ currentUser.username }}
               </router-link>
               님 안녕하세요. 
-              <button @click="logout" class="btn btn-info">로그아웃</button>
+              <button id="logout_btn" @click="logout" class="btn">로그아웃</button>
               </div>
               <div v-else>
                 로그인되지 않았습니다.
-                <button @click="goToLogInPage" class="btn btn-info">로그인</button> | 
-                <button @click="goToSignUpPage" class="btn btn-info">회원가입</button> 
+                <button id="login_btn" @click="goToLogInPage" class="btn">로그인</button> | 
+                <button id="join_btn" @click="goToSignUpPage" class="btn">회원가입</button> 
             </div>
             <!-- <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-success" type="submit">Search</button> -->
@@ -96,6 +96,37 @@ export default {
 }
 #service_name{
   color: #bfbfbf
+}
+
+#logout_btn{
+  background-color: #261639;
+  border: solid 1px #ff2679;
+  color: #ff2679;
+  font-weight: bold;
+}
+#logout_btn:hover{
+  background-color: #352c41;;
+  color: #ff9ec3;
+}
+#login_btn{
+  background-color: #261639;
+  border: solid 1px #ff2679;
+  color: #ff2679;
+  font-weight: bold;
+}
+#login_btn:hover{
+  background-color: #352c41;;
+  color: #ff9ec3;
+}
+#join_btn{
+  background-color: #261639;
+  border: solid 1px #ff2679;
+  color: #ff2679;
+  font-weight: bold;
+}
+#join_btn:hover{
+  background-color: #352c41;;
+  color: #ff9ec3;
 }
 
 .logo_img{
