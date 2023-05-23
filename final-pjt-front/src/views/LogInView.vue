@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h2 style="color: #ff2679;">Login</h2>
+    <h2 class="title-mg-ct">Login</h2>
     <div class="container fw-bold login-color">
       <div class="row justify-content-center">
         <div class="col-md-4">

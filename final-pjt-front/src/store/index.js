@@ -49,7 +49,7 @@ export default new Vuex.Store({
   mutations: {
     // articles
     GET_ARTICLES(state, articles) {
-      state.articles = Array.reverse(articles)
+      state.articles = articles.reverse();
     },
 
     // movies
@@ -273,7 +273,8 @@ export default new Vuex.Store({
         }
         console.log(user)
         context.commit('SET_USER', user)
-        router.push('/')
+        // router.push('/')
+        router.push('/movieList')
       })
       .catch((error) => {
         if (error.response && error.response.status === 400) {

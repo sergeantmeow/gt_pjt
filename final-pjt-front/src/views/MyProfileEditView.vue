@@ -1,23 +1,27 @@
 <template>
-  <div>
-    <h1>MyProfileEdit Page</h1>
-    <form @submit.prevent="changePassword">
-      <label for="currentPassword">기존 비밀번호: </label>
-      <input type="password" id="currentPassword" v-model="currentPassword" required><br>
+  <div class="container fw-bold">
+    <h2 class="title-mg-ct">회원정보 수정</h2>
+    <form @submit.prevent="changePassword" class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <label for="currentPassword">기존 비밀번호: </label>
+        <input type="password" id="currentPassword" v-model="currentPassword" required class="form-control"><br>
 
-      <label for="newPassword">새로운 비밀번호: </label>
-      <input type="password" id="newPassword" v-model="newPassword" required><br>
+        <label for="newPassword">새로운 비밀번호: </label>
+        <input type="password" id="newPassword" v-model="newPassword" required class="form-control"><br>
 
-      <label for="confirmPassword">비밀번호 확인: </label>
-      <input type="password" id="confirmPassword" v-model="confirmPassword" required><br>
+        <label for="confirmPassword">비밀번호 확인: </label>
+        <input type="password" id="confirmPassword" v-model="confirmPassword" required class="form-control"><br>
 
-      <button type="submit">수정</button>
+        <button type="submit" class="btn btn-primary">수정</button>
+      </div>
     </form>
     <hr>
-    <form @submit.prevent="changeUserInfo">
-      <label for="mbti">MBTI: </label>
-      <input type="text" id="mbti" v-model="mbti" :placeholder="mbti || 'MBTI를 입력하세요'" required><br>
-      <button type="submit">수정</button>
+    <form @submit.prevent="changeUserInfo" class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <label for="mbti">MBTI: </label>
+        <input type="text" id="mbti" v-model="mbti" :placeholder="mbti || 'MBTI를 입력하세요'" required class="form-control"><br>
+        <button type="submit" class="btn btn-primary mb-4">수정</button>
+      </div>
     </form>
   </div>
 </template>
@@ -106,6 +110,16 @@ export default {
 };
 </script>
 
-<style>
-/* 필요한 스타일을 추가해주세요. */
+<style scoped>
+.btn-primary {
+  color: #bfbfbf;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
+
+.btn-primary:hover {
+  color: #ff2679;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
 </style>

@@ -1,6 +1,5 @@
 <template>
-  <div>
-    <h3>댓글 창</h3>
+  <div class="comment-color">
     <template v-if="comments.length">
       <ArticleCommentItem v-for="comment in comments" :key="comment.id" :comment="comment" />
     </template>
@@ -8,9 +7,8 @@
       <p>댓글이 아직 아무것도 없습니다.</p>
     </template>
     <form @submit.prevent="addComment">
-      <label for="content">댓글 작성</label>
-      <textarea id="content" v-model="newCommentContent"></textarea><br>
-      <button type="submit">댓글 추가</button>
+      <textarea id="content" v-model="newCommentContent"  class="form-control" rows="1" placeholder="댓글을 입력하세요"></textarea><br>
+      <button type="submit" class="btn btn-primary mb-4">댓글 작성</button>
     </form>
   </div>
 </template>
@@ -84,4 +82,20 @@ export default {
 }
 </script>
 
-<style></style>
+<style scoped>
+.btn-primary {
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
+
+.btn-primary:hover {
+  background-color: #7c6891;
+  border-color: #7c6891;
+}
+
+.comment-color {
+  border-color: #bfbfbf;
+}
+
+
+</style>

@@ -1,8 +1,9 @@
 <template>
   <div>
-    <h2 style="color: #ff2679;">Community</h2>
-    <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view fw-bold">새 글쓰기</router-link>
-    <hr>
+    <h2 class="title-mg-ct">Community</h2>
+    <div v-if="isLogin" class="go-article-page">
+      <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view fw-bold">새 글쓰기</router-link>
+    </div>
     <ArticleList />
   </div>
 </template>
@@ -14,6 +15,11 @@ export default {
   name: 'ArticleView',
   components: {
     ArticleList,
+  },
+  computed:{
+    isLogin() {
+      return this.$store.getters.isLogin
+    },
   },
   created() {
     this.getArticles()
@@ -29,10 +35,17 @@ export default {
 <style>
 .btn-article-view {
   background-color: #261639;
+  border-color: #261639;
   color: #bfbfbf;
 }
 
 .btn-article-view:hover {
   background-color: #7c6891;
+  border-color: #7c6891;
 }
+
+.go-article-page {
+  margin-top: 10px; 
+}
+
 </style>

@@ -1,20 +1,24 @@
 <template>
-  <div>
-    <h1>OtherProfile Page</h1>
-    <template v-if="user">
-      <p>이름: {{ user.username }}</p>
-      <p>MBTI: {{ user.mbti }}</p>
-      <p>가입일: {{ formatDateTime(user.date_joined) }}</p>
-      <p>최근 로그인: {{ formatDateTime(user.last_login) }}</p>
-      <hr>
-      <UserArticle :username="user.username" />
-      <hr>
-      <UserComment :username="user.username" />
-      <p>팔로워 : {{ user.followers.length }}</p>
-      <div v-if="isNotAuthor">
-      <button @click="followUser">팔로잉</button>
+  <div class="container">
+    <h2 class="title-mg-ct mb-3">{{ user.username }} Profile</h2>
+    <div class="card mb-4">
+      <div class="card-body">
+        <template v-if="user">
+          <p class="card-title">이름: {{ user.username }}</p>
+          <p class="card-text">MBTI: {{ user.mbti }}</p>
+          <p class="card-text">가입일: {{ formatDateTime(user.date_joined) }}</p>
+          <p class="card-text">최근 로그인: {{ formatDateTime(user.last_login) }}</p>
+          <p>팔로워 : {{ user.followers.length }}</p>
+          <div v-if="isNotAuthor">
+            <button @click="followUser" class="btn btn-primary">팔로잉</button>   
+          </div>  
+        </template>
       </div>
-    </template>
+    </div>
+    <hr>
+    <UserArticle :username="user.username" />
+    <hr>
+    <UserComment :username="user.username" /> 
   </div>
 </template>
 
@@ -94,6 +98,23 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.card {
+  width: 100%;
+  background-color: rgb(31, 32, 63);
+  border-color: rgb(31, 32, 63);
+  color: #bfbfbf;
+}
 
+.btn-primary {
+  color: #bfbfbf;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
+
+.btn-primary:hover {
+  color: #ff2679;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
 </style>
