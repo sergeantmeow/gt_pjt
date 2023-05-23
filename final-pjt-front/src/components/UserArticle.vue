@@ -1,17 +1,32 @@
 <template>
   <div>
-    <h5>작성한 글</h5>
-    <ul>
-      <li v-for="article in articles" :key="article.id">
-          <router-link :to="{
-          name: 'ArticleDetailView',
-          params: {id: article.id }}">
-          <h6>{{ article.title }}</h6>
+    <h3 class="text-center mb-4">작성한 글</h3>
+    <ul class="list-group">
+      <li class="list-group-item" v-for="article in displayedArticles" :key="article.id">
+        <router-link :to="{ name: 'ArticleDetailView', params: { id: article.id }}" class="article-title">
+          <h5>{{ article.title }}</h5>
         </router-link>
         <p>{{ formatDateTime(article.created_at) }}</p>
-        <!-- 게시물의 이미지 등 다른 필드들을 표시할 수 있음 -->
       </li>
     </ul>
+
+    <nav v-if="totalPages > 1">
+      <ul class="pagination justify-content-center mt-4">
+        <li class="page-item" :class="{ disabled: currentPage === 1 }">
+          <a class="page-link" href="#" @click="changePage(currentPage - 1)" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item" v-for="page in totalPages" :key="page" :class="{ active: currentPage === page }">
+          <a class="page-link" href="#" @click="changePage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+          <a class="page-link" href="#" @click="changePage(currentPage + 1)" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
@@ -25,13 +40,25 @@ export default {
   data() {
     return {
       articles: [],
+      currentPage: 1,
+      itemsPerPage: 3,
     };
   },
   props: {
-    username : String,
+    username: String,
   },
   created() {
     this.fetchUserArticles();
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.articles.length / this.itemsPerPage);
+    },
+    displayedArticles() {
+      const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+      const endIndex = startIndex + this.itemsPerPage;
+      return this.articles.slice(startIndex, endIndex);
+    },
   },
   methods: {
     formatDateTime(dateTime) {
@@ -55,19 +82,63 @@ export default {
           Authorization: `Token ${this.$store.state.user.token}`,
         },
       })
-      .then(response => {
-        this.articles = response.data;
-      })
-      .catch(error => {
-        console.error(error);
-      });
-  },
+        .then(response => {
+          this.articles = response.data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    },
+    changePage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.currentPage = page;
+      }
+    },
   },
 };
 </script>
 
-<style>
-  ul{
-    list-style:none;
-  }
+<style scoped>
+.list-group-item {
+  border-color: rgb(31, 32, 63);
+  background-color: rgb(31, 32, 63);
+  color: #bfbfbf;
+}
+
+.list-group-item:hover {
+  background-color: #4f3d63;
+}
+
+.article-title {
+  text-decoration: none;
+  color: #ff2679;
+}
+
+.article-title:hover {
+  color: #7c6891;
+}
+
+.page-item.disabled .page-link {
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+  color: #ff2679;
+  cursor: not-allowed;
+}
+
+.page-item.active .page-link {
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+  color: #ff2679;
+}
+
+.page-link {
+  color: #bfbfbf;
+  border-radius: 0;
+}
+
+.page-link:hover {
+  background-color: #4f3d63;
+  border-color: #261639;
+  color: #ff2679;
+}
 </style>

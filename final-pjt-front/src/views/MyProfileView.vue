@@ -1,11 +1,15 @@
 <template>
-  <div>
-    <h1>MyProfile Page</h1>
-    <p>이름: {{ currentUser.username }}</p>
-    <p>MBTI: {{ currentUser.mbti }}</p>
-    <p>가입일: {{ formatDateTime(currentUser.date_joined) }}</p>
-    <p>최근 로그인: {{ formatDateTime(currentUser.last_login) }}</p>
-    <router-link :to="{ name: 'MyProfileEditView' }">[회원정보 수정]</router-link>
+  <div class="container">
+    <h2 class="title-mg-ct mb-3">My Profile</h2>
+    <div class="card mb-4">
+      <div class="card-body">
+        <h5 class="card-title">이름: {{ currentUser.username }}</h5>
+        <p class="card-text">MBTI: {{ currentUser.mbti }}</p>
+        <p class="card-text">가입일: {{ formatDateTime(currentUser.date_joined) }}</p>
+        <p class="card-text">최근 로그인: {{ formatDateTime(currentUser.last_login) }}</p>
+        <router-link :to="{ name: 'MyProfileEditView' }" class="btn btn-primary">회원정보 수정</router-link>
+      </div>
+    </div>
     <hr>
     <UserArticle :username="currentUser.username" />
     <hr>
@@ -45,6 +49,27 @@ export default {
   };
 </script>
 
-<style>
+<style scoped>
+.card {
+  width: 100%;
+  background-color: rgb(31, 32, 63);
+  border-color: rgb(31, 32, 63);
+  color: #bfbfbf;
+}
 
+.btn-primary {
+  color: #bfbfbf;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
+
+.btn-primary:hover {
+  color: #ff2679;
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+}
+
+.btn-primary:focus, .btn-primary.focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
 </style>

@@ -4,7 +4,7 @@
       <ArticleListItem v-for="article in displayedArticles" :key="article.id" :article="article" />
     </template>
     <template v-else>
-      <p>게시글이 아직 없습니다.</p>
+      <p style="color : #bfbfbf">게시글이 아직 없습니다.</p>
     </template>
     <nav v-if="hasPagination" aria-label="Page navigation">
       <ul class="pagination justify-content-center">
@@ -74,6 +74,7 @@ export default {
 
 <style scoped>
 .article-list {
+  justify-content: center;
   text-align: center;
   padding: 20px;
 }

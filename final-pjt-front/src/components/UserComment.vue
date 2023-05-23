@@ -1,12 +1,29 @@
 <template>
   <div>
-    <h5>작성한 댓글</h5>
-    <ul>
-      <li v-for="comment in comments" :key="comment.id">
+    <h3 class="text-center mb-4">작성한 댓글</h3>
+    <ul class="list-group">
+      <li class="list-group-item" v-for="comment in displayedComments" :key="comment.id">
         <p>{{ comment.content }}</p>
-        <!-- 댓글의 추가 필드들을 표시할 수 있음 -->
       </li>
     </ul>
+
+    <nav v-if="totalPages > 1">
+      <ul class="pagination justify-content-center mt-4">
+        <li class="page-item" :class="{ disabled: currentPage === 1 }">
+          <a class="page-link" href="#" @click="changePage(currentPage - 1)" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+          </a>
+        </li>
+        <li class="page-item" v-for="page in totalPages" :key="page" :class="{ active: currentPage === page }">
+          <a class="page-link" href="#" @click="changePage(page)">{{ page }}</a>
+        </li>
+        <li class="page-item" :class="{ disabled: currentPage === totalPages }">
+          <a class="page-link" href="#" @click="changePage(currentPage + 1)" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </template>
 
@@ -20,13 +37,25 @@ export default {
   data() {
     return {
       comments: [],
+      currentPage: 1,
+      itemsPerPage: 3,
     };
   },
   props: {
-    username : String,
+    username: String,
   },
   created() {
     this.fetchUserComments();
+  },
+  computed: {
+    totalPages() {
+      return Math.ceil(this.comments.length / this.itemsPerPage);
+    },
+    displayedComments() {
+      const startIndex = (this.currentPage - 1) * this.itemsPerPage;
+      const endIndex = startIndex + this.itemsPerPage;
+      return this.comments.slice(startIndex, endIndex);
+    },
   },
   methods: {
     fetchUserComments() {
@@ -37,15 +66,56 @@ export default {
           Authorization: `Token ${this.$store.state.user.token}`,
         },
       })
-      .then(response => {
-        this.comments = response.data;
-      })
-      .catch(error => {
-        console.error(error);
-      });
+        .then(response => {
+          this.comments = response.data;
+        })
+        .catch(error => {
+          console.error(error);
+        });
+    },
+    changePage(page) {
+      if (page >= 1 && page <= this.totalPages) {
+        this.currentPage = page;
+      }
     },
   },
 };
 </script>
 
-<style></style>
+<style scoped>
+.list-group-item {
+  border-color: rgb(31, 32, 63);
+  background-color: rgb(31, 32, 63);
+  color: #bfbfbf;
+}
+
+.list-group-item:hover {
+  background-color: #4f3d63;
+  color: #ff2679;
+}
+
+
+.page-item.disabled .page-link {
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+  color: #ff2679;
+  cursor: not-allowed;
+}
+
+.page-item.active .page-link {
+  background-color: #4f3d63;
+  border-color: #4f3d63;
+  color: #ff2679;
+}
+
+.page-link {
+  color: #bfbfbf;
+  border-radius: 0;
+}
+
+.page-link:hover {
+  background-color: #4f3d63;
+  border-color: #261639;
+  color: #ff2679;
+}
+</style>

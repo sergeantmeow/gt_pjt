@@ -1,19 +1,27 @@
-<!-- views/CreateView.vue -->
-
 <template>
-  <div>
-    <h1>게시글 작성</h1>
-    <form @submit.prevent="createArticle">
-      <label for="title">제목 : </label>
-      <input type="text" id="title" v-model.trim="title"><br>
-      <div v-if="image">
-        <img :src="image" alt="이미지" class="image-preview">
+  <div class="container fw-bold">
+    <h2 class="title-mg-ct">게시글 작성</h2>
+    <form @submit.prevent="createArticle" class="row justify-content-center mt-4">
+      <div class="col-md-6">
+        <div class="form-group article-create">
+          <label for="title">제목</label>
+          <input type="text" id="title" v-model.trim="title" class="form-control">
+        </div>
+        <div class="form-group article-create">
+          <label for="content">내용</label>
+          <textarea id="content" rows="10" v-model="content" class="form-control"></textarea>
+        </div>
+        <div v-if="image" class="mb-3 article-img-create-container">
+          <img :src="image" alt="이미지" class="article-img-create img-fluid">
+        </div>
+        <div class="form-group article-create">
+          <label for="image">이미지 선택</label>
+          <input type="file" id="image" ref="image" @change="handleImageChange" class="form-control-file">
+        </div>
+        <div class="article-create submit-button">
+          <button type="submit" id="submit" class="btn btn-article-create fw-bold">작성</button>
+        </div> 
       </div>
-      <label for="content">내용 : </label>
-      <textarea id="content" cols="50" rows="10" v-model="content"></textarea><br>
-      <label for="content">이미지 선택 : </label>
-      <input type="file" id="image" ref="image" @change="handleImageChange"><br>
-      <input type="submit" id="submit" value="작성">
     </form>
   </div>
 </template>
@@ -85,8 +93,35 @@ export default {
 </script>
 
 <style>
-.image-preview {
-  max-width: 500px;
-  max-height: 500px;
+.article-img-create-container {
+  margin-top: 10px;
+  max-width: 100%;
 }
+
+.article-img-create {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+.article-create label {
+  margin-top: 0.3rem;
+  margin-bottom: 0.1rem;
+}
+
+.article-create button {
+ margin-top: 10px; 
+ margin-bottom: 10px;
+}
+
+.btn-article-create {
+  background-color: #261639;
+  color: #bfbfbf;
+}
+
+.btn-article-create:hover {
+  background-color: #7c6891;
+}
+
 </style>

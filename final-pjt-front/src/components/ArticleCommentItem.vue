@@ -1,17 +1,22 @@
 <template>
-  <div v-if="comment">
-    <hr>
-    <h5>댓글: {{ comment.content }}</h5>
-    <p>작성자 : 
+  <div v-if="comment" class="comment-container">
+    <h5 class="comment-content">{{ comment.content }}</h5>
+    <div class="otheruser-link">
+    <p>
       <router-link :to="{ name: 'OtherProfileView', params: { username: comment.username } }">
         {{ comment.username }}
       </router-link>
     </p>
-    <p>작성일 : {{ formatDateTime(comment.created_at) }}</p>
+    </div>
+    <p>{{ formatDateTime(comment.created_at) }}</p>
     <!-- <p>수정일 : {{ formatDateTime(comment.updated_at) }}</p> -->
-    <div v-if="isAuthor">
-      <button @click="editArticle">수정</button>
-      <button @click="deleteComment">삭제</button>
+    <div v-if="isAuthor" class="comment-icons">
+      <span class="edit-icon" @click="editComment">
+        <img src="@/assets/icon-edit.png" alt="수정 아이콘" class="comment-icon-img">
+      </span>
+      <span class="delete-icon" @click="deleteComment">
+        <img src="@/assets/icon-delete.png" alt="삭제 아이콘" class="comment-icon-img">
+      </span>
     </div>
   </div>
 </template>
@@ -46,9 +51,7 @@ export default {
       const day = date.getDate().toString().padStart(2, '0');
       const hours = date.getHours().toString().padStart(2, '0');
       const minutes = date.getMinutes().toString().padStart(2, '0');
-      const seconds = date.getSeconds().toString().padStart(2, '0');
-
-      return `${year}-${month}-${day} ${hours}:${minutes}:${seconds}`;
+      return `${year}-${month}-${day} ${hours}:${minutes}`;
     },
     deleteComment(){ 
       if (confirm('댓글을 삭제하시겠습니까?')) {
@@ -65,7 +68,7 @@ export default {
         })
       }
     },
-    editArticle() {
+    editComment() {
       const newContent = prompt('댓글 내용을 수정하세요:', this.comment.content);
       if (newContent) {
         const id = this.comment.id;
@@ -90,4 +93,31 @@ export default {
 </script>
 
 <style>
+.comment-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.comment-content {
+  margin-right: 10px;
+  margin-bottom: 5px;
+  word-wrap: break-word;
+}
+
+.comment-icons {
+  display: flex;
+}
+
+.comment-icon-img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.2s ease-in-out;
+  margin-right : 3px;
+  margin-bottom: 10px;
+}
+
+.comment-icon-img:hover {
+  transform: scale(1.3);
+}
 </style>

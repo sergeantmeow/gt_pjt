@@ -73,11 +73,15 @@ export default {
       this.$store.dispatch('logout')
     },
     goToSignUpPage() {
-      this.$router.push({ name: 'SignUpView' });
+      if (this.$route.name !== 'SignUpView') {
+        this.$router.push({ name: 'SignUpView' });
+      }
     },
     goToLogInPage() {
-      this.$router.push({ name: 'LogInView' });
-    }
+      if (this.$route.name !== 'LogInView') {
+        this.$router.push({ name: 'LogInView' });
+      }
+    },
   }
 };
 </script>
@@ -155,5 +159,10 @@ export default {
   background-image: url('/src/assets/hamburg_icon.png');
 }
 
+.title-mg-ct {
+  margin-top: 5px;
+  margin-bottom: 0px;
+  color: #ff2679;
+}
 
 </style>

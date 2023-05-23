@@ -1,5 +1,5 @@
 <template>
-  <div class="article-list-container">
+  <div class="article-item-container">
     <div class="article-list-title">
     <router-link :to="{
       name: 'ArticleDetailView',
@@ -7,11 +7,12 @@
       <h4>{{ article.title }}</h4>
     </router-link>
     </div>
-    <div class="article-list-content">
-    <h5>{{ article.username }}</h5>
-    <p>{{ formatDateTime(article.created_at) }}</p>
+    <div class="article-item-content">
+      <div class="article-item-info">
+      <h5>{{ article.username }}</h5>
+      {{ formatDateTime(article.created_at) }}
+      </div>
     </div>
-    <hr>
   </div>
 </template>
 
@@ -36,17 +37,55 @@ export default {
 </script>
 
 <style>
+.article-item-container {
+  color: #bfbfbf;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 4px #261639;
+  transition: box-shadow 0.3s;
+}
+
+.article-item-container:hover {
+  box-shadow: 0 4px 6px #bfbfbf;
+}
+
+.article-list-title {
+  flex-grow: 1;
+}
+
 .article-list-title a {
   text-decoration: none;
-  color: #ff2679
+  color: #ff2679;
+  transition: color 0.3s;
 }
 
 .article-list-title a:hover {
-  text-decoration: underline;
-  color: #7c6891
+  color: #7c6891;
 }
 
-.article-list-content {
-  color: #bfbfbf
+.article-item-content {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
 }
+
+.article-item-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+}
+
+.article-item-info h5 {
+  margin-bottom: 5px;
+}
+
+.article-item-info span {
+  color: #888888;
+  font-size: 14px;
+}
+
 </style>
