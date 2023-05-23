@@ -216,7 +216,7 @@ export default {
   .btn_search_cinema{
     background-color: #261639;
     color: #ff2679;
-    font-weight: bold;
+    /* font-weight: bold; */
     border: transparent;
     border-radius: 6px;
     margin-bottom: 10px;

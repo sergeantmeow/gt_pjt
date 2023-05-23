@@ -54,7 +54,7 @@
                 <div class="modal-body bg-transparent container">
                     <div class="row">
                       <div class="col"><img id="modal_poster_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt=""></div>
-                      <div id="modal_content" class="col text-black">
+                      <div id="modal_content" class="col text-black fw-bold">
                         <h3 class="modal-title fs-5 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
                         <br>
                         <div v-if="showFullText">
@@ -68,15 +68,27 @@
                         </span> 
                         <br>
                         <p style="margin-top: 10px;">개봉일: {{this.$store.state.movie?.release_date}}</p>
-                        <div class="circle-wrap">
-                          <div class="circle">
-                            <div class="mask full">
-                              <div class="fill"></div>
+                        <div class="row">
+                          <div class="col">
+                            <ul>
+                              <li>
+                              </li>
+                            </ul>
+                            원제 : {{ this.$store.state.movie?.original_title }}
+                          </div>
+                          <div class="col">
+                            평점 평균
+                            <div class="circle-wrap">
+                              <div class="circle">
+                                <div class="mask full">
+                                  <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                  <div class="fill"></div>
+                                </div>
+                                <div class="inside-circle"> {{ vote_num }}점 </div>
+                              </div>
                             </div>
-                            <div class="mask half">
-                              <div class="fill"></div>
-                            </div>
-                            <div class="inside-circle"> {{ vote_num }}점 </div>
                           </div>
                         </div>
                       </div>
