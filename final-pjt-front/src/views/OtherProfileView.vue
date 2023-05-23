@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h2 class="title-mg-ct mb-3">{{ user.username }} Profile</h2>
+  <div class="container" v-if="user">
+    <h2 class="title-mg-ct mb-3" >{{ user.username }} Profile</h2>
     <div class="card mb-4">
       <div class="card-body">
         <template v-if="user">
@@ -16,9 +16,13 @@
       </div>
     </div>
     <hr>
+    <UserFollowers :id="user.id" />
+    <hr>
+    <UserFollowings :id="user.id" />
+    <hr>
     <UserArticle :username="user.username" />
     <hr>
-    <UserComment :username="user.username" /> 
+    <UserComment :username="user.username" />
   </div>
 </template>
 
@@ -26,12 +30,15 @@
 import axios from 'axios'
 import UserArticle from '@/components/UserArticle'
 import UserComment from '@/components/UserComment'
+import UserFollowers from '@/components/UserFollowers.vue'
+import UserFollowings from '@/components/UserFollowings.vue'
+
 const API_URL = 'http://127.0.0.1:8000'
 
 export default {
   name: 'OtherProfileView',
   components: {
-    UserArticle, UserComment
+    UserArticle, UserComment, UserFollowers, UserFollowings
   },
   data() {
     return {

@@ -12,6 +12,6 @@ urlpatterns = [
     path('password/change/', PasswordChangeView.as_view(), name='rest_password_change'),
     path('profile/<str:username>/', UserProfileView.as_view(), name='profile'),
     path('follow/<int:user_pk>/', user_follow, name="follow" ),
-    path('<int:user_pk>/followers', user_follower, name='user_follower'),
-    path('<int:user_pk>/followings', user_following, name='user_following'),
+    path('<int:user_pk>/followers/', user_follower, name='user_follower'),
+    path('<int:user_pk>/followings/', user_following, name='user_following'),
 ]

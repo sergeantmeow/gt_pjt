@@ -1,6 +1,6 @@
 from dj_rest_auth.registration.views import RegisterView
 from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView, PasswordChangeView
-from rest_framework import status, permissions
+from rest_framework import status
 from rest_framework.response import Response
 from .serializers import CustomRegisterSerializer, UserSerializer, CustomUserDetailsSerializer
 from rest_framework.authtoken.models import Token
@@ -9,6 +9,7 @@ from django.contrib.auth import get_user_model
 from rest_framework.decorators import permission_classes
 from rest_framework.permissions import IsAuthenticated
 from rest_framework.decorators import api_view
+from django.shortcuts import get_object_or_404
 
 User = get_user_model()
 
@@ -121,24 +122,36 @@ def user_follow(request, user_pk):
     else:
         return Response({'success': False, 'message': 'Invalid request method.'})
 
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
 def user_follower(request, user_pk):
-    if request.method == 'GET':
-        user = request.user
-        try:
-            target_user = User.objects.get(pk=user_pk)
-            followers = target_user.followers.all()
-            serializer = UserSerializer(followers, many=True)
-            return Response(serializer.data)
-        except User.DoesNotExist:
-            return Response({'success': False, 'message': 'User not found.'})
+    user = get_object_or_404(User, pk=user_pk)
+    followers = user.followers.all()
+
+    follower_list = []
+    for follower in followers:
+        follower_list.append({
+            'id': follower.id,
+            'username': follower.username,
+            # Include other fields you want to return
+        })
+
+    return Response(follower_list)
+
 
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def user_following(request, user_pk):
-    if request.method == 'GET':
-        user = request.user
-        following_users = user.followings.all()
-        serializer = UserSerializer(following_users, many=True)
-        return Response(serializer.data)
-    else:
-        return Response({'success': False, 'message': 'Invalid request method.'})
+    user = get_object_or_404(User, pk=user_pk)
+    following = user.followings.all()
+
+    following_list = []
+    for followed_user in following:
+        following_list.append({
+            'id': followed_user.id,
+            'username': followed_user.username,
+            'email': followed_user.email,
+            # Include other fields you want to return
+        })
+
+    return Response(following_list)

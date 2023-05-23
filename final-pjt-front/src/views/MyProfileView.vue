@@ -11,6 +11,10 @@
       </div>
     </div>
     <hr>
+    <UserFollowers :id="currentUser.id" />
+    <hr>
+    <UserFollowings :id="currentUser.id" />
+    <hr>
     <UserArticle :username="currentUser.username" />
     <hr>
     <UserComment :username="currentUser.username" />
@@ -20,11 +24,13 @@
 <script>
 import UserArticle from '@/components/UserArticle'
 import UserComment from '@/components/UserComment'
+import UserFollowers from '@/components/UserFollowers.vue'
+import UserFollowings from '@/components/UserFollowings.vue'
 
 export default {
   name: 'MyProfileView',
   components: {
-    UserArticle, UserComment
+    UserArticle, UserComment, UserFollowers, UserFollowings
   },
   computed: {
     currentUser() {

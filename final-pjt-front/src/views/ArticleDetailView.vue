@@ -32,7 +32,7 @@
           </span>
           <hr>
         </div>
-        <ArticleComment :articleId="articleId" />
+        <ArticleComment :articleId="Number(articleId)" />
       </div>
     </div>
   </div>
@@ -83,28 +83,26 @@ export default {
       return `${year}-${month}-${day} ${hours}:${minutes}`;
     },
     getArticleDetail() {
-      if (this.isLogin) {
-        axios({
-          method: 'get',
-          url: `${API_URL}/articles/${this.$route.params.id}/`,
+      axios({
+        method: 'get',
+        url: `${API_URL}/articles/${this.$route.params.id}/`,
+      })
+        .then((res) => {
+          this.article = res.data
         })
-          .then((res) => {
-            this.article = res.data
-          })
-          .catch((err) => {
-            console.log(err)
-          })
-      } else {
-        alert('로그인이 필요한 페이지입니다...')
-        this.$router.push({ name: 'LogInView' })
-      }
-    },
+        .catch((err) => {
+          console.log(err)
+        })
+      },
     // 삭제하고 다른 페이지 이동 설정하기
     deleteArticle() {
       if (confirm('게시물을 삭제하시겠습니까?')) {
         axios({
           method: 'delete',
-          url: `${API_URL}/articles/${this.$route.params.id}/`
+          url: `${API_URL}/articles/${this.$route.params.id}/delete/`,
+          headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+          },
         })
           .then(() => {
             this.$router.push({ name: 'ArticleView' })
@@ -124,6 +122,7 @@ export default {
       this.$router.push({ name: 'ArticleEditView', params: { id: this.article.id }, query: params })
     },
     likeArticle() {
+      if(this.isLogin){
       axios({
         method: 'post',
         url: `${API_URL}/articles/${this.article.id}/like/`,
@@ -137,6 +136,10 @@ export default {
         .catch((err) => {
           console.log(err)
         })
+      } else {
+        alert('로그인한 유저만 좋아요를 할 수 있습니다.')
+        this.$router.push('/login')
+      }
     }
   }
 }
