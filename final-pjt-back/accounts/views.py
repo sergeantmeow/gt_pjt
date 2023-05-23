@@ -2,7 +2,7 @@ from dj_rest_auth.registration.views import RegisterView
 from dj_rest_auth.views import LoginView, LogoutView, UserDetailsView, PasswordChangeView
 from rest_framework import status, permissions
 from rest_framework.response import Response
-from .serializers import CustomRegisterSerializer, User, CustomUserDetailsSerializer
+from .serializers import CustomRegisterSerializer, UserSerializer, CustomUserDetailsSerializer
 from rest_framework.authtoken.models import Token
 from rest_framework.views import APIView
 from django.contrib.auth import get_user_model
@@ -36,7 +36,7 @@ class CustomLoginView(LoginView):
 
         user = serializer.validated_data['user']
         token, created = Token.objects.get_or_create(user=user)
-
+        
         response_data = {
             'key': token.key,
             'user': {
@@ -97,6 +97,15 @@ class UserProfileView(APIView):
 @api_view(['POST'])
 @permission_classes([IsAuthenticated])
 def user_follow(request, user_pk):
+    if request.method == 'GET':
+        user = request.user
+        try:
+            target_user = User.objects.get(pk=user_pk)
+            followers = target_user.followers.all()
+            serializer = UserSerializer(followers, many=True)
+            return Response(serializer.data)
+        except User.DoesNotExist:
+            return Response({'success': False, 'message': 'User not found.'})
     if request.method == 'POST':
         user = request.user
         try:
@@ -109,5 +118,27 @@ def user_follow(request, user_pk):
             return Response({'success': True, 'message': 'User followed successfully.'})
         except User.DoesNotExist:
             return Response({'success': False, 'message': 'User not found.'})
+    else:
+        return Response({'success': False, 'message': 'Invalid request method.'})
+
+def user_follower(request, user_pk):
+    if request.method == 'GET':
+        user = request.user
+        try:
+            target_user = User.objects.get(pk=user_pk)
+            followers = target_user.followers.all()
+            serializer = UserSerializer(followers, many=True)
+            return Response(serializer.data)
+        except User.DoesNotExist:
+            return Response({'success': False, 'message': 'User not found.'})
+
+@api_view(['GET'])
+@permission_classes([IsAuthenticated])
+def user_following(request, user_pk):
+    if request.method == 'GET':
+        user = request.user
+        following_users = user.followings.all()
+        serializer = UserSerializer(following_users, many=True)
+        return Response(serializer.data)
     else:
         return Response({'success': False, 'message': 'Invalid request method.'})
