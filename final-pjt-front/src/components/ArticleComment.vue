@@ -25,13 +25,18 @@ export default {
     ArticleCommentItem,
   },
   props: {
-    articleId : String,
+    articleId : Number,
     },
   data() {
     return {
       newCommentContent: '',
       comments: [],
     }
+  },
+  computed: {
+    isLogin() {
+      return this.$store.getters.isLogin
+    },
   },
   created() {
     this.getComment()
@@ -43,7 +48,10 @@ export default {
     getComment(){
       axios({
           method: 'get',
-          url: `${API_URL}/articles/${ this.articleId }/comments/`
+          url: `${API_URL}/articles/${ this.articleId }/comments/`,
+          headers: {
+          Authorization: `Token ${this.$store.state.user.token}`,
+          },
         })
         .then((res) => {
           this.comments = res.data
@@ -53,6 +61,7 @@ export default {
         })
     },
     addComment() {
+      if(this.isLogin){
       const content = this.newCommentContent.trim();
       if (!content) {
         alert('댓글 내용을 입력해주세요.');
@@ -68,17 +77,21 @@ export default {
           content: this.newCommentContent,
         }
       })
-        .then((res) => {
-          const newComment = res.data
-          this.comments.push(newComment)
-          this.newCommentContent = ''
-          this.getComment
-        })
-        .catch((err) => {
-          console.log(err)
-        })
-    },
-  }
+      .then((res) => {
+        const newComment = res.data
+        this.comments.push(newComment)
+        this.newCommentContent = ''
+        this.getComment
+      })
+      .catch((err) => {
+        console.log(err)
+      })
+      } else {
+          alert('로그인한 유저만 댓글을 작성할 수 있습니다.')
+          this.$router.push('/login')
+      }
+    }
+  },
 }
 </script>
 

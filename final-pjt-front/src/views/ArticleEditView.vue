@@ -76,7 +76,7 @@ export default {
 
       axios({
         method: 'patch',
-        url: `${API_URL}/articles/${ this.$route.params.id }/`,
+        url: `${API_URL}/articles/${ this.$route.params.id }/edit/`,
         headers: headers,
         data: formData
       })

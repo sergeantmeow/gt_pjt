@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h3 class="text-center mb-4">작성한 글</h3>
-    <ul class="list-group">
+    <h3 class="text-center mb-4" @click="toggleArticles">작성한 글</h3>
+    <ul class="list-group" v-if="showArticles">
       <li class="list-group-item" v-for="article in displayedArticles" :key="article.id">
         <router-link :to="{ name: 'ArticleDetailView', params: { id: article.id }}" class="article-title">
           <h5>{{ article.title }}</h5>
@@ -10,18 +10,18 @@
       </li>
     </ul>
 
-    <nav v-if="totalPages > 1">
+    <nav v-if="totalPages > 1 && showArticles">
       <ul class="pagination justify-content-center mt-4">
         <li class="page-item" :class="{ disabled: currentPage === 1 }">
-          <a class="page-link" href="#" @click="changePage(currentPage - 1)" aria-label="Previous">
+          <a class="page-link" href="#" @click="changePage(currentPage - 1, $event)" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
         <li class="page-item" v-for="page in totalPages" :key="page" :class="{ active: currentPage === page }">
-          <a class="page-link" href="#" @click="changePage(page)">{{ page }}</a>
+          <a class="page-link" href="#" @click="changePage(page, $event)">{{ page }}</a>
         </li>
         <li class="page-item" :class="{ disabled: currentPage === totalPages }">
-          <a class="page-link" href="#" @click="changePage(currentPage + 1)" aria-label="Next">
+          <a class="page-link" href="#" @click="changePage(currentPage + 1, $event)" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
@@ -42,6 +42,7 @@ export default {
       articles: [],
       currentPage: 1,
       itemsPerPage: 3,
+      showArticles: false,
     };
   },
   props: {
@@ -89,9 +90,16 @@ export default {
           console.error(error);
         });
     },
-    changePage(page) {
+    changePage(page, event) {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
+        event.preventDefault();
+      }
+    },
+    toggleArticles() {
+      this.showArticles = !this.showArticles;
+      if (this.showArticles) {
+        this.fetchUserArticles();
       }
     },
   },

@@ -1,24 +1,24 @@
 <template>
   <div>
-    <h3 class="text-center mb-4">작성한 댓글</h3>
-    <ul class="list-group">
+    <h3 class="text-center mb-4" @click="toggleComments">작성한 댓글</h3>
+    <ul class="list-group" v-if="showComments">
       <li class="list-group-item" v-for="comment in displayedComments" :key="comment.id">
         <p>{{ comment.content }}</p>
       </li>
     </ul>
 
-    <nav v-if="totalPages > 1">
+    <nav v-if="totalPages > 1 && showComments">
       <ul class="pagination justify-content-center mt-4">
         <li class="page-item" :class="{ disabled: currentPage === 1 }">
-          <a class="page-link" href="#" @click="changePage(currentPage - 1)" aria-label="Previous">
+          <a class="page-link" href="#" @click="changePage(currentPage - 1, $event)" aria-label="Previous">
             <span aria-hidden="true">&laquo;</span>
           </a>
         </li>
         <li class="page-item" v-for="page in totalPages" :key="page" :class="{ active: currentPage === page }">
-          <a class="page-link" href="#" @click="changePage(page)">{{ page }}</a>
+          <a class="page-link" href="#" @click="changePage(page, $event)">{{ page }}</a>
         </li>
         <li class="page-item" :class="{ disabled: currentPage === totalPages }">
-          <a class="page-link" href="#" @click="changePage(currentPage + 1)" aria-label="Next">
+          <a class="page-link" href="#" @click="changePage(currentPage + 1, $event)" aria-label="Next">
             <span aria-hidden="true">&raquo;</span>
           </a>
         </li>
@@ -39,6 +39,7 @@ export default {
       comments: [],
       currentPage: 1,
       itemsPerPage: 3,
+      showComments: false,
     };
   },
   props: {
@@ -73,9 +74,16 @@ export default {
           console.error(error);
         });
     },
-    changePage(page) {
+    changePage(page, event) {
       if (page >= 1 && page <= this.totalPages) {
         this.currentPage = page;
+        event.preventDefault();
+      }
+    },
+    toggleComments() {
+      this.showComments = !this.showComments;
+      if (this.showComments) {
+        this.fetchUserComments();
       }
     },
   },

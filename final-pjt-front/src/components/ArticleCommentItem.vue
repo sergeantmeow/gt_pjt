@@ -1,13 +1,13 @@
 <template>
   <div v-if="comment" class="comment-container">
     <h5 class="comment-content">{{ comment.content }}</h5>
-    <div class="otheruser-link">
-    <p>
-      <router-link :to="{ name: 'OtherProfileView', params: { username: comment.username } }">
-        {{ comment.username }}
-      </router-link>
-    </p>
-    </div>
+      <div class="otheruser-link">
+      <p>
+        <router-link :to="{ name: 'OtherProfileView', params: { username: comment.username } }">
+          {{ comment.username }}
+        </router-link>
+      </p>
+      </div>
     <p>{{ formatDateTime(comment.created_at) }}</p>
     <!-- <p>수정일 : {{ formatDateTime(comment.updated_at) }}</p> -->
     <div v-if="isAuthor" class="comment-icons">
@@ -58,7 +58,10 @@ export default {
         const id = this.comment.id;
         axios({
           method: 'delete',
-          url: `${API_URL}/articles/comments/${ id }/`
+          url: `${API_URL}/articles/comments/${ id }/`,
+          headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+          },
         })
         .then(() => {
           this.$eventBus.$emit('commentDeleted');
@@ -75,6 +78,9 @@ export default {
         axios({
           method: 'put',
           url: `${API_URL}/articles/comments/${id}/`,
+          headers: {
+          Authorization: `Token ${this.$store.state.user.token}`
+          },
           data: {
             content: newContent
           }
@@ -92,7 +98,7 @@ export default {
 
 </script>
 
-<style>
+<style scoped>
 .comment-container {
   display: flex;
   flex-direction: row;
@@ -100,12 +106,16 @@ export default {
 }
 
 .comment-content {
+  margin-bottom: 15px;
   margin-right: 10px;
-  margin-bottom: 5px;
   word-wrap: break-word;
 }
 
+.otheruser-link {
+  margin-right: 5px;
+}
 .comment-icons {
+  margin-left: 10px;
   display: flex;
 }
 

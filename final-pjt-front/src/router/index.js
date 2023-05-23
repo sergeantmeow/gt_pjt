@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import store from '../store'
 import ArticleView from '../views/ArticleView'
 import ArticleCreateView from '../views/ArticleCreateView'
 import ArticleDetailView from '../views/ArticleDetailView'
@@ -11,32 +12,44 @@ import SignUpView from '../views/SignUpView'
 import MyProfileView from '@/views/MyProfileView'
 import OtherProfileView from '@/views/OtherProfileView'
 import MyProfileEditView from '@/views/MyProfileEditView'
+import HomeView from '@/views/HomeView'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    name: 'HomeView',
+    component: HomeView
+  },
+  {
     path: '/articles',
     name: 'ArticleView',
-    component: ArticleView
+    component: ArticleView,
   },
 
   {
     path: '/articles/create',
     name: 'ArticleCreateView',
-    component: ArticleCreateView
+    component: ArticleCreateView,
+    meta: {
+      requiresAuth: true
+    }
   },
 
   {
     path: '/articles/detail/:id',
     name: 'ArticleDetailView',
-    component: ArticleDetailView
+    component: ArticleDetailView,
   },
 
   {
     path: '/articles/edit/:id',
     name: 'ArticleEditView',
-    component: ArticleEditView
+    component: ArticleEditView,
+    meta: {
+      requiresAuth: true
+    }
   },
 
   {
@@ -65,27 +78,45 @@ const routes = [
   {
     path: '/myprofile',
     name: 'MyProfileView',
-    component: MyProfileView
+    component: MyProfileView,
+    meta: {
+      requiresAuth: true
+    }
   },
 
   {
     path: '/otherprofile/:username',
     name: 'OtherProfileView',
-    component: OtherProfileView
+    component: OtherProfileView,
+    meta: {
+      requiresAuth: true
+    }
   },
 
   {
     path: '/myprofile-edit',
     name: 'MyProfileEditView',
-    component: MyProfileEditView
+    component: MyProfileEditView,
+    meta: {
+      requiresAuth: true
+    }
   },
 ]
+
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes
 })
+
+router.beforeEach((to, from, next) => {
+  if (to.meta.requiresAuth && !store.getters.isLogin) {
+    next('/login'); 
+  } else {
+    next();
+  }
+});
 
 
 
