@@ -184,7 +184,7 @@ export default {
             content : iwContent,
             removable: iwRemoveable
           })
-          //////////////////////////////// 수정필 ////////함수밖(위에) 신규 마커를 선언하고 함수 안에서 그 마커에 신규 마커정보를 넣어주면?/////////////////////////
+          
           // set clickevent on the marker
           kakao.maps.event.addListener(marker, 'click', function(){
             infowindow.open(mapInstance, marker)
@@ -216,7 +216,7 @@ export default {
   .btn_search_cinema{
     background-color: #261639;
     color: #ff2679;
-    font-weight: bold;
+    /* font-weight: bold; */
     border: transparent;
     border-radius: 6px;
     margin-bottom: 10px;

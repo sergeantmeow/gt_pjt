@@ -47,25 +47,55 @@
       />
     </div>
     <!-- Modal -->
-    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+    
+        <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-fullsize">
               <img id="modal_bg_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.backdrop_path}`" alt="">
                 <div class="modal-body bg-transparent container">
                     <div class="row">
                       <div class="col"><img id="modal_poster_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt=""></div>
                       <div id="modal_content" class="col text-black fw-bold">
-                        <h3 class="modal-title fs-7 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
+                        <h3 class="modal-title fs-5 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
                         <br>
-                        <p>{{this.$store.state.movie?.overview}}</p>
+                        <div v-if="showFullText">
+                          <p>{{this.$store.state.movie?.overview}}</p>
+                        </div>
+                        <span v-else>
+                          <span>{{ trimmedOverview }}</span>
+                        </span>
+                        <span v-if="showButton">
+                          <button class="modal_btn" @click.stop="toggleText">{{ buttonText }}</button>
+                        </span> 
                         <br>
-                        <p>평점: {{this.$store.state.movie?.vote_average}}</p> 
-                        <br>
-                        <p>개봉일: {{this.$store.state.movie?.release_date}}</p> 
+                        <p style="margin-top: 10px;">개봉일: {{this.$store.state.movie?.release_date}}</p>
+                        <div class="row">
+                          <div class="col">
+                            <ul>
+                              <li>
+                              </li>
+                            </ul>
+                            원제 : {{ this.$store.state.movie?.original_title }}
+                          </div>
+                          <div class="col">
+                            평점 평균
+                            <div class="circle-wrap">
+                              <div class="circle">
+                                <div class="mask full">
+                                  <div class="fill"></div>
+                                </div>
+                                <div class="mask half">
+                                  <div class="fill"></div>
+                                </div>
+                                <div class="inside-circle"> {{ vote_num }}점 </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="modal_btn" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -82,7 +112,27 @@ export default {
     return {
       movies : this.$store.state.cinemaMovies,
       movieItem : this.$store.state.movie,
-      moviesCarousel : null
+      moviesCarousel : null,
+      maxTextLength : 300,
+      showFullText: false,
+      vote_num : null,
+    }
+  },
+  computed: {
+    trimmedOverview(){
+      console.log(this.$store.state.movie?.overview.length)
+      if(this.$store.state.movie?.overview.length > this.maxTextLength){
+        return this.$store.state.movie?.overview.slice(0, this.maxTextLength)+' ...'
+      }else{
+      // this.showFullText = true
+      return this.$store.state.movie?.overview
+      }
+    },
+    showButton(){
+      return this.$store.state.movie?.overview.length > this.maxTextLength
+    },
+    buttonText(){
+      return this.showFullText ? '숨기기' : '더보기'
     }
   },
   components: {
@@ -97,6 +147,55 @@ export default {
     popFilms.push(filmsByRate[i])
   }
   this.moviesCarousel = popFilms
+  },
+  methods : {
+    toggleText(){
+      this.showFullText = !this.showFullText
+    },
+    async getMovie(pk){
+        await this.$store.dispatch('getMovie', pk)
+    },
+  },
+  watch : {
+    '$store.state.movie':{
+      handler(movie){
+        if(movie.vote_average){
+          let vote_num = parseFloat(this.$store.state.movie.vote_average) * 10
+          let vote_degree = vote_num * 180 / 100
+          let newAngle = vote_degree
+          this.vote_num = parseInt(vote_num)
+          let rotEle = document.querySelector('.circle-wrap .circle .mask.full' )
+          let rotEle2 = document.querySelector('.circle-wrap .circle .fill')
+          rotEle.style.transform = `rotate${vote_num}`
+          rotEle2.style.transform = `rotate${vote_num}`
+
+          // keyframes
+          let keyframesRule = null;
+          let styleSheets = document.styleSheets;
+
+          for (let i = 0; i < styleSheets.length; i++) {
+            var rules = styleSheets[i].cssRules || styleSheets[i].rules;
+            for (let j = 0; j < rules.length; j++) {
+              if (rules[j].type === CSSRule.KEYFRAMES_RULE && rules[j].name === 'fill') {
+                keyframesRule = rules[j];
+                break;
+              }
+            }
+            if (keyframesRule) {
+              break;
+            }
+          }
+          if (keyframesRule) {
+            var keyframesStyle = keyframesRule.cssRules || keyframesRule.rules;
+            if (keyframesStyle.length === 2) {
+              keyframesStyle[1].style.transform = 'rotate(' + newAngle + 'deg)';
+            }
+          }
+
+        }
+      },
+      deep: true,
+    }
   }
 }
 </script>

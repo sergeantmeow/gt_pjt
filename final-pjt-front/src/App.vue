@@ -3,7 +3,7 @@
     <img id="header_image" src="./assets/header_image.jpg">
     <nav id="top_navbar" class="navbar navbar-expand-md">
       <div class="container-fluid">
-        <a href="" class="text-decoration-none fw-bold">
+        <a href="/" class="text-decoration-none">
           <img alt="VCR Logo" src="./assets/vcr_img.png" class="logo_img">
           <!-- <a id="service_name" class="navbar-brand align-middle" href="#">SOME LIKE IT 90'S</a> -->
         </a>
@@ -14,29 +14,18 @@
           <ul class="navbar-nav me-auto mb-2 mb-md-0">
             <li class="nav-item">
               <a class="nav-link active align-middle" aria-current="page" href="#">
-                <router-link :to="{ name: 'MovieListView'}" class="app_nav text-decoration-none fw-bold">Movie</router-link>
+                <router-link :to="{ name: 'MovieListView'}" class="app_nav fs-5 text-decoration-none">Movie</router-link>
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link active align-middle" aria-current="page" href="#">
-                <router-link :to="{ name: 'ArticleView' }" class="app_nav text-decoration-none fw-bold">Community</router-link>
+                <router-link :to="{ name: 'ArticleView' }" class="app_nav fs-5 text-decoration-none">Community</router-link>
               </a>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li> -->
           </ul>
           <div class="d-flex" >
             <div v-if="isLogin">
-              <router-link :to="{ name: 'MyProfileView' }" class="app_nav fw-bold text-decoration-none">
+              <router-link :to="{ name: 'MyProfileView' }" class="app_nav text-decoration-none">
                 {{ currentUser.username }}
               </router-link>
               님 안녕하세요. 
@@ -54,6 +43,9 @@
       </div>
     </nav>
     <router-view/>
+    <div id="footer">
+      SSAFY pjt Website created by 정진욱, 안대현
+    </div>
   </div>
 </template>
 
@@ -94,6 +86,7 @@ export default {
   color: #bfbfbf;
   background-image: url("/src/assets/blue-gradient.jpg");
   background-repeat: repeat-y;
+  font-family: 'DungGeunMo';
 }
 #header_image{
   width : 100%;
@@ -106,7 +99,7 @@ export default {
   background-color: #261639;
   border: solid 1px #ff2679;
   color: #ff2679;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 #logout_btn:hover{
   background-color: #352c41;;
@@ -116,7 +109,7 @@ export default {
   background-color: #261639;
   border: solid 1px #ff2679;
   color: #ff2679;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 #login_btn:hover{
   background-color: #352c41;;
@@ -126,7 +119,7 @@ export default {
   background-color: #261639;
   border: solid 1px #ff2679;
   color: #ff2679;
-  font-weight: bold;
+  /* font-weight: bold; */
 }
 #join_btn:hover{
   background-color: #352c41;;
@@ -164,5 +157,16 @@ export default {
   margin-bottom: 0px;
   color: #ff2679;
 }
+#footer{
+  background-color: #261639;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-family: 'DungGeunMo' ;
+}
 
+@font-face{
+  font-family : 'DungGeunMo';
+  src: url('./assets/DungGeunMo.ttf') format('woff');
+  font-weight: 400;
+}
 </style>

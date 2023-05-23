@@ -12,10 +12,16 @@ import SignUpView from '../views/SignUpView'
 import MyProfileView from '@/views/MyProfileView'
 import OtherProfileView from '@/views/OtherProfileView'
 import MyProfileEditView from '@/views/MyProfileEditView'
+import HomeView from '@/views/HomeView'
 
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'HomeView',
+    component: HomeView
+  },
   {
     path: '/articles',
     name: 'ArticleView',

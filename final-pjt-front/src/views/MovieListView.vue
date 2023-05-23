@@ -1,17 +1,14 @@
 <template>
   <div>
     <nav id="movie_navbar">
-      <!-- <router-link :to="{ name: 'MovieListView'}">인기작</router-link> |
-      <router-link :to="{ name: 'MovieOnCinema' }">지금 상영 중</router-link> |
-      <router-link :to="{ name: 'ArticleView' }">맞춤 추천</router-link> -->
       <button class="movie_nav">
-        <a href="" @click.prevent="popular" class="movie_menu text-decoration-none fw-bold">Recommendations</a>
+        <a href="" @click.prevent="popular" class="movie_menu text-decoration-none">Recommendations</a>
       </button>|
       <button class="movie_nav">
-        <a href="" @click.prevent="cinema" class="movie_menu text-decoration-none fw-bold">Now On Cinema</a>
+        <a href="" @click.prevent="cinema" class="movie_menu text-decoration-none">Now On Cinema</a>
       </button>|
       <button class="movie_nav">
-        <a href="" @click.prevent="mbti" class="movie_menu text-decoration-none fw-bold">Cinema Info</a>
+        <a href="" @click.prevent="mbti" class="movie_menu text-decoration-none">Cinema Info</a>
       </button>
     </nav>
     <hr id="spacer">
