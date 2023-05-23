@@ -150,19 +150,33 @@
                       <div id="modal_content" class="col text-black">
                         <h3 class="modal-title fs-5 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
                         <br>
-                        <p>{{this.$store.state.movie?.overview}}</p>
+                        <div v-if="showFullText">
+                          <p>{{this.$store.state.movie?.overview}}</p>
+                        </div>
+                        <span v-else>
+                          <span>{{ trimmedOverview }}</span>
+                        </span>
+                        <span v-if="showButton">
+                          <button class="modal_btn" @click.stop="toggleText">{{ buttonText }}</button>
+                        </span> 
                         <br>
-                        <p>평점: {{this.$store.state.movie?.vote_average}}</p> 
-                        <br>
-                        <p>개봉일: {{this.$store.state.movie?.release_date}}</p>
-                        <p v-for="genre in this.$store.state.movie?.genre_ids" :key='genre.pk'>
-                          {{genre.name}}
-                        </p> 
+                        <p style="margin-top: 10px;">개봉일: {{this.$store.state.movie?.release_date}}</p>
+                        <div class="circle-wrap">
+                          <div class="circle">
+                            <div class="mask full">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="mask half">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle"> {{ vote_num }}점 </div>
+                          </div>
+                        </div>
                       </div>
                     </div>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="modal_close_btn" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="modal_btn" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
@@ -176,14 +190,78 @@ export default {
   name: 'MovieCard',
   data(){
     return {
-      movies : this.$store.state.movies
+      movies : this.$store.state.movies,
+      maxTextLength : 200,
+      showFullText: false,
+      vote_num : null,
+    }
+  },
+
+  computed: {
+    trimmedOverview(){
+      if(this.$store.state.movie?.overview.length > this.maxTextLength){
+        return this.$store.state.movie?.overview.slice(0, this.maxTextLength)+' ...'
+      }else{
+      // this.showFullText = true
+      return this.$store.state.movie?.overview
+      }
+    },
+    showButton(){
+      return this.$store.state.movie?.overview.length > this.maxTextLength
+    },
+    buttonText(){
+      return this.showFullText ? '숨기기' : '더보기'
     }
   },
 
   methods : {
-    getMovie(pk){
-        this.$store.dispatch('getMovie', pk)
+    toggleText(){
+      this.showFullText = !this.showFullText
     },
+    async getMovie(pk){
+        await this.$store.dispatch('getMovie', pk)
+    },
+  },
+  watch : {
+    '$store.state.movie':{
+      handler(movie){
+        if(movie.vote_average){
+          let vote_num = parseFloat(this.$store.state.movie.vote_average) * 10
+          let vote_degree = vote_num * 180 / 100
+          let newAngle = vote_degree
+          this.vote_num = vote_num
+          let rotEle = document.querySelector('.circle-wrap .circle .mask.full' )
+          let rotEle2 = document.querySelector('.circle-wrap .circle .fill')
+          rotEle.style.transform = `rotate${vote_num}`
+          rotEle2.style.transform = `rotate${vote_num}`
+
+          // keyframes
+          let keyframesRule = null;
+          let styleSheets = document.styleSheets;
+
+          for (let i = 0; i < styleSheets.length; i++) {
+            var rules = styleSheets[i].cssRules || styleSheets[i].rules;
+            for (let j = 0; j < rules.length; j++) {
+              if (rules[j].type === CSSRule.KEYFRAMES_RULE && rules[j].name === 'fill') {
+                keyframesRule = rules[j];
+                break;
+              }
+            }
+            if (keyframesRule) {
+              break;
+            }
+          }
+          if (keyframesRule) {
+            var keyframesStyle = keyframesRule.cssRules || keyframesRule.rules;
+            if (keyframesStyle.length === 2) {
+              keyframesStyle[1].style.transform = 'rotate(' + newAngle + 'deg)';
+            }
+          }
+
+        }
+      },
+      deep: true,
+    }
   }
 }
 
@@ -197,7 +275,7 @@ export default {
   #recommend_title{
     margin-top: 15px;
     margin-bottom: 0;
-    color: white;
+    color: #bfbfbf;
   }
   #outerLine {
     margin: 14px
@@ -323,9 +401,8 @@ export default {
     left: 0;
     height: 100%;
     width: 100%;
-    overflow: auto;
+    /* overflow: auto; */
     object-fit: cover;
-    overflow: hidden;
     z-index: -1;
     filter: contrast(20%);
     border-radius: 5px;
@@ -342,16 +419,74 @@ export default {
     margin-right: 4%;
   }
 
-  .modal_close_btn:hover{
-    background-color: antiquewhite;
-    color: gray
+  .modal_btn:hover{
+    background-color: #352c41;;
+    color: #ff9ec3;
   }
 
-  .modal_close_btn {
+  .modal_btn {
     background-color: #261639;
     color: #ff2679;
     border: none;
     border-radius: 3px;
+    z-index: 999;
+    pointer-events: stroke;
+  }
+
+  .circle-wrap {
+  margin: 50px auto;
+  width: 150px;
+  height: 150px;
+  background: #e6e2e7;
+  border-radius: 50%;
+  }
+
+  .circle-wrap .circle .mask,
+  .circle-wrap .circle .fill {
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .circle-wrap .circle .mask {
+    clip: rect(0px, 150px, 150px, 75px);
+  }
+
+  .circle-wrap .circle .mask .fill {
+    clip: rect(0px, 75px, 150px, 0px);
+    background-color: #ff2679;
+  }
+
+  .circle-wrap .circle .mask.full,
+  .circle-wrap .circle .fill {
+    animation: fill ease-in-out 1s;
+    transform: rotate(10deg);
+    animation-fill-mode: forwards;
+  }
+
+  @keyframes fill {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(150deg);
+    }
+  }
+
+  .circle-wrap .inside-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: #fff;
+    line-height: 130px;
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: absolute;
+    z-index: 100;
+    font-weight: 700;
+    font-size: 2em;
   }
 
 
