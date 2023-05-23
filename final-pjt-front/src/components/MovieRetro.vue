@@ -168,11 +168,11 @@ export default {
     max-width: 80%;
   }
 
-  #recommend_title{
+  /* #recommend_title{
     margin-top: 20px;
     margin-bottom: 0;
     color: white;
-  }
+  } */
   #outerLine {
     margin: 14px
   }

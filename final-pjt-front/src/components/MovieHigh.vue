@@ -162,11 +162,11 @@ export default {
   :root{
     --font-size-md: calc(0.5rem + 2vw);
   }
-  #recommend_title{
+  /* #recommend_title{
     margin-top: 20px;
     margin-bottom: 0;
     color: white;
-  }
+  } */
   #outerLine {
     margin: 14px
   }
