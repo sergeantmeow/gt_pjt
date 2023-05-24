@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center mb-4" @click="toggleComments">작성한 댓글</h3>
+    <h3 class="user-comment" @click="toggleComments">작성한 댓글</h3>
     <ul class="list-group" v-if="showComments">
       <li class="list-group-item" v-for="comment in displayedComments" :key="comment.id">
         <p>{{ comment.content }}</p>
@@ -91,18 +91,17 @@ export default {
 </script>
 
 <style scoped>
+.user-comment {
+  transition: transform 0.3s ease;
+}
+.user-comment:hover {
+  transform: scale(1.1);
+}
 .list-group-item {
-  border-color: rgb(31, 32, 63);
-  background-color: rgb(31, 32, 63);
+  border-color: rgb(31, 32, 63, 0);
+  background-color: rgb(31, 32, 63, 0);
   color: #bfbfbf;
 }
-
-.list-group-item:hover {
-  background-color: #4f3d63;
-  color: #ff2679;
-}
-
-
 .page-item.disabled .page-link {
   background-color: #4f3d63;
   border-color: #4f3d63;

@@ -10,13 +10,9 @@
         <router-link :to="{ name: 'MyProfileEditView' }" class="btn btn-primary">회원정보 수정</router-link>
       </div>
     </div>
-    <hr>
     <UserFollowers :id="currentUser.id" />
-    <hr>
     <UserFollowings :id="currentUser.id" />
-    <hr>
     <UserArticle :username="currentUser.username" />
-    <hr>
     <UserComment :username="currentUser.username" />
   </div>
 </template>
@@ -61,8 +57,11 @@ export default {
   background-color: rgb(31, 32, 63);
   border-color: rgb(31, 32, 63);
   color: #bfbfbf;
+  transition: transform 0.3s ease;
 }
-
+.card:hover {
+  transform: scale(1.05);
+}
 .btn-primary {
   color: #bfbfbf;
   background-color: #4f3d63;

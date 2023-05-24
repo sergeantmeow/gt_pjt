@@ -1,6 +1,6 @@
 <template>
   <div v-if="comment" class="comment-container">
-    <h5 class="comment-content">{{ comment.content }}</h5>
+    <h6 class="comment-content">{{ comment.content }}</h6>
       <div class="otheruser-link">
       <p>
         <router-link :to="{ name: 'OtherProfileView', params: { username: comment.username } }">

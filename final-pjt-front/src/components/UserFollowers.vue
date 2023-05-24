@@ -1,9 +1,11 @@
 <template>
   <div>
-    <h3 @click="toggleFollowers">팔로워</h3>
-    <ul v-if="showFollowers">
-      <li v-for="follower in followers" :key="follower.id">
-        <router-link :to="{ name: 'OtherProfileView', params: { username: follower.username } }">
+    <h3 @click="toggleFollowers" class="follower-title">팔로워</h3>
+    <ul v-if="showFollowers" class="list-group">
+      <li v-for="follower in followers" :key="follower.id" class="list-group-item">
+        <router-link :to="{ name: 'OtherProfileView',
+         params: { username: follower.username } }"
+          class="item">
           {{ follower.username }}
         </router-link>
       </li>
@@ -57,3 +59,33 @@ export default {
   },
 }
 </script>
+
+<style scoped>
+.follower-title {
+  transition: transform 0.3s ease;
+}
+.follower-title:hover {
+  transform: scale(1.1);
+}
+
+.list-group-item {
+  border-color: rgb(31, 32, 63, 0);
+  background-color: rgb(31, 32, 63, 0);
+  color: #bfbfbf;
+}
+
+.list-group-item:hover {
+  background-color: rgba(79, 61, 99, 0);
+  color: #ff2679;
+}
+
+.item {
+  color: #bfbfbf;
+  text-decoration : none;
+}
+
+.item:hover {
+  color: #ff2679
+}
+
+</style>

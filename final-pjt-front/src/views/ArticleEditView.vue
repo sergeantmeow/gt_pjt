@@ -1,24 +1,24 @@
 <!-- views/CreateView.vue -->
 
 <template>
-  <div class="container fw-bold">
+  <div class="container">
     <h2 class="title-mg-ct">게시글 수정</h2>
     <form @submit.prevent="editArticle" class="row justify-content-center mt-4">
       <div class="col-md-6">
         <div class="form-group article-create">
-          <label for="title">제목 : </label>
+          <label for="title">제목</label>
           <input type="text" id="title" v-model.trim="title" class="form-control"><br>
-          <label for="content">내용 : </label>
+          <label for="content">내용</label>
           <textarea id="content" cols="50" rows="10" v-model="content" class="form-control"></textarea><br>
           <div v-if="image">
             <img :src="image" alt="이미지" class="article-img-create img-fluid">
           </div>
           <div class="form-group article-create">
-            <label for="content">이미지 선택 : </label>
+            <label for="content">이미지 선택</label>
             <input type="file" id="image" ref="image" @change="handleImageChange"><br>
           </div>
           <div class="article-create submit-button">
-            <input type="submit" id="submit" value="수정" class="btn btn-article-create fw-bold">
+            <input type="submit" id="submit" value="수정" class="btn btn-article-create">
           </div>
         </div>
       </div>  

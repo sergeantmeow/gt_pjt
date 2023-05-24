@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h3 class="text-center mb-4" @click="toggleArticles">작성한 글</h3>
+    <h3 class="user-article" @click="toggleArticles">작성한 글</h3>
     <ul class="list-group" v-if="showArticles">
       <li class="list-group-item" v-for="article in displayedArticles" :key="article.id">
         <router-link :to="{ name: 'ArticleDetailView', params: { id: article.id }}" class="article-title">
@@ -107,23 +107,29 @@ export default {
 </script>
 
 <style scoped>
+.user-article {
+  transition: transform 0.3s ease;
+}
+.user-article:hover {
+  transform: scale(1.1);
+}
 .list-group-item {
-  border-color: rgb(31, 32, 63);
-  background-color: rgb(31, 32, 63);
+  border-color: rgb(31, 32, 63, 0);
+  background-color: rgb(31, 32, 63, 0);
   color: #bfbfbf;
 }
 
 .list-group-item:hover {
-  background-color: #4f3d63;
+  background-color: rgba(79, 61, 99, 0);
 }
 
 .article-title {
   text-decoration: none;
-  color: #ff2679;
+  color: #bfbfbf;
 }
 
 .article-title:hover {
-  color: #7c6891;
+  color: #ff2679;
 }
 
 .page-item.disabled .page-link {

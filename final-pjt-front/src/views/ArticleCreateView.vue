@@ -1,5 +1,5 @@
 <template>
-  <div class="container fw-bold">
+  <div class="container">
     <h2 class="title-mg-ct">게시글 작성</h2>
     <form @submit.prevent="createArticle" class="row justify-content-center mt-4">
       <div class="col-md-6">

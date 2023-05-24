@@ -1,5 +1,5 @@
 <template>
-  <div class="container fw-bold login-color">
+  <div class="container login-color">
     <div class="row justify-content-center">
       <h2 class="title-mg-ct">{{ article?.title }}</h2>
       <div class="col-md-8">
@@ -32,6 +32,7 @@
           </span>
           <hr>
         </div>
+        <hr>
         <ArticleComment :articleId="Number(articleId)" />
       </div>
     </div>
