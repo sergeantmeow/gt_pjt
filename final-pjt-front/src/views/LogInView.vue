@@ -50,6 +50,7 @@ export default {
 .btn-login {
   background-color: #261639;
   color: #bfbfbf;
+  margin-bottom: 10px;
 }
 
 .btn-login:hover {

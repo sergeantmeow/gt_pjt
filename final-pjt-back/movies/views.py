@@ -2,7 +2,7 @@
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from django.shortcuts import get_object_or_404, get_list_or_404
-from .serializers import MovieListSerializer, MovieSerializer, CinemaListSerializer, GenreSerializer
+from .serializers import MovieListSerializer, MovieSerializer, CinemaListSerializer
 from .models import Movie, Cinema, Genre
 import random
 from .kakaoLocalAPI import KakaoLocalAPI
