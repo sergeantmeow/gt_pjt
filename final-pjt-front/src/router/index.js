@@ -6,7 +6,6 @@ import ArticleCreateView from '../views/ArticleCreateView'
 import ArticleDetailView from '../views/ArticleDetailView'
 import ArticleEditView from '../views/ArticleEditView'
 import MovieListView from '@/views/MovieListView'
-import MovieDetailView from '@/views/MovieDetailView'
 import LogInView from '../views/LogInView'
 import SignUpView from '../views/SignUpView'
 import MyProfileView from '@/views/MyProfileView'
@@ -56,11 +55,6 @@ const routes = [
     path: '/MovieList',
     name: 'MovieListView',
     component: MovieListView
-  },
-  {
-    path: '/MovieDetail',
-    name: 'MovieDetailView',
-    component: MovieDetailView
   },
   
   {

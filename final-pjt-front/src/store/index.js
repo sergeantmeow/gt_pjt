@@ -44,6 +44,9 @@ export default new Vuex.Store({
     },
     currentUser(state) {
       return state.user
+    },
+    isCoor(state){
+      return state.userGEO[0]? true : false
     }
   },
   mutations: {
@@ -149,12 +152,11 @@ export default new Vuex.Store({
       if("geolocation" in navigator){
         navigator.geolocation.getCurrentPosition((position)=>{
           this.state.userGEO = [position.coords.latitude, position.coords.longitude]
+          console.log(position)
         })
         console.log(context)
-        // console.log(this.state.userGEO)
-        // console.log(this.state.userGEO[0])
-        // console.log(this.state.userGEO[1])
       }else{
+        this.state.userGEO = null
         console.log('>>>>>GEO data does not work<<<<<<')
       }
     },

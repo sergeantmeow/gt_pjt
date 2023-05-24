@@ -9,7 +9,7 @@
       <li><a class="dropdown-item" href="#" @click="setEnglish"><img src="../assets/usflag.png" alt=""> English</a></li>
       <li><a class="dropdown-item" href="#" @click="setFrench"><img src="../assets/frflag.png" alt=""> Français</a></li>
     </ul>
-    <img src="../assets/lettering2.png" style="margin-bottom: 6px;" alt="">
+    <img src="../assets/lettering3.png" style="margin-bottom: 16px; width: 60%;" alt="">
     <div class="row">
         <div id="intro_textBox" class="col">
             <div v-if="language === 'english'">
