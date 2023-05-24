@@ -19,8 +19,8 @@
       <MovieOnCinema/>
     </div>
     <div v-else>
-      <KakaoMap v-if="isLogin" :options="mapOptions"/>
-      <p v-else>로그인이 필요한 기능입니다.</p>
+      <KakaoMap v-if="isCoor" :options="mapOptions"/>
+      <p v-else>위치정보 허용이 필요한 기능입니다.</p>
     </div>
   </div>
 </template>
@@ -41,6 +41,10 @@ export default {
     isLogin() {
       return this.$store.getters.isLogin; // 로그인 여부 확인
     },
+    isCoor() {
+      console.log(this.$store.getters.isCoor)   // test code
+      return this.$store.getters.isCoor;
+    }
   },
   data(){
     return{
