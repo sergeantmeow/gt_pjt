@@ -13,7 +13,7 @@
             <label for="password"> password : </label>
             <input type="password" id="password" v-model="password" class="form-control"><br>
             </div>
-            <input type="submit" value="로그인" class="btn btn-login fw-bold">
+            <input type="submit" value="로그인" class="btn btn-login fw-bold mb-3">
           </form>
         </div>
       </div>
