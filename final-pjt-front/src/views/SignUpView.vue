@@ -12,6 +12,7 @@
           <div class="form-group">
           <label for="password1"> password</label>
           <input type="password" id="password1" v-model="password1" class="form-control">
+          <span style="font-size: 14px;">최소 길이 8자, 1개 이상의 숫자, 대문자, 소문자, 특수문자 포함</span>
           </div>
           <div class="form-group">
           <label for="password2"> password confirmation</label>

@@ -151,7 +151,6 @@ def user_following(request, user_pk):
             'id': followed_user.id,
             'username': followed_user.username,
             'email': followed_user.email,
-            # Include other fields you want to return
         })
 
     return Response(following_list)

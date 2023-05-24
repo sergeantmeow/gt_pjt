@@ -106,8 +106,6 @@
 
 <script>
 import MovieCardItem from '@/components/MovieCardItem'
-// import axios from 'axios'
-
 export default {
   name: 'MovieCard',
   data(){
