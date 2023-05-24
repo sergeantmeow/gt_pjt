@@ -56,6 +56,13 @@ export default {
       return this.isLogin && this.user?.username != this.currentUser.username
     },
   },
+  watch: {
+    '$route'(to, from) {
+      if (to.params.username !== from.params.username) {
+        this.getUserProfile(to.params.username);
+      }
+    }
+  },
   created(){
       this.getUserProfile(this.$route.params.username);
   },

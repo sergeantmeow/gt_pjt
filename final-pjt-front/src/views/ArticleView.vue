@@ -2,7 +2,7 @@
   <div>
     <h2 class="title-mg-ct">Community</h2>
     <div v-if="isLogin" class="go-article-page">
-      <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view fw-bold">새 글쓰기</router-link>
+      <router-link :to="{ name: 'ArticleCreateView' }" class="btn btn-article-view">새 글쓰기</router-link>
     </div>
     <ArticleList />
   </div>

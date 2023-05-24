@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="title-mg-ct">Login</h2>
-    <div class="container fw-bold login-color">
+    <div class="container login-color">
       <div class="row justify-content-center">
         <div class="col-md-4">
           <form @submit.prevent="login" class="mt-4">

@@ -1,7 +1,7 @@
 <template>
   <div>
     <h2 class="title-mg-ct">SignUp</h2>
-    <div class="container sign-color fw-bold">
+    <div class="container sign-color">
       <div class="row justify-content-center">
         <div class="col-md-4">
         <form @submit.prevent="signUp" class="mt-4">
@@ -23,7 +23,7 @@
           </div>
           <div class="signup-link">
           <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC" target="_blank">MBTI 유형 검사하기</a><br>
-          <input type="submit" value="신청" class="btn btn-signup fw-bold">
+          <input type="submit" value="신청" class="btn btn-signup">
           </div>
         </form>
         <div class="signup-link">
