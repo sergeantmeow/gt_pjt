@@ -15,13 +15,9 @@
         </template>
       </div>
     </div>
-    <hr>
     <UserFollowers :id="user.id" />
-    <hr>
     <UserFollowings :id="user.id" />
-    <hr>
     <UserArticle :username="user.username" />
-    <hr>
     <UserComment :username="user.username" />
   </div>
 </template>
@@ -33,7 +29,7 @@ import UserComment from '@/components/UserComment'
 import UserFollowers from '@/components/UserFollowers.vue'
 import UserFollowings from '@/components/UserFollowings.vue'
 
-const API_URL = 'http://127.0.0.1:8000'
+const API_URL = process.env.VUE_APP_API_URL
 
 export default {
   name: 'OtherProfileView',

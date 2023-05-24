@@ -4,7 +4,7 @@ import axios from 'axios'
 import createPersistedState from 'vuex-persistedstate'
 import router from '../router'
 
-const API_URL = 'http://127.0.0.1:8000'
+const API_URL = process.env.VUE_APP_API_URL
 
 Vue.use(Vuex)
 
@@ -275,8 +275,7 @@ export default new Vuex.Store({
         }
         console.log(user)
         context.commit('SET_USER', user)
-        // router.push('/')
-        router.push('/movieList')
+        router.push('/')
       })
       .catch((error) => {
         if (error.response && error.response.status === 400) {

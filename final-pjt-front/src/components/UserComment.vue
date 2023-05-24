@@ -6,7 +6,6 @@
         <p>{{ comment.content }}</p>
       </li>
     </ul>
-
     <nav v-if="totalPages > 1 && showComments">
       <ul class="pagination justify-content-center mt-4">
         <li class="page-item" :class="{ disabled: currentPage === 1 }">
@@ -30,7 +29,7 @@
 <script>
 import axios from 'axios';
 
-const API_URL = 'http://127.0.0.1:8000';
+const API_URL = process.env.VUE_APP_API_URL
 
 export default {
   name: 'UserComment',
