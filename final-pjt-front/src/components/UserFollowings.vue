@@ -2,21 +2,24 @@
   <div>
     <h3 @click="toggleFollowings" class="following-title">팔로잉</h3>
     <ul v-if="showFollowings" class="list-group">
-      <li v-for="following in followings" :key="following.id" class="list-group-item">
-        <router-link :to="{ name: 'OtherProfileView',
-         params: { username: following.username } }"
-          class="item">
+      <li v-for="following in paginatedFollowings" :key="following.id" class="list-group-item">
+        <router-link :to="{ name: 'OtherProfileView', params: { username: following.username } }" class="item">
           {{ following.username }}
-        </router-link>   
+        </router-link>
       </li>
     </ul>
+    <div class="pagination" v-if="showFollowings">
+      <div class="pagination-buttons">
+        <button v-for="page in pageCount" :key="page" @click="changePage(page, $event)" :class="{ active: currentPage === page }">{{ page }}</button>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 import axios from 'axios';
 
-const API_URL = process.env.VUE_APP_API_URL
+const API_URL = process.env.VUE_APP_API_URL;
 
 export default {
   name: 'UserFollowings',
@@ -24,10 +27,22 @@ export default {
     return {
       followings: [],
       showFollowings: false,
-    }
+      currentPage: 1,
+      followingsPerPage: 3,
+    };
   },
   props: {
     id: Number,
+  },
+  computed: {
+    paginatedFollowings() {
+      const startIndex = (this.currentPage - 1) * this.followingsPerPage;
+      const endIndex = startIndex + this.followingsPerPage;
+      return this.followings.slice(startIndex, endIndex);
+    },
+    pageCount() {
+      return Math.ceil(this.followings.length / this.followingsPerPage);
+    },
   },
   methods: {
     toggleFollowings() {
@@ -43,18 +58,22 @@ export default {
         url: `${API_URL}/accounts/${this.id}/followings/`,
         headers: {
           Authorization: `Token ${this.$store.state.user.token}`,
-        }
+        },
       })
-      .then((response) => {
-        this.followings = response.data;
-        this.showFollowings = true;
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-    }
-  }
-}
+        .then((response) => {
+          this.followings = response.data;
+          this.showFollowings = true;
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    },
+    changePage(page, event) {
+      this.currentPage = page;
+      event.preventDefault();
+    },
+  },
+};
 </script>
 
 <style scoped>
@@ -78,10 +97,39 @@ export default {
 
 .item {
   color: #bfbfbf;
-  text-decoration : none;
+  text-decoration: none;
 }
 
 .item:hover {
-  color: #ff2679
+  color: #ff2679;
+}
+
+.pagination {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.pagination button {
+  margin: 5px;
+  padding: 5px 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  color: #333;
+  cursor: pointer;
+}
+
+.pagination button:hover {
+  background-color: #eee;
+}
+
+.pagination button.active {
+  background-color: #ff2679;
+  color: #fff;
 }
 </style>
