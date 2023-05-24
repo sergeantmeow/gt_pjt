@@ -48,57 +48,59 @@
     </div>
     <!-- Modal -->
     
-        <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-fullsize">
-              <img id="modal_bg_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.backdrop_path}`" alt="">
-                <div class="modal-body bg-transparent container">
+    <div class="modal fade" id="movieModal" tabindex="-1" aria-labelledby="movieModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullsize">
+          <img id="modal_bg_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.backdrop_path}`" alt="">
+            <div class="modal-body bg-transparent container">
+                <div class="row">
+                  <div class="col"><img id="modal_poster_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt=""></div>
+                  <div id="modal_content" class="col text-black fw-bold">
+                    <h3 class="modal-title fs-5 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
+                    <br>
+                    <div v-if="showFullText">
+                      <p>{{this.$store.state.movie?.overview}}</p>
+                    </div>
+                    <span v-else>
+                      <span>{{ trimmedOverview }}</span>
+                    </span>
+                    <span v-if="showButton">
+                      <button class="modal_btn" @click.stop="toggleText">{{ buttonText }}</button>
+                    </span> 
+                    <br>
+                    <p style="margin-top: 10px;">개봉일: {{this.$store.state.movie?.release_date}}</p>
                     <div class="row">
-                      <div class="col"><img id="modal_poster_img" :src="`https://image.tmdb.org/t/p/w500/${this.$store.state.movie?.poster_path}`" alt=""></div>
-                      <div id="modal_content" class="col text-black fw-bold">
-                        <h3 class="modal-title fs-5 fw-bold" id="movieModalLabel">{{this.$store.state.movie?.title}}</h3>
+                      <div class="col">
+                        <ul>
+                          <li v-for="genre in this.$store.state.movie?.genres" :key="genre" style="list-style-type: none">
+                            {{ genre.name }}
+                          </li>
+                        </ul>
                         <br>
-                        <div v-if="showFullText">
-                          <p>{{this.$store.state.movie?.overview}}</p>
-                        </div>
-                        <span v-else>
-                          <span>{{ trimmedOverview }}</span>
-                        </span>
-                        <span v-if="showButton">
-                          <button class="modal_btn" @click.stop="toggleText">{{ buttonText }}</button>
-                        </span> 
-                        <br>
-                        <p style="margin-top: 10px;">개봉일: {{this.$store.state.movie?.release_date}}</p>
-                        <div class="row">
-                          <div class="col">
-                            <ul>
-                              <li>
-                              </li>
-                            </ul>
-                            원제 : {{ this.$store.state.movie?.original_title }}
-                          </div>
-                          <div class="col">
-                            평점 평균
-                            <div class="circle-wrap">
-                              <div class="circle">
-                                <div class="mask full">
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="mask half">
-                                  <div class="fill"></div>
-                                </div>
-                                <div class="inside-circle"> {{ vote_num }}점 </div>
-                              </div>
+                        원제 : {{ this.$store.state.movie?.original_title }}
+                      </div>
+                      <div class="col">
+                        평점 평균
+                        <div class="circle-wrap">
+                          <div class="circle">
+                            <div class="mask full">
+                              <div class="fill"></div>
                             </div>
+                            <div class="mask half">
+                              <div class="fill"></div>
+                            </div>
+                            <div class="inside-circle"> {{ vote_num }}점 </div>
                           </div>
                         </div>
                       </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="modal_btn" data-bs-dismiss="modal">Close</button>
+                  </div>
                 </div>
             </div>
+            <div class="modal-footer">
+                <button type="button" class="modal_btn" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
+    </div>
   </div>
 </template>
 

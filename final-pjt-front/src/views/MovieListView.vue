@@ -19,7 +19,8 @@
       <MovieOnCinema/>
     </div>
     <div v-else>
-      <KakaoMap :options="mapOptions"/>
+      <KakaoMap v-if="isLogin" :options="mapOptions"/>
+      <p v-else>로그인이 필요한 기능입니다.</p>
     </div>
   </div>
 </template>
