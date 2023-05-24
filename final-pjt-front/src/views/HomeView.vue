@@ -32,14 +32,14 @@
                 의견과 정보를 공유할 게시판도 물론 있고 말이죠. 이제 마우스와 팝콘을 잡고 90년대를 즐기세요!
             </div>
             <div v-if="language === 'french'">
-                Doux années 1990.
-                 L'époque où les gens ne regardaient pas les minuscules écrans sur leurs paumes. Le temps où la coutume l'emportait sur la loi, et la violence sur les mœurs.
-                 L'optimisme était au rendez-vous avec la croissance économique qui semblait durer éternellement. 
-                 <br>
-                 Pour ceux qui manquent la location de magnétoscope, console de jeux vidéo 16 bits, magasin général local,
-                 des films noirs ringards et des lumières de léon remplissant l'air nocturne, Some Like It 90's présente la communauté de films en ligne sur le thème des années 90. Vous pouvez rechercher des mentions élogieuses de films par votre MBTI,
-                 classement du film, et par l'année de leur sortie. Il affiche des films sur le cinéma maintenant ainsi que les informations sur l'emplacement du cinéma. Sans oublier qu'il y a un tableau où
-                 vous pouvez partager vos opinions et informations à. Prenez votre souris, et probablement du pop-corn aussi, profitez des années 90!
+                Chères années 90,
+                Temps où les gens ne restaient pas fixés à de petits écrans collés sur leur main.
+                Temps où la coutume l'emportait sur la loi, et la violence sur les manières.
+                Temps où l'optimisme était au rendez-vous avec une croissance économique qui semblait durer éternellement.
+                À ceux à qui la location de K7, les consoles 16 bits, les magasins de quartier, les films mielleux et les néons lumineux manquent.
+                Vous pouvez rechercher des films en fonction de votre MBTI, de leur classement et de leur année de sortie. Vous trouverez des informations sur les films actuellement au cinéma ainsi que sur la localisation des cinémas qui les diffusent.
+                Vous pourrez également y trouver un emplacement où partager vos avis ou toutes autres informations qui vous semblent utiles.
+                Alors attrapez votre souris et pourquoi pas quelques pop-corns et profitez des années 90 !
             </div>
         </div>
         <div class="col">
@@ -54,7 +54,7 @@ export default {
   name: 'HomeView',
   data(){
     return{
-        language: 'english'
+        language: 'korean'
     }
   },
   methods : {

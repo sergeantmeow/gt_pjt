@@ -114,7 +114,7 @@ export default new Vuex.Store({
         url: `${API_URL}/movies/${pk}/`,
       })
       .then((response)=>{
-        console.log(response.data)
+        console.log(response)
         context.commit('GET_MOVIE', response.data)
       })
     },

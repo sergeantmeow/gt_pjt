@@ -111,8 +111,8 @@ export default {
 }
 
 .article-create button {
- margin-top: 10px; 
- margin-bottom: 10px;
+  margin-top: 10px; 
+  margin-bottom: 10px;
 }
 
 .btn-article-create {

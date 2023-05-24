@@ -164,9 +164,11 @@
                         <div class="row">
                           <div class="col">
                             <ul>
-                              <li>
+                              <li v-for="genreName in this.$store.state.movie?.genres_name" :key="genreName" style="list-style-type: none">
+                                {{ genreName }}
                               </li>
                             </ul>
+                            <br>
                             원제 : {{ this.$store.state.movie?.original_title }}
                           </div>
                           <div class="col">
@@ -214,8 +216,7 @@ export default {
       if(this.$store.state.movie?.overview.length > this.maxTextLength){
         return this.$store.state.movie?.overview.slice(0, this.maxTextLength)+' ...'
       }else{
-      // this.showFullText = true
-      return this.$store.state.movie?.overview
+        return this.$store.state.movie?.overview
       }
     },
     showButton(){
@@ -363,12 +364,7 @@ export default {
     
   }
   
-  /* .wrapper section .item .duration {
-    position: absolute;
-    bottom: 0;
-    left: 20px;
-    color: #fff;
-  } */
+  
   .wrapper section .arrow__btn {
     position: absolute;
     color: #fff;
@@ -381,6 +377,7 @@ export default {
     z-index: 1;
     display: flex;
     align-items: center;
+    font-family: 'gulim'
   }
   .wrapper section .left-arrow {
     top: 0;

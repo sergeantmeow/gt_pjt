@@ -33,14 +33,16 @@
             <div v-if="mbtiNullError" class="error-message">
             MBTI를 넣어주세요. 
             <br>
-            MBTI를 모르시다면?
+            <!-- 내 MBTI 유형을 모른다면?
             <br>
-            <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">검사하러가기</a>
+            <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">검사하러가기</a> -->
           </div>
             <div v-if="mbtiWrongError" class="error-message">
-            올바른 MBTI를 넣어주세요. MBTI를 모르시다면?
+            올바른 MBTI를 넣어주세요. 
+            <br> 
+            <!-- 내 MBTI 유형을 모른다면?
             <br>
-            <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">검사하러가기</a>
+            <a href="https://www.16personalities.com/ko/%EB%AC%B4%EB%A3%8C-%EC%84%B1%EA%B2%A9-%EC%9C%A0%ED%98%95-%EA%B2%80%EC%82%AC">검사하러가기</a> -->
             </div>
           </div>
         </div>
